@@ -1,59 +1,36 @@
-<script lang="ts">
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
+<script>
+    import Header from '$lib/components/Header.svelte';
+    import Navbar from '$lib/components/Navbar.svelte';
+    import HeroSection from '$lib/components/Hero.svelte';
+    import Products from '$lib/components/Products.svelte';
+    import Benefits from '$lib/components/Benefits.svelte';
+    import Learn from '$lib/components/Learn.svelte';
+    import Compatibility from '$lib/components/Compatibility.svelte';
+    import ContactForm from '$lib/components/Contact.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+<main>
+    <Navbar/>
+    <Header />
+    <HeroSection />
+    <Products />
+    <Benefits/>
+    <Learn />
+    <Compatibility />
+    <ContactForm />
+    <Footer />
+</main>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+    main {
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 </style>
+
+  
