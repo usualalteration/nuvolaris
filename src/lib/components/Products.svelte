@@ -13,24 +13,24 @@
 
         <!-- Titolo e descrizione -->
         <div class="text-section">
-            <div class="image-container">
-                <p class="highlighted-text">We make Kubernetes a serverless solution</p>
-                <p class="highlighted-text2">Choose the best version of nuvolaris according to your business</p>
-            
-            <p class="title">3 PRODUCTS</p>
-            <p class="subtitle">Customize your solution to better fit your company</p>
-
-        <!-- Contenitore prodotti con griglia 4 colonne e primo spazio vuoto -->
-        <div class="products-grid">
-            <div class="empty-space"></div> <!-- Spazio vuoto -->
-            {#each products as product}
-                <div class="product-wrapper">
-                    <ProductCard title={product.title} category={product.category} image={product.image} color={product.color} />
-                </div>
-            {/each}
+        <div class="sidebar"></div>
+        <img class="image-container" src="../img/design-scritta-home.png"/>
+        
+        <p class="highlighted-text">We make Kubernetes a serverless solution</p>
+        <p class="highlighted-text2">Choose the best version of nuvolaris according to your business</p>
+                <p class="title">3 PRODUCTS</p>
+                <p class="subtitle">Customize your solution to better fit your company</p>
+                
+                <!-- Contenitore prodotti con griglia 4 colonne e primo spazio vuoto -->
+                <div class="products-grid">
+                    <div class="empty-space"></div> <!-- Spazio vuoto -->
+                    {#each products as product}
+                    <div class="product-wrapper">
+                        <ProductCard title={product.title} category={product.category} image={product.image} color={product.color} />
+                    </div>
+                    {/each}
         </div>
         </div>
-    </div>
 </section>
 
 
