@@ -32,7 +32,7 @@ img {
     display: block;
 }
 
-.highlighted-text, .highlighted-text2 {
+.highlighted-text {
     background: #303030;
     color: white;
     width: 90%;
@@ -41,10 +41,27 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    margin:auto;
     font-size: clamp(14px, 3vw, 18px);
     position: relative;
     z-index: 1;
+    top: 50px;
+}
+
+.highlighted-text2 {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    max-width: 400px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: clamp(12px, 2vw, 8px);
+    position: relative;
+    z-index: 1;
+    top: 60px;
 }
 
 /* Container */

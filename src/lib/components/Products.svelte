@@ -14,8 +14,8 @@
         <!-- Titolo e descrizione -->
         <div class="text-section">
             <div class="image-container">
-                <p class="highlighted-text">Testo evidenziato</p>
-                <p class="highlighted-text2">Testo evidenziato</p>
+                <p class="highlighted-text">We make Kubernetes a serverless solution</p>
+                <p class="highlighted-text2">Choose the best version of nuvolaris according to your business</p>
             
             <p class="title">3 PRODUCTS</p>
             <p class="subtitle">Customize your solution to better fit your company</p>
