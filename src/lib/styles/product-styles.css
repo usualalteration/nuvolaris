@@ -89,7 +89,7 @@ img {
     left: 0;
     top: 1;
     width: 35%; /* Adatta alla proporzione dell'immagine */
-    height: 200vh; /* Occupa l'intera altezza dello schermo */
+    height: 200vh;
     background: #222; /* Colore nero o simile */
     z-index: 0;
 }
@@ -162,7 +162,7 @@ img {
 }
 
 .product-card {
-    width: 140px; /* Leggermente più stretta */
+    width: 100px; /* Leggermente più stretta */
     background: white;
     padding: 15px; /* Ridotto il padding */
     border-radius: 10px;
@@ -279,4 +279,45 @@ img {
     height: auto;
     margin-left: 50vh;
 }
+
+/* Colonna destra */
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Sposta le card in alto */
+    text-align: center;
+    padding: 20px;
+    height: 100%; /* Assicura che la colonna occupi tutto lo spazio disponibile */
+}
+
+/* Contenitore delle card nella terza colonna */
+.product-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra le card */
+    gap: 5px; /* Riduce lo spazio tra le card */
+    width: 100%;
+}
+
+/* Colonna centrale */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Sposta le card in alto */
+    text-align: center;
+    padding: 20px;
+    height: 100%; /* Assicura che la colonna occupi tutto lo spazio disponibile */
+}
+
+/* Contenitore delle card */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra le card */
+    gap: 5px; /* Riduce lo spazio tra le card */
+    width: 100%;
+}
+
 

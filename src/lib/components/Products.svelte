@@ -30,23 +30,20 @@
                 <img src="../img/monitor-why-choose 1.png"/>
             </div>
             <div class="column center">
-                <p>Contenuto centrale</p>
+                <div class="product-container">
+                        <ProductCard title={"DEVELOPMENT"} category={"NUVOLARIS"} image={"img/icona-monitor.png"} color={"#F4A261"} />
+                </div>
             </div>
-            <div class="column right">
-                <p>Contenuto destro</p>
-            </div>
+            
+    </div>
+    <div class="column right">
+        <div class="product-container-right">
+            <ProductCard title={"PRODUCTION"} category={"NUVOLARIS"} image={"img/icona-enterprise.png"} color={"#E76F51"}/>
+            <ProductCard title={"ON PREMISES"} category={"NUVOLARIS"} image={"img/Livello_1.png"} color={"#0077B6"}/>
         </div>
-                
-                <!-- Contenitore prodotti con griglia 4 colonne e primo spazio vuoto -->
-                <div class="products-grid">
-                    <div class="empty-space"></div> <!-- Spazio vuoto -->
-                    {#each products as product}
-                    <div class="">
-                        <ProductCard title={product.title} category={product.category} image={product.image} color={product.color} />
-                    </div>
-                    {/each}
-        </div>
-        </div>
+    </div>
+    
+</div>
         
 </section>
 
