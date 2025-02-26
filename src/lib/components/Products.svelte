@@ -29,19 +29,26 @@
                     your company</pre>
                 <img src="../img/monitor-why-choose 1.png"/>
             </div>
-            <div class="column center">
-                <div class="product-container">
-                        <ProductCard title={"DEVELOPMENT"} category={"NUVOLARIS"} image={"img/icona-monitor.png"} color={"#F4A261"} />
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>NUVOLARIS DEVELOPMENT</h3>
+                    <img src="img/icona-monitor.png" alt="Development">
+                    <a href="#" class="btn">LEARN MORE</a>
+                </div>
+            
+                <div id="production" class="product-card" >
+                    <h3>NUVOLARIS PRODUCTION</h3>
+                    <img src="img/icona-enterprise.png" alt="Production">
+                    <a href="#" class="btn">LEARN MORE</a>
+                </div>
+            
+                <div id="premises" class="product-card">
+                    <h3>NUVOLARIS ON PREMISES</h3>
+                    <img src="img/Livello_1.png" alt="On Premises">
+                    <a href="#" class="btn">LEARN MORE</a>
                 </div>
             </div>
             
-    </div>
-    <div class="column right">
-        <div class="product-container-right">
-            <ProductCard title={"PRODUCTION"} category={"NUVOLARIS"} image={"img/icona-enterprise.png"} color={"#E76F51"}/>
-            <ProductCard title={"ON PREMISES"} category={"NUVOLARIS"} image={"img/Livello_1.png"} color={"#0077B6"}/>
-        </div>
-    </div>
     
 </div>
         

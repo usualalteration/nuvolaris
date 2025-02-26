@@ -94,110 +94,70 @@ img {
     z-index: 0;
 }
 
-
-/* Container */
-.container {
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Tre colonne flessibili */
+    gap: 20px;
+    align-items: start;
+    justify-items: center;
+    max-width: 900px;
     margin: auto;
-    overflow: hidden;
-    padding: 0 15px;
+    padding-top: 20px;
+    position: relative; /* Per controllare meglio il posizionamento */
+    top: -270px;
 }
 
+#production{
+    background-color: #FF9600;
+}
 
-.card {
-    background: #ffffff;
-    padding: 3px; /* Meno spazio interno */
-    flex: 1 1 140px; /* Larghezza ancora più piccola */
-    max-width: 140px; /* Ridotta la larghezza */
-    transition: transform 0.2s;
+#premises{
+    background-color: #00C1FF;
+}
+
+/* Stile base per le card */
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: -200px;
-    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+    width: 90%;
+    max-width: 200px;
 }
 
-.card:hover {
-    transform: scale(1.02); /* Effetto hover molto leggero */
+/* Hover effect */
+.product-card:hover {
+    transform: translateY(-5px);
 }
 
-
-
-/* Section Headers */
-.section-header {
-    text-align: center;
-    margin: 40px 0;
-}
-
-/* Forms */
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-}
-
-.form-group label {
-    margin-bottom: 5px;
-}
-
-/* Button Styles */
-.btn {
+/* Pulsante */
+.product-card .btn {
+    display: inline-block;
     background: #FF5A00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
     border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
     transition: background 0.3s;
 }
 
-.btn:hover {
+.product-card .btn:hover {
     background: #d85500;
 }
 
-/* Products Grid */
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 2px; /* Spazio quasi nullo tra le card */
-    justify-items: center;
-    align-items: center;
+/* 🔄 Responsività */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        top: -100px; /* Spostiamo meno alto su mobile */
+    }
 }
 
-.product-card {
-    width: 100px; /* Leggermente più stretta */
-    background: white;
-    padding: 15px; /* Ridotto il padding */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra più leggera */
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-    z-index: 1;
-}
-
-.product-card:hover {
-    transform: translateY(-3px); /* Hover più leggero */
-}
-
-
-.product-card img {
-    width: 100px;
-    margin: 15px 0;
-}
-
-.product-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Grid Layouts */
-.products-container, .benefits-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: start;
-    padding: 20px 0;
-}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -291,14 +251,7 @@ img {
     height: 100%; /* Assicura che la colonna occupi tutto lo spazio disponibile */
 }
 
-/* Contenitore delle card nella terza colonna */
-.product-container-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra le card */
-    gap: 5px; /* Riduce lo spazio tra le card */
-    width: 100%;
-}
+
 
 /* Colonna centrale */
 .center {
@@ -311,13 +264,6 @@ img {
     height: 100%; /* Assicura che la colonna occupi tutto lo spazio disponibile */
 }
 
-/* Contenitore delle card */
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra le card */
-    gap: 5px; /* Riduce lo spazio tra le card */
-    width: 100%;
-}
+
 
 
