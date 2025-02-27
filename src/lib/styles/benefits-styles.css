@@ -1,0 +1,97 @@
+.benefits-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tre colonne */
+    align-items: start; /* ⬆️ Allinea tutto in alto */
+    padding: 5vw;
+    position: relative;
+    margin-top: -15vw; /* ❗ Porta più in alto */
+}
+
+/* Colonna vuota */
+.empty-column {
+    /* Vuota per mantenere lo spazio */
+}
+
+/* Centro (Titoli) */
+.benefits-text {
+    text-align: center;
+    padding: 0 2vw;
+    align-self: start; /* ⬆️ Allinea "Benefits" con il primo benefit */
+    margin-top: 10px; /* ❗ Aggiusta la posizione */
+}
+
+/* Lista dei benefit (Terza colonna) */
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 600px;
+}
+
+/* Box dei singoli benefit */
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icone */
+.benefit img {
+    width: 40px;
+    height: 40px;
+}
+
+/* 🔹 RESPONSIVE DESIGN 🔹 */
+@media (max-width: 1024px) { /* Tablet */
+    .benefits-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: -5vw; /* ❗ Meno spostamento su tablet */
+    }
+
+    .empty-column {
+        display: none;
+    }
+
+    .benefits-text {
+        margin-bottom: 0;
+        align-self: center; /* ✅ Centra il titolo su tablet */
+    }
+
+    .benefits-container {
+        align-items: center;
+    }
+
+    .benefit {
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .benefits-section {
+        margin-top: 0; /* ❗ Azzeriamo lo spostamento su mobile */
+    }
+
+    .benefits-text {
+        margin-bottom: 15px;
+    }
+
+    .benefit {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .benefit img {
+        width: 30px;
+        height: 30px;
+    }
+}
