@@ -1,7 +1,11 @@
 /* 🌟 Importa il font "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*{
-  font-family: 'Poppins', 'sans-serif';
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; /* Previene problemi di layout */
+  margin: 0;
+  padding: 0;
 }
 
 /* 🌟 Stili generali */
@@ -11,8 +15,8 @@ body {
     padding: 0;
 }
 
-p{
-    font-size:12px;
+p {
+    font-size: 14px; /* Miglior leggibilità su mobile */
 }
 
 /* 🏗️ Sezione Grid */
@@ -21,18 +25,19 @@ p{
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Evita spazi vuoti sopra */
+    padding: 20px; /* Padding per evitare che tocchi i bordi */
 }
 
 /* 🏗️ Griglia principale */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colonne */
-    grid-template-rows: auto auto;  /* 2 righe */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adatta le colonne */
     gap: 15px;
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     background: url('img/learn-nuvolaris.png') no-repeat center / cover;
     height: auto;
+    padding: 20px;
 }
 
 /* 🔳 Celle della griglia */
@@ -42,36 +47,22 @@ p{
     font-weight: bold;
 }
 
-/* 📌 Celle unite verticalmente */
-.item-1{
-    grid-row: span 1;
-    text-align: right;
-}
-
-.item-2 {
-    grid-row: span 1;
-}
-
-/* 📌 Allineamento colonne */
-.item-3, .item-4 {
-    grid-column: span 1;
-}
-
-/* 🎨 Bottoni */
+/* 📌 Bottoni */
 .buttons-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra i bottoni */
+    align-items: center;
     gap: 20px;
     padding: 20px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
 }
 
 /* 🏷️ Titoli dei bottoni */
 .button-box h3 {
     font-size: 1.2em;
     font-weight: bold;
-    color: #000000;
+    color: #000;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -110,58 +101,51 @@ p{
 .transparent-box {
     background: rgba(255, 255, 255, 0.5);
     padding: 30px;
-    width: 130%;
-    height: 400px;
-    max-width: 600px;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
     text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra tutto dentro la box */
+    align-items: center;
     justify-content: center;
 }
 
 /* 📌 Testo dentro il box trasparente */
 .transparent-box h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .transparent-box p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-/* 📌 Centra i bottoni anche nella box trasparente */
+/* 📌 Centra i bottoni nella box trasparente */
 .transparent-box .buttons-container {
     width: 100%;
-}
-
-/* 🎨 Applica il font "Poppins" anche al <pre> */
-pre {
-    font-family: 'Poppins', sans-serif;
 }
 
 /* 📱 Responsività */
 @media screen and (max-width: 900px) {
     .grid-container {
-        grid-template-columns: 1fr 1fr; /* Adatta per schermi medi */
-        grid-template-rows: auto auto auto;
-    }
-
-    .item-3 {
-        grid-column: span 2; /* Occupa tutta la riga su schermi medi */
+        grid-template-columns: repeat(2, 1fr); /* Adatta per tablet */
     }
 }
 
 @media screen and (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr; /* Una sola colonna su mobile */
-        grid-template-rows: repeat(3, auto);
     }
 
-    .item-1, .item-2, .item-3 {
-        grid-column: span 1;
+    .transparent-box {
+        width: 95%; /* Più adattabile su schermi piccoli */
+    }
+
+    p {
+        font-size: 16px; /* Testo più leggibile su mobile */
     }
 }
