@@ -14,10 +14,15 @@
                 <img src="img/python.png" alt="Python">
                 <img src="img/php.png" alt="PHP">
                 <img src="img/go.png" alt="Go">
+            </div>
+            <br>
+            <div class="languages">
                 <img src="img/node.png" alt="Node.js">
                 <img src="img/swift.png" alt="Swift">
                 <img src="img/java.png" alt="Java">
-            </div>
+        </div>
         </div>
     </div>
+    <div class="orange-line"></div>
 </section>
+

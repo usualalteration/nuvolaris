@@ -24,11 +24,20 @@ body {
     gap: 50px;
 }
 
-/* 🖼️ Immagine a sinistra */
+/* 🖼️ Immagine a sinistra (PNG con trasparenza) */
 .compatibility-image img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px; /* Ingrandisce l'immagine */
     height: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Mantiene la trasparenza */
+    transform: scale(1.1); /* Ingrandisce leggermente */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ✨ Effetto hover per più dinamismo */
+.compatibility-image img:hover {
+    transform: scale(1.15);
 }
 
 /* 📌 Testo a destra */
@@ -57,20 +66,25 @@ body {
 /* 📌 Sottotitolo */
 .compatibility-text .subtitle {
     font-size: 1.2em;
-    color: #3498db; /* Blu acceso */
+    color: #3498db;
     margin-bottom: 20px;
+    text-align: right;
 }
 
-/* 🔹 Icone dei linguaggi */
+/* 🔹 Icone dei linguaggi allineate a destra */
 .languages {
     display: flex;
-    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
+/* 📌 Mantiene le proporzioni originali */
 .languages img {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 40px;
+    object-fit: contain;
 }
 
 /* 📱 Responsività */
@@ -83,4 +97,19 @@ body {
     .compatibility-text {
         text-align: center;
     }
+
+    /* Centra le icone sui dispositivi piccoli */
+    .languages {
+        justify-content: center;
+    }
+}
+
+/* 🔶 Riga arancione in basso */
+.orange-line {
+    width: 100%;
+    height: 10px;
+    background-color: #f7a40c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
