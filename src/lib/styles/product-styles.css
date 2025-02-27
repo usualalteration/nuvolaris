@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.alternate-bold b {
-    font-weight: bold;
-}
-
-/* Reset and Box Sizing */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:wght@100..900&display=swap');
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+/* Reset e Box Sizing */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +15,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Body and General Styles */
+/* 🔹 Body e Stili Generali */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -28,49 +28,60 @@ img {
     height: auto;
 }
 
-.title {
-    position: relative;  /* Assicura che il z-index funzioni */
-    z-index: 10;  /* Numero più alto rispetto agli altri elementi */
-    color: white;
-    padding: 5px 10px; /* Spazio interno per migliorare il contrasto */
-    border-radius: 5px; /* Angoli arrotondati */
+h3{
     font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 100;
+    color:#333;
+}
+
+h6{
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/* 🔹 Titoli e Sottotitoli */
+.title, .subtitle {
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.title {
     top: -100px;
 }
 
-.subtitle {
-    position: relative;  /* Assicura che il z-index funzioni */
-    z-index: 10;  /* Numero più alto rispetto agli altri elementi */
-    color: white;
-    padding: 5px 10px; /* Spazio interno per migliorare il contrasto */
-    border-radius: 5px; /* Angoli arrotondati */
-}
-
+/* 🔹 Sidebar */
 .sidebar {
-    max-width: 100%;
+    position: absolute;
+    left: -60px;
+    top: 55vh;
+    width: 100vh;
     height: auto;
-    display: block;
-    margin: auto;
-    position: absolute; /* Permette di posizionarla liberamente dentro .products-section */
-    left: -60px; /* Sposta la sidebar ancora più a sinistra, modificabile a piacere */
-    top: 55vh; /* Sposta la sidebar più in basso rispetto all'inizio della sezione */
-    width: 100vh; /* Rendi la sidebar più grande */
-    height: auto; /* Mantiene le proporzioni originali */
-    z-index: 0; /* Assicura che la sidebar sia sopra gli altri elementi */
+    z-index: 0;
 }
 
+/* 🔹 Contenitore Immagine */
 .image-container {
-    position: relative; /* Assicura che sia sopra la sidebar */
+    position: relative;
     background: url('../img/design-scritta-home.png') no-repeat center center;
     background-size: cover;
     width: 100%;
-    max-width: 100vw;
     height: auto;
-    display: block;
-    z-index: 1; /* Un valore più alto della sidebar */
+    z-index: 1;
 }
 
-
+/* 🔹 Testo Evidenziato */
 .highlighted-text {
     background: #303030;
     color: white;
@@ -80,11 +91,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:auto;
+    margin: auto;
     font-size: clamp(14px, 3vw, 18px);
     position: relative;
     z-index: 1;
-    top: -250px;
+    top: -270px;
 }
 
 .highlighted-text2 {
@@ -100,159 +111,139 @@ img {
     font-size: clamp(12px, 2vw, 8px);
     position: relative;
     z-index: 1;
-    top: -240px;
+    top: -230px;
 }
 
-
-
-/* Responsività per schermi più piccoli */
+/* 🔹 Responsività per la Sidebar */
 @media (max-width: 1024px) {
     .sidebar {
-        width: 40%; /* Più grande su tablet */
+        width: 40%;
     }
 }
 
 @media (max-width: 768px) {
     .sidebar {
-        width: 50%; /* Più spazio per il contenuto */
+        width: 50%;
     }
 }
 
 @media (max-width: 480px) {
     .sidebar {
-        width: 100%; /* Occupa tutta la larghezza su schermi piccoli */
-        height: auto; /* Adatta l'altezza in base al contenuto */
-        position: relative; /* Non fissa su schermi piccoli */
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 }
 
-
-/* Stili aggiornati per le card */
+/* 🔹 Stili delle Card */
 .product-card {
-    background: white; /* Sfondo bianco per coprire tutto dietro */
-    opacity: 1; /* Rende le card completamente opache */
+    background: white;
     padding: 15px;
-    border-radius: 0; /* Rimosso angoli arrotondati */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     transition: transform 0.2s ease-in-out;
-    width: 85%; /* Leggermente più strette */
-    max-width: 180px; /* Prima era 200px */
-    height: 250px; /* Più alte, ma senza sforare */
+    width: 85%;
+    max-width: 180px;
+    height: 250px;
+    position: relative; /* Rende possibile il posizionamento assoluto all'interno */
+    padding-bottom: 50px; /* Spazio extra per il pulsante */
 }
 
-/* Evita che le card scendano troppo in basso */
+/* Stili del Pulsante */
+.product-card .btn {
+    position: absolute;
+    bottom: 10px; /* Mantiene il pulsante sempre 10px sopra il bordo inferiore */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 300;
+    justify-content: center;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    padding: 5px;
+}
+
+.product-card .btn img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.product-card .btn:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+/* 🔹 Grid delle Card */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(180px, 1fr)); /* Tre colonne più strette */
-    gap: 2px; /* Meno spazio tra le card */
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 2px;
     align-items: start;
     justify-items: center;
     max-width: 900px;
     margin: auto;
     padding-top: 20px;
     position: relative;
-    top: -200px; /* Non cambia altezza globale */
+    top: -200px;
     left: 10vh;
 }
 
-
+/* 🔹 Colorazioni delle Card */
 #development {
-    z-index:10;
+    z-index: 10;
     opacity: 1;
 }
 
-#production{
+#production {
     background-color: #FF9600;
     opacity: 1;
-    z-index:10;
-    
+    z-index: 10;
 }
 
-#premises{
+#premises {
     background-color: #00C1FF;
     opacity: 1;
-    z-index:10;
+    z-index: 10;
 }
 
-/* Hover effect */
-.product-card:hover {
-    transform: translateY(-5px);
-}
 
-/* Pulsante */
-.product-card .btn {
-    display: inline-block;
-    background: #FF5A00;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 10px;
-    transition: background 0.3s;
-}
-
+/* 🔹 Pulsanti Specifici */
 #production .btn {
-    background: #9DD8F2; /* Nuovo colore azzurro */
-    color: black; /* Testo nero per contrasto */
+    background: #9DD8F2;
+    color: black;
 }
 
 #production .btn:hover {
-    background: #7CC2E3; /* Effetto hover leggermente più scuro */
+    background: #7CC2E3;
 }
 
 #premises .btn {
-    background: #0085C0; /* Nuovo colore blu */
-    color: white; /* Testo bianco per contrasto */
+    background: #0085C0;
+    color: white;
 }
 
 #premises .btn:hover {
-    background: #006FA0; /* Effetto hover più scuro */
+    background: #006FA0;
 }
 
-
-.product-card .btn:hover {
-    background: #d85500;
-}
-
-/* 🔄 Responsività */
+/* 🔹 Responsività */
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr;
         gap: 15px;
-        top: -100px; /* Spostiamo meno alto su mobile */
+        top: -100px;
     }
 }
 
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .products-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        max-width: 90%;
-    }
-    .products-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-/* Contenitore principale */
+/* 🔹 Layout a Tre Colonne */
 .three-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Tre colonne di uguale larghezza */
-    gap: 10px; /* Spazio tra le colonne */
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -260,14 +251,5 @@ img {
 }
 
 .products-section {
-    position: relative; /* Per rendere la posizione della sidebar relativa alla sezione */
+    position: relative;
 }
-
-
-
-
-
-
-
-
-

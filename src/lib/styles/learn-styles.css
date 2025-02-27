@@ -1,170 +1,179 @@
-/* Reset e box sizing */
-* {
+/* 🌟 Stili generali */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.learn-nuvolaris {
-    background: linear-gradient(to right, #69B9FF, #E3F3FF);
-    padding: 50px 20px;
-    position: relative;
-}
-
-.container {
+/* 🏗️ Sezione Grid */
+.grid-section {
+    padding: 0; /* ✅ Tolto il padding */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    position: relative;
+    background: none; /* ❌ Assicura che non abbia sfondo */
+    min-height: 100vh; /* ✅ Evita spazi vuoti sopra */
 }
 
-/* Testo principale */
-.text-content {
-    width: 50%;
-    color: #000;
-}
-
-.text-content h2 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.text-content h2 span {
-    color: white;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background: #E76F51;
-    padding: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.description {
-    margin-top: 20px;
-}
-
-.description h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #222;
-}
-
-/* Pulsanti */
-.buttons {
-    display: flex;
+/* 🏗️ Griglia con sfondo */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* ✅ Ora ha 4 colonne invece di 3 */
+    grid-template-rows: repeat(2, auto);  /* 2 righe */
     gap: 20px;
-    margin-top: 20px;
+    width: 100vw; /* ✅ Occupa tutta la larghezza */
+    max-width: 1200px; /* ✅ Impedisce che si allarghi troppo */
+    background: url('img/learn-nuvolaris.png') no-repeat center / cover; /* ✅ Sfondo SOLO nella griglia */
+    height: auto; /* ✅ Fa sì che la griglia non si ripeta */
 }
 
-.btn-box {
+.item-3 {
+    grid-column: span 1;
+}
+
+.item-4 {
+    grid-column: span 1;
+}
+.grid-item {
+    padding: 1px; /* ✅ Ridotto da 50px a 30px */
+    font-size: 1.2em; /* ✅ Reso più piccolo */
+}
+
+/* 📌 Celle unite verticalmente */
+.item-1, .item-2 {
+    grid-row: span 1; /* ✅ Non si allungano troppo */
+}
+
+/* 🏗️ Griglia più compatta */
+.grid-container {
+    grid-template-columns: 2fr 2fr 1fr; /* ✅ Più spazio alla terza colonna */
+    grid-template-rows: auto auto; /* ✅ Evita celle troppo alte */
+    gap: 15px; /* ✅ Meno spazio tra gli elementi */
+}
+
+/* 📱 Responsività migliorata */
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* ✅ Adatta per schermi medi */
+        grid-template-rows: auto auto auto;
+    }
+
+    .item-3 {
+        grid-column: span 1; /* ✅ Occupa tutta la riga in schermi medi */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* ✅ Una sola colonna su mobile */
+        grid-template-rows: auto auto auto;
+    }
+
+    .item-1, .item-2, .item-3 {
+        grid-column: span 1;
+    }
+}
+
+
+/* 🎨 Contenitore dei bottoni */
+.buttons-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 250px;
+}
+
+/* 🔲 Scatola trasparente dietro il bottone */
+.button-box {
+    background: rgba(255, 255, 255, 0.2); /* Bianco trasparente */
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
 }
 
-.btn-title {
-    font-size: 1rem;
+/* 🏷️ Stile Titolo */
+.button-box h3 {
+    font-size: 1.2em;
     font-weight: bold;
-    color: #000;
-    margin-bottom: 5px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
+/* 🟠 Stili generali bottoni */
 .btn {
-    display: inline-block;
-    background: #FF9600;
-    color: white;
-    padding: 10px 15px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background 0.3s;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+/* 🟡 Bottone "Watch" */
+.watch-btn {
+    background-color: #f7a40c;
+    color: white;
+}
+
+/* 🟠 Bottone "Learn" */
+.learn-btn {
+    background-color: #e87d0d;
+    color: white;
+}
+
+/* ✨ Effetto hover */
 .btn:hover {
-    background: #d85500;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
-/* Immagine di sfondo */
-.background-image {
-    background: url("../img/background-pattern.png") no-repeat right center;
-    background-size: cover;
-    width: 50%;
-    height: 300px;
+
+/* 📱 Responsività */
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .item-3 {
+        grid-column: span 2;
+    }
 }
 
-/* Sezione Compatibility */
-.compatibility {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 50px 20px;
-    position: relative;
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .item-1, .item-2, .item-3 {
+        grid-column: span 1;
+    }
 }
 
-.compatibility-content {
-    width: 50%;
+
+/* 🎨 Contenitore bianco trasparente */
+.transparent-box {
+    background: rgba(255, 255, 255, 0.2); /* Bianco trasparente */
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    color: black;
+    backdrop-filter: blur(10px); /* Effetto sfocato dietro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
-.compatibility-content h2 {
-    font-size: 2.5rem;
+/* 🏷️ Stili del testo */
+.transparent-box h2 {
+    font-size: 1.8em;
     font-weight: bold;
 }
 
-.compatibility-content h2 span {
-    color: #0077B6;
-}
-
-.compatibility-content p {
-    font-size: 1rem;
-    color: #0077B6;
-    margin-bottom: 20px;
-}
-
-/* Icone linguaggi di programmazione */
-.icons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.icons img {
-    width: 50px;
-    height: auto;
-}
-
-/* Immagine sviluppatore */
-.developer-image {
-    background: url("../img/developer-image.png") no-repeat center;
-    background-size: cover;
-    width: 50%;
-    height: 300px;
-}
-
-/* 🔄 Responsività */
-@media (max-width: 768px) {
-    .container,
-    .compatibility {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text-content, 
-    .compatibility-content {
-        width: 100%;
-    }
-
-    .background-image,
-    .developer-image {
-        width: 100%;
-        height: 200px;
-    }
+.transparent-box p {
+    font-size: 1.2em;
 }

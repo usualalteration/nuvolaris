@@ -4,6 +4,9 @@
     export let image;
   </script>
   
+  <style>
+
+</style>
   
   <div class="card {title.toLowerCase().replace(' ', '-')}">
     <div class="header">NUVOLARIS</div>

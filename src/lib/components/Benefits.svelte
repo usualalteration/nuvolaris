@@ -9,7 +9,9 @@
     <!-- Colonna 2 (Titoli) -->
     <div class="benefits-text">
         <h2>Benefits</h2>
-        <h3>WHY CHOOSE <span>NUVOLARIS</span></h3>
+        <h3 class="verybigletters">WHY</h3>
+        <h3 class="bigletters poppins-bold">CHOOSE</h3>
+        <h3 class="letters">NUVOLARIS</h3>
     </div>
 
     <!-- Colonna 3 (Benefit) -->
