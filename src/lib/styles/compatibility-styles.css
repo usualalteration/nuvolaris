@@ -1,0 +1,86 @@
+/* 🌟 Importa il font "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🎨 Sezione principale */
+.compatibility-section {
+    background: linear-gradient(to right, #ffffff 50%, #e8f4ff 50%);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 🎯 Contenitore principale */
+.compatibility-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    gap: 50px;
+}
+
+/* 🖼️ Immagine a sinistra */
+.compatibility-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+/* 📌 Testo a destra */
+.compatibility-text {
+    text-align: left;
+    max-width: 500px;
+}
+
+/* ✨ Titolo compatibilità */
+.compatibility-text h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.compatibility-text .bold {
+    font-weight: 600;
+    color: black;
+}
+
+.compatibility-text .light {
+    font-weight: 300;
+    color: black;
+}
+
+/* 📌 Sottotitolo */
+.compatibility-text .subtitle {
+    font-size: 1.2em;
+    color: #3498db; /* Blu acceso */
+    margin-bottom: 20px;
+}
+
+/* 🔹 Icone dei linguaggi */
+.languages {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.languages img {
+    width: 50px;
+    height: auto;
+}
+
+/* 📱 Responsività */
+@media screen and (max-width: 900px) {
+    .compatibility-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .compatibility-text {
+        text-align: center;
+    }
+}

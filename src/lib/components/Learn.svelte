@@ -33,7 +33,7 @@ Neque porro quisqua.</p>
         <div class="transparent-box">
         <div class="grid-item item-3">
             <div class="buttons-container">
-                <div>
+                <div class="buttons">
                     <h3>Use Cases</h3>
                     <button class="btn watch-btn">WATCH THEM NOW</button>
                 </div>

@@ -1,6 +1,9 @@
+/* 🌟 Importa il font "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* 🌟 Stili generali */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +21,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 colonne */
     grid-template-rows: auto auto;  /* 2 righe */
-    gap: 15px; /* Meno spazio tra gli elementi */
+    gap: 15px;
     width: 100vw;
     max-width: 1200px;
     background: url('img/learn-nuvolaris.png') no-repeat center / cover;
@@ -27,14 +30,19 @@ body {
 
 /* 🔳 Celle della griglia */
 .grid-item {
-    padding: 20px; /* Ridotto per compattezza */
+    padding: 15px;
     font-size: 1.2em;
     font-weight: bold;
 }
 
 /* 📌 Celle unite verticalmente */
-.item-1, .item-2 {
-    grid-row: span 1; /* Non si allungano troppo */
+.item-1{
+    grid-row: span 1;
+    text-align: right;
+}
+
+.item-2 {
+    grid-row: span 1;
 }
 
 /* 📌 Allineamento colonne */
@@ -46,30 +54,25 @@ body {
 .buttons-container {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centra i bottoni */
     gap: 20px;
     padding: 20px;
     width: 250px;
-}
-
-/* 🔲 Box trasparente dietro i bottoni */
-.button-box {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    text-align: center;
 }
 
 /* 🏷️ Titoli dei bottoni */
 .button-box h3 {
     font-size: 1.2em;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* 🟠 Stili generali bottoni */
 .btn {
+    font-family: 'Poppins', sans-serif;
     border: none;
-    margin-right: 10vh;
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
@@ -88,7 +91,6 @@ body {
 .learn-btn {
     background-color: #e87d0d;
     color: white;
-    margin-right: 50px;
 }
 
 /* ✨ Effetto hover */
@@ -97,16 +99,20 @@ body {
     opacity: 0.9;
 }
 
-/* 🎨 Box trasparente con testo */
+/* 🎨 Box trasparente con testo e bottoni centrati */
 .transparent-box {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.5);
     padding: 30px;
-    width: 80%;
+    width: 130%;
     max-width: 600px;
     text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra tutto dentro la box */
+    justify-content: center;
 }
 
 /* 📌 Testo dentro il box trasparente */
@@ -117,6 +123,16 @@ body {
 
 .transparent-box p {
     font-size: 1.2em;
+}
+
+/* 📌 Centra i bottoni anche nella box trasparente */
+.transparent-box .buttons-container {
+    width: 100%;
+}
+
+/* 🎨 Applica il font "Poppins" anche al <pre> */
+pre {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* 📱 Responsività */
