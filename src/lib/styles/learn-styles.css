@@ -7,92 +7,58 @@ body {
 
 /* 🏗️ Sezione Grid */
 .grid-section {
-    padding: 0; /* ✅ Tolto il padding */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: none; /* ❌ Assicura che non abbia sfondo */
-    min-height: 100vh; /* ✅ Evita spazi vuoti sopra */
+    min-height: 100vh; /* Evita spazi vuoti sopra */
 }
 
-/* 🏗️ Griglia con sfondo */
+/* 🏗️ Griglia principale */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* ✅ Ora ha 4 colonne invece di 3 */
-    grid-template-rows: repeat(2, auto);  /* 2 righe */
-    gap: 20px;
-    width: 100vw; /* ✅ Occupa tutta la larghezza */
-    max-width: 1200px; /* ✅ Impedisce che si allarghi troppo */
-    background: url('img/learn-nuvolaris.png') no-repeat center / cover; /* ✅ Sfondo SOLO nella griglia */
-    height: auto; /* ✅ Fa sì che la griglia non si ripeta */
+    grid-template-columns: repeat(4, 1fr); /* 4 colonne */
+    grid-template-rows: auto auto;  /* 2 righe */
+    gap: 15px; /* Meno spazio tra gli elementi */
+    width: 100vw;
+    max-width: 1200px;
+    background: url('img/learn-nuvolaris.png') no-repeat center / cover;
+    height: auto;
 }
 
-.item-3 {
-    grid-column: span 1;
-}
-
-.item-4 {
-    grid-column: span 1;
-}
+/* 🔳 Celle della griglia */
 .grid-item {
-    padding: 1px; /* ✅ Ridotto da 50px a 30px */
-    font-size: 1.2em; /* ✅ Reso più piccolo */
+    padding: 20px; /* Ridotto per compattezza */
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* 📌 Celle unite verticalmente */
 .item-1, .item-2 {
-    grid-row: span 1; /* ✅ Non si allungano troppo */
+    grid-row: span 1; /* Non si allungano troppo */
 }
 
-/* 🏗️ Griglia più compatta */
-.grid-container {
-    grid-template-columns: 2fr 2fr 1fr; /* ✅ Più spazio alla terza colonna */
-    grid-template-rows: auto auto; /* ✅ Evita celle troppo alte */
-    gap: 15px; /* ✅ Meno spazio tra gli elementi */
+/* 📌 Allineamento colonne */
+.item-3, .item-4 {
+    grid-column: span 1;
 }
 
-/* 📱 Responsività migliorata */
-@media screen and (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr; /* ✅ Adatta per schermi medi */
-        grid-template-rows: auto auto auto;
-    }
-
-    .item-3 {
-        grid-column: span 1; /* ✅ Occupa tutta la riga in schermi medi */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* ✅ Una sola colonna su mobile */
-        grid-template-rows: auto auto auto;
-    }
-
-    .item-1, .item-2, .item-3 {
-        grid-column: span 1;
-    }
-}
-
-
-/* 🎨 Contenitore dei bottoni */
+/* 🎨 Bottoni */
 .buttons-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     padding: 20px;
     width: 250px;
 }
 
-/* 🔲 Scatola trasparente dietro il bottone */
+/* 🔲 Box trasparente dietro i bottoni */
 .button-box {
-    background: rgba(255, 255, 255, 0.2); /* Bianco trasparente */
+    background: rgba(255, 255, 255, 0.2);
     padding: 15px;
-    border-radius: 8px;
     text-align: center;
 }
 
-/* 🏷️ Stile Titolo */
+/* 🏷️ Titoli dei bottoni */
 .button-box h3 {
     font-size: 1.2em;
     font-weight: bold;
@@ -103,6 +69,7 @@ body {
 /* 🟠 Stili generali bottoni */
 .btn {
     border: none;
+    margin-right: 10vh;
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
@@ -121,6 +88,7 @@ body {
 .learn-btn {
     background-color: #e87d0d;
     color: white;
+    margin-right: 50px;
 }
 
 /* ✨ Effetto hover */
@@ -129,46 +97,19 @@ body {
     opacity: 0.9;
 }
 
-
-/* 📱 Responsività */
-@media screen and (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .item-3 {
-        grid-column: span 2;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .item-1, .item-2, .item-3 {
-        grid-column: span 1;
-    }
-}
-
-
-/* 🎨 Contenitore bianco trasparente */
+/* 🎨 Box trasparente con testo */
 .transparent-box {
-    background: rgba(255, 255, 255, 0.2); /* Bianco trasparente */
+    background: rgba(255, 255, 255, 0.2);
     padding: 30px;
-    border-radius: 10px;
     width: 80%;
     max-width: 600px;
     text-align: center;
-    color: black;
-    backdrop-filter: blur(10px); /* Effetto sfocato dietro */
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
-/* 🏷️ Stili del testo */
+/* 📌 Testo dentro il box trasparente */
 .transparent-box h2 {
     font-size: 1.8em;
     font-weight: bold;
@@ -176,4 +117,27 @@ body {
 
 .transparent-box p {
     font-size: 1.2em;
+}
+
+/* 📱 Responsività */
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Adatta per schermi medi */
+        grid-template-rows: auto auto auto;
+    }
+
+    .item-3 {
+        grid-column: span 2; /* Occupa tutta la riga su schermi medi */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una sola colonna su mobile */
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .item-1, .item-2, .item-3 {
+        grid-column: span 1;
+    }
 }
