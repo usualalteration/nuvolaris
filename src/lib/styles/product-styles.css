@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:wght@100..900&display=swap');
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Reset e Box Sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+
 }
 
 html {
@@ -31,13 +28,13 @@ img {
 h3{
     font-family: 'Poppins';
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 500;
     color:#333;
 }
 
 h6{
     font-family: 'Poppins';
-    font-weight: 100;
+    font-weight: 500;
     font-size: 15px;
 }
 
@@ -51,11 +48,6 @@ h6{
     font-family: 'Poppins', sans-serif;
 }
 
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
 
 .title {
     top: -100px;
@@ -160,7 +152,7 @@ h6{
     display: flex;
     align-items: center;
     font-family: 'Poppins';
-    font-weight: 300;
+    font-weight: 500;
     justify-content: center;
     width: 100%;
     max-width: 120px;
@@ -212,6 +204,14 @@ h6{
 
 
 /* 🔹 Pulsanti Specifici */
+#development .btn {
+    background:  #FF9600;
+    color: black;
+}
+
+#development .btn:hover {
+    background:  #c27c19;
+}
 #production .btn {
     background: #9DD8F2;
     color: black;

@@ -27,7 +27,8 @@ vitae dicta sunt explicabo.
 Nemo enim ipsam voluptatem quia voluptas sit aspernatur
 aut odit aut fugit, sed quia consequuntur magni
 dolores eos qui ratione voluptatem sequi nesciunt.
-Neque porro quisqua.</p>
+Neque porro quisqua.
+</p>
         </pre>
         </div>
         <div class="transparent-box">
