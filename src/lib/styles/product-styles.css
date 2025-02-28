@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Reset e Box Sizing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Global styles and box-sizing reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'sans-serif';
-
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* 🔹 Body e Stili Generali */
+/* Body styling */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -25,35 +25,32 @@ img {
     height: auto;
 }
 
-h3{
-    font-family: 'Poppins';
+/* Typography */
+h3 {
     font-size: 17px;
     font-weight: 500;
-    color:#333;
+    color: #333;
 }
 
-h6{
-    font-family: 'Poppins';
+h6 {
     font-weight: 500;
     font-size: 15px;
 }
 
-/* 🔹 Titoli e Sottotitoli */
+/* Titles and subtitles */
 .title, .subtitle {
     position: relative;
     z-index: 10;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
 }
-
 
 .title {
     top: -100px;
 }
 
-/* 🔹 Sidebar */
+/* Sidebar styling */
 .sidebar {
     position: absolute;
     left: -60px;
@@ -63,7 +60,7 @@ h6{
     z-index: 0;
 }
 
-/* 🔹 Contenitore Immagine */
+/* Image container */
 .image-container {
     position: relative;
     background: url('../img/design-scritta-home.png') no-repeat center center;
@@ -73,7 +70,7 @@ h6{
     z-index: 1;
 }
 
-/* 🔹 Testo Evidenziato */
+/* Highlighted text sections */
 .highlighted-text {
     background: #303030;
     color: white;
@@ -92,7 +89,7 @@ h6{
 
 .highlighted-text2 {
     background: #ffffff;
-    color: rgb(0, 0, 0);
+    color: black;
     width: 90%;
     max-width: 400px;
     height: 25px;
@@ -106,7 +103,7 @@ h6{
     top: -14rem;
 }
 
-/* 🔹 Responsività per la Sidebar */
+/* Sidebar responsiveness */
 @media (max-width: 1024px) {
     .sidebar {
         width: 40%;
@@ -127,36 +124,32 @@ h6{
     }
 }
 
-/* 🔹 Stili delle Card */
+/* Product card styling */
 .product-card {
     background: white;
     padding: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     transition: transform 0.2s ease-in-out;
     width: 85%;
     max-width: 180px;
     height: 250px;
-    position: relative; /* Rende possibile il posizionamento assoluto all'interno */
-    padding-bottom: 50px; /* Spazio extra per il pulsante */
+    position: relative;
+    padding-bottom: 50px;
 }
 
-/* Stili del Pulsante */
+/* Button inside the product card */
 .product-card .btn {
     position: absolute;
-    bottom: 10px; /* Mantiene il pulsante sempre 10px sopra il bordo inferiore */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    font-family: 'Poppins';
-    font-weight: 500;
     justify-content: center;
     width: 100%;
     max-width: 120px;
-    height: auto;
     padding: 5px;
 }
 
@@ -169,7 +162,8 @@ h6{
 .product-card .btn:hover {
     transform: translateX(-50%) scale(1.05);
 }
-/* 🔹 Grid delle Card */
+
+/* Product grid layout */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(180px, 1fr));
@@ -184,7 +178,7 @@ h6{
     left: 10vh;
 }
 
-/* 🔹 Colorazioni delle Card */
+/* Product card colors */
 #development {
     z-index: 10;
     opacity: 1;
@@ -202,16 +196,16 @@ h6{
     z-index: 10;
 }
 
-
-/* 🔹 Pulsanti Specifici */
+/* Button styling for product cards */
 #development .btn {
-    background:  #FF9600;
+    background: #FF9600;
     color: black;
 }
 
 #development .btn:hover {
-    background:  #c27c19;
+    background: #c27c19;
 }
+
 #production .btn {
     background: #9DD8F2;
     color: black;
@@ -230,7 +224,7 @@ h6{
     background: #006FA0;
 }
 
-/* 🔹 Responsività */
+/* Responsive product grid */
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr;
@@ -239,7 +233,7 @@ h6{
     }
 }
 
-/* 🔹 Layout a Tre Colonne */
+/* Three-column layout */
 .three-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -250,6 +244,7 @@ h6{
     z-index: 10;
 }
 
+/* Product section positioning */
 .products-section {
     position: relative;
 }

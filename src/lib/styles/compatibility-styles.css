@@ -1,12 +1,12 @@
-/* 🌟 Importa il font "Poppins" */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* 🎨 Sezione principale */
+/* Main section with a split background */
 .compatibility-section {
     background: linear-gradient(to right, #ffffff 50%, #e8f4ff 50%);
     padding: 50px 0;
@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 
-/* 🎯 Contenitore principale */
+/* Container for the image and text */
 .compatibility-container {
     display: flex;
     align-items: center;
@@ -23,35 +23,36 @@ body {
     gap: 50px;
 }
 
-/* 🖼️ Immagine a sinistra (PNG con trasparenza) */
+/* Image on the left with transparency effect */
 .compatibility-image img {
     width: 100%;
-    max-width: 550px; /* Ingrandisce l'immagine */
+    max-width: 550px;
     height: auto;
     object-fit: contain;
-    mix-blend-mode: multiply; /* Mantiene la trasparenza */
-    transform: scale(1.1); /* Ingrandisce leggermente */
+    mix-blend-mode: multiply;
+    transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
 
-/* ✨ Effetto hover per più dinamismo */
+/* Image scaling effect on hover */
 .compatibility-image img:hover {
     transform: scale(1.15);
 }
 
-/* 📌 Testo a destra */
+/* Text section on the right */
 .compatibility-text {
     text-align: left;
     max-width: 500px;
 }
 
-/* ✨ Titolo compatibilità */
+/* Main title */
 .compatibility-text h2 {
     font-size: 3.5em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Bold and light text variations */
 .compatibility-text .bold {
     font-weight: 600;
     color: black;
@@ -62,7 +63,7 @@ body {
     color: black;
 }
 
-/* 📌 Sottotitolo */
+/* Subtitle with right alignment */
 .compatibility-text .subtitle {
     font-size: 1.2em;
     color: #3498db;
@@ -70,7 +71,7 @@ body {
     text-align: right;
 }
 
-/* 🔹 Icone dei linguaggi allineate a destra */
+/* Programming language icons aligned to the right */
 .languages {
     display: flex;
     justify-content: flex-end;
@@ -79,14 +80,14 @@ body {
     flex-wrap: wrap;
 }
 
-/* 📌 Mantiene le proporzioni originali */
+/* Maintain original proportions of language icons */
 .languages img {
     width: auto;
     height: 40px;
     object-fit: contain;
 }
 
-/* 📱 Responsività */
+/* Responsive adjustments for smaller screens */
 @media screen and (max-width: 900px) {
     .compatibility-container {
         flex-direction: column;
@@ -97,13 +98,13 @@ body {
         text-align: center;
     }
 
-    /* Centra le icone sui dispositivi piccoli */
+    /* Center language icons on small devices */
     .languages {
         justify-content: center;
     }
 }
 
-/* 🔶 Riga arancione in basso */
+/* Fixed orange bar at the bottom */
 .orange-line {
     width: 100%;
     height: 10px;

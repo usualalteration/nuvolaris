@@ -1,151 +1,150 @@
-/* 🌟 Importa il font "Poppins" */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box; /* Previene problemi di layout */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 🌟 Stili generali */
+/* General styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-size: 14px; /* Miglior leggibilità su mobile */
+  font-size: 14px;
 }
 
-/* 🏗️ Sezione Grid */
+/* Grid section container */
 .grid-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Evita spazi vuoti sopra */
-    padding: 20px; /* Padding per evitare che tocchi i bordi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-/* 🏗️ Griglia principale */
+/* Main grid layout */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adatta le colonne */
-    gap: 15px;
-    width: 100%;
-    max-width: 1200px;
-    background: url('img/learn-nuvolaris.png') no-repeat center / cover;
-    height: auto;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  background: url('img/learn-nuvolaris.png') no-repeat center / cover;
+  height: auto;
+  padding: 20px;
 }
 
-/* 🔳 Celle della griglia */
+/* Grid items */
 .grid-item {
-    padding: 15px;
-    font-size: 1.2em;
-    font-weight: bold;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-/* 📌 Bottoni */
+/* Button container */
 .buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
 }
 
-/* 🏷️ Titoli dei bottoni */
+/* Button titles */
 .button-box h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-/* 🟠 Stili generali bottoni */
+/* General button styles */
 .btn {
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-/* 🟡 Bottone "Watch" */
+/* "Watch" button */
 .watch-btn {
-    background-color: #f7a40c;
-    color: white;
+  background-color: #f7a40c;
+  color: white;
 }
 
-/* 🟠 Bottone "Learn" */
+/* "Learn" button */
 .learn-btn {
-    background-color: #e87d0d;
-    color: white;
+  background-color: #e87d0d;
+  color: white;
 }
 
-/* ✨ Effetto hover */
+/* Button hover effect */
 .btn:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
-/* 🎨 Box trasparente con testo e bottoni centrati */
+/* Transparent box with centered text and buttons */
 .transparent-box {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 30px;
-    width: 90%;
-    max-width: 500px;
-    height: auto;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* 📌 Testo dentro il box trasparente */
+/* Text inside the transparent box */
 .transparent-box h2 {
-    font-size: 1.5em;
-    font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .transparent-box p {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
-/* 📌 Centra i bottoni nella box trasparente */
+/* Center buttons inside the transparent box */
 .transparent-box .buttons-container {
-    width: 100%;
+  width: 100%;
 }
 
-/* 📱 Responsività */
+/* Responsive adjustments */
 @media screen and (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Adatta per tablet */
-    }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Una sola colonna su mobile */
-    }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 
-    .transparent-box {
-        width: 95%; /* Più adattabile su schermi piccoli */
-    }
+  .transparent-box {
+    width: 95%;
+  }
 
-    p {
-        font-size: 16px; /* Testo più leggibile su mobile */
-    }
+  p {
+    font-size: 16px;
+  }
 }

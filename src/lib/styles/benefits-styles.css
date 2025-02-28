@@ -1,50 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-  font-family: 'Poppins', 'sans-serif';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');  
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Section containing benefits with three columns */
 .benefits-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Tre colonne */
-    align-items: start; /* ⬆️ Allinea tutto in alto */
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start; 
     padding: 1vw;
     position: relative;
-    margin-top: -20vw; /* ❗ Porta più in alto */
+    margin-top: -20vw; /* Moves section higher */
 }
 
-p{
-    font-size:15px;
-    font-family:'inter';
+p {
+    font-size: 15px;
+    font-family: 'Inter';
 }
 
-h2, h4{
-    color:#00C1FF;
-    font-famly: 'Poppins';
-
+/* Headings styles */
+h2, h4 {
+    color: #00C1FF;
+    font-family: 'Poppins';
 }
 
-h3{
+h3 {
     color: black;
     font-family: 'Poppins';
 }
 
+/* Adjust heading spacing */
 .benefits-text h3 {
-    line-height: 0.8; /* 🔹 Riduce l'interlinea */
-    margin-bottom: 5px; /* 🔹 Riduce lo spazio sotto l'h3 */
+    line-height: 0.8;
+    margin-bottom: 5px;
 }
-/* Colonna vuota */
-.verybigletters{
+
+/* Font size variations */
+.verybigletters {
     font-size: 72px;
 }
-.bigletters{
+
+.bigletters {
     font-size: 52px;
 }
-.letters{
+
+.letters {
     font-size: 39px;
 }
 
-
-/* Centro (Titoli) */
+/* Centered text block */
 .benefits-text {
     text-align: center;
     padding: 0 2vw;
@@ -52,7 +57,7 @@ h3{
     margin-top: 20px;
 }
 
-
+/* Container for benefit items */
 .benefits-container {
     display: flex;
     flex-direction: column;
@@ -61,16 +66,15 @@ h3{
     max-width: 600px;
 }
 
+/* Individual benefit item */
 .benefit {
     display: flex;
     align-items: center;
-    margin-top: 0px; /* 🔹 Ridotto da 25px a 10px */
-    padding: 0px 0; /* 🔹 Riduce eventuali spazi interni */
+    margin-top: 0px;
+    padding: 0px 0;
 }
 
-
-
-/* Icone */
+/* Benefit icons */
 .benefit img {
     width: 70px;
     height: auto;
@@ -78,11 +82,11 @@ h3{
 }
 
 /* 🔹 RESPONSIVE DESIGN 🔹 */
-@media (max-width: 1024px) { /* Tablet */
+@media (max-width: 1024px) { /* Tablet view */
     .benefits-section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout */
         text-align: center;
-        margin-top: -5vw; /* ❗ Meno spostamento su tablet */
+        margin-top: -5vw; /* Adjusted positioning */
     }
 
     .empty-column {
@@ -91,7 +95,7 @@ h3{
 
     .benefits-text {
         margin-bottom: 0;
-        align-self: center; /* ✅ Centra il titolo su tablet */
+        align-self: center;
     }
 
     .benefits-container {
@@ -105,9 +109,9 @@ h3{
     }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) { /* Mobile view */
     .benefits-section {
-        margin-top: 0; /* ❗ Azzeriamo lo spostamento su mobile */
+        margin-top: 0; /* Reset positioning */
     }
 
     .benefits-text {
