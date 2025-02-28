@@ -13,10 +13,7 @@
     
     <!-- Titolo e descrizione -->
     <div class="text-section">
-        <img class="image-container" src="../img/design-scritta-home.png"/>
-        
-        <p class="highlighted-text">We make Kubernetes a serverless solution</p>
-        <p class="highlighted-text2">Choose the best version of nuvolaris according to your business</p>
+        <img class="image-container" src="../img/design-scritta-home2.png"/>
         <div class="three-columns">
             <div class="column left">
             </div> 
