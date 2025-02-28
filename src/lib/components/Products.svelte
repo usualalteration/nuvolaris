@@ -24,7 +24,7 @@
                     <h3>DEVELOPMENT</h3>
                     <hr>
                     <img src="img/icona-monitor.png" alt="Development">
-                    <a href="#" class="btn">LEARN MORE</a>
+                    <a href="#" class="btn learn-more">LEARN MORE</a>
                 </div>
                 
                 <div id="production" class="product-card" >
@@ -33,7 +33,7 @@
                     <h3>PRODUCTION</h3>
                     <hr>
                     <img src="img/icona-enterprise.png" alt="Production">
-                    <a href="#" class="btn">LEARN MORE</a>
+                    <a href="#" class="btn learn-more">LEARN MORE</a>
                 </div>
                 
                 <div id="premises" class="product-card">
@@ -42,7 +42,7 @@
                     <h3>ON PREMISES</h3>
                     <hr>
                     <img src="img/Livello_1.png" alt="On Premises">
-                    <a href="#" class="btn">LEARN MORE</a>
+                    <a href="#" class="btn learn-more">LEARN MORE</a>
                 </div>
             </div>
             <img class="sidebar" src="../img/SIdebarcomputer.png">

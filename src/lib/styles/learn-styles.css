@@ -86,11 +86,19 @@ p {
   color: white;
 }
 
-/* "Learn" button */
-.learn-btn {
-  background-color: #e87d0d;
-  color: white;
-}
+/* "Learn More" button */
+.learn-more {
+    font-weight: 400; /* Reduced font weight */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  /* Prevent underline on click (for buttons styled as links) */
+  .learn-more:focus, 
+  .learn-more:active, 
+  .learn-more:hover {
+    text-decoration: none;
+  }
+  
 
 /* Button hover effect */
 .btn:hover {

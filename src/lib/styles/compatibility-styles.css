@@ -23,6 +23,26 @@ body {
     gap: 50px;
 }
 
+/* Main title */
+.compatibility-text h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2; /* Reduced line height */
+}
+
+/* Bold and light text variations */
+.compatibility-text .bold,
+.compatibility-text .light {
+    font-weight: 300;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.7; /* Adjusted line height for readability */
+    text-align: right;
+}
+
+
 /* Adjust image to extend above the section */
 .compatibility-image {
     position: relative;
@@ -126,9 +146,5 @@ body {
     background-color: #f7a40c;
     position: relative; /* Removes fixed position */
     margin-top: -30px; /* Adds spacing before the bar */
-}
-
-br{
-    height:10px;
 }
 
