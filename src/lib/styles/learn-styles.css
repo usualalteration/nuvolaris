@@ -16,6 +16,7 @@ body {
 
 p {
   font-size: 14px;
+  font-family: 'Poppins', 'sans-serif';
 }
 
 /* Grid section container */
@@ -37,6 +38,7 @@ p {
   background: url('img/learn-nuvolaris.png') no-repeat center / cover;
   height: auto;
   padding: 20px;
+  margin-top: 8%;
 }
 
 /* Grid items */
@@ -117,10 +119,12 @@ p {
 .transparent-box h2 {
   font-size: 1.5em;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .transparent-box p {
   font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Center buttons inside the transparent box */
@@ -146,5 +150,6 @@ p {
 
   p {
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
   }
 }

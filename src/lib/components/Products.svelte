@@ -22,6 +22,7 @@
                     <h6>NUVOLARIS</h6>
                     <hr>
                     <h3>DEVELOPMENT</h3>
+                    <hr>
                     <img src="img/icona-monitor.png" alt="Development">
                     <a href="#" class="btn">LEARN MORE</a>
                 </div>
@@ -30,6 +31,7 @@
                     <h6>NUVOLARIS</h6>
                     <hr>
                     <h3>PRODUCTION</h3>
+                    <hr>
                     <img src="img/icona-enterprise.png" alt="Production">
                     <a href="#" class="btn">LEARN MORE</a>
                 </div>
@@ -38,6 +40,7 @@
                     <h6>NUVOLARIS</h6>
                     <hr>
                     <h3>ON PREMISES</h3>
+                    <hr>
                     <img src="img/Livello_1.png" alt="On Premises">
                     <a href="#" class="btn">LEARN MORE</a>
                 </div>

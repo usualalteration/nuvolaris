@@ -7,7 +7,8 @@
             <img src="img/developer-image.png" alt="Developer working">
         </div>
         <div class="compatibility-text">
-            <h2><span class="bold">COMPAT</span><span class="light">IBILITY</span></h2>
+            <h2 class="light">C<span class="bold">OMP</span>AT</h2>
+            <h2 class="light"><span class="bold">IB</span>ILI<span class="bold">TY</span></h2>
             <p class="subtitle">Programming languages <br> supported by Nuvolaris</p>
             <div class="languages">
                 <img src="img/ruby.png" alt="Ruby">

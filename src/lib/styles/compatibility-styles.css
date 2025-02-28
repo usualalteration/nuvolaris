@@ -53,6 +53,7 @@ body {
 .compatibility-text {
     text-align: left;
     max-width: 500px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Main title */
@@ -60,17 +61,20 @@ body {
     font-size: 3.5em;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Bold and light text variations */
 .compatibility-text .bold {
     font-weight: 600;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .compatibility-text .light {
     font-weight: 300;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Subtitle with right alignment */
@@ -79,6 +83,7 @@ body {
     color: #3498db;
     margin-bottom: 20px;
     text-align: right;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Programming language icons aligned to the right */
@@ -121,5 +126,9 @@ body {
     background-color: #f7a40c;
     position: relative; /* Removes fixed position */
     margin-top: -30px; /* Adds spacing before the bar */
+}
+
+br{
+    height:10px;
 }
 
