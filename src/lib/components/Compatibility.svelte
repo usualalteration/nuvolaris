@@ -23,6 +23,6 @@
         </div>
         </div>
     </div>
-    <div class="orange-line"></div>
 </section>
+<div class="orange-line"></div>
 

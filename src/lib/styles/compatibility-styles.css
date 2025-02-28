@@ -23,16 +23,26 @@ body {
     gap: 50px;
 }
 
-/* Image on the left with transparency effect */
+/* Adjust image to extend above the section */
+.compatibility-image {
+    position: relative;
+    margin-top: -50px; /* Moves image slightly above the section */
+}
+
+/* Ensure image reaches the bottom of the section */
 .compatibility-image img {
     width: 100%;
     max-width: 550px;
     height: auto;
+    margin-top: -60px; /* Moves image higher */
     object-fit: contain;
     mix-blend-mode: multiply;
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
+    display: block;
+    margin-bottom: -20px; /* Moves image down to touch the orange bar */
 }
+
 
 /* Image scaling effect on hover */
 .compatibility-image img:hover {
@@ -104,12 +114,12 @@ body {
     }
 }
 
-/* Fixed orange bar at the bottom */
+/* Orange bar positioned at the end of the section */
 .orange-line {
     width: 100%;
-    height: 10px;
+    height: 30px;
     background-color: #f7a40c;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: relative; /* Removes fixed position */
+    margin-top: -30px; /* Adds spacing before the bar */
 }
+
