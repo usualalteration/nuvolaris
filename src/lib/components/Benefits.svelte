@@ -1,5 +1,6 @@
 <script>
     import "$lib/styles/benefits-styles.css";
+    import "$lib/styles/global-font-styles.css";
 </script>
 
 <section class="benefits-section">

@@ -28,31 +28,6 @@
     margin-top: -40px;
   }
 
-  .verybigletters {
-    font-size: 4rem;
-    font-weight: 300;
-    color: #333;
-    display: inline;
-  }
-
-  .verybigletters span {
-    font-weight: 700; /* Parte in grassetto */
-  }
-
-  .bigletters {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: #333;
-    margin-top: -10px;
-  }
-
-  .letters {
-    font-size: 2.8rem;
-    font-weight: 300;
-    color: #333;
-    margin-top: -10px;
-  }
-
 
 p {
     font-size: 15px;
