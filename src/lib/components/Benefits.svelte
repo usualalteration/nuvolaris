@@ -9,6 +9,7 @@
     <!-- Colonna 2 (Titoli) -->
     <div class="benefits-text">
         <h2 class="benefits">Benefits</h2>
+        <br>
         <h3 class="verybigletters">W<span class="verybigletters">HY</span></h3>
         <h3 class="bigletters poppins-bold">CHOOSE</h3>
         <h3 class="letters">NUVOLARIS</h3>
@@ -16,6 +17,7 @@
 
     <!-- Colonna 3 (Benefit) -->
     <div class="benefits-container">
+        <br>
         <div class="benefit">
             <img src="./img/numerazione 1.png" alt="Cost Reduction">
             <div>

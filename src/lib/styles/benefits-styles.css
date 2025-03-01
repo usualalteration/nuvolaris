@@ -12,6 +12,7 @@
     padding: 1vw;
     position: relative;
     margin-top: -20vw; /* Moves section higher */
+    margin-bottom: -73px;
 }
 
 
@@ -22,14 +23,13 @@
 
   .benefits {
     color: #00A7E1; /* Blu */
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
     margin-top: -40px;
   }
 
   .verybigletters {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
     color: #333;
     display: inline;
@@ -40,14 +40,14 @@
   }
 
   .bigletters {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: 600;
     color: #333;
     margin-top: -10px;
   }
 
   .letters {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 300;
     color: #333;
     margin-top: -10px;
@@ -73,7 +73,6 @@ h3 {
 /* Adjust heading spacing */
 .benefits-text h3 {
     line-height: 1.1;
-    margin-bottom: 5px;
 }
 
 /* Centered text block */
@@ -116,6 +115,7 @@ h3 {
         grid-template-columns: 1fr; /* Single column layout */
         text-align: center;
         margin-top: -5vw; /* Adjusted positioning */
+        margin-bottom: 20px;
     }
 
     .empty-column {

@@ -28,78 +28,7 @@
   </script>
   
   <style>
-    .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 2rem;
-      align-items: center;
-    }
-  
-    .contact-info h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-  
-    .contact-info h6 {
-      font-size: 1rem;
-      color: #555;
-    }
-  
-    .contact-form {
-      background: #f9f9f9;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  
-    .form-group {
-      margin-bottom: 1rem;
-    }
-  
-    .checkbox-group {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* Two columns */
-      gap: 15px;
-    }
-  
-    .service-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: #f9f9f9;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px 15px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
-      width: 100%;
-      text-align: left;
-    }
-  
-    .service-btn img {
-      width: 24px;
-      height: 24px;
-    }
-  
-    .service-btn.active {
-      background: #007bff;
-      color: white;
-      border-color: #0056b3;
-    }
-  
-    @media (max-width: 768px) {
-      .contact-container {
-        grid-template-columns: 1fr;
-      }
-  
-      .checkbox-group {
-        grid-template-columns: 1fr;
-      }
-    }
+ 
   </style>
   
   <div class="contact-container">
