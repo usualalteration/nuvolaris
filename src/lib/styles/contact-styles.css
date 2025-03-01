@@ -44,7 +44,8 @@
   justify-content: center;
 }
 
-.contact-form h2, .contact-form p {
+.contact-form h2,
+.contact-form p {
   text-align: center;
   width: 100%;
 }
@@ -60,7 +61,8 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;

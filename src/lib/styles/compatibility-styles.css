@@ -1,150 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main section with a split background */
 .compatibility-section {
-    background: linear-gradient(to right, #ffffff 50%, #e8f4ff 50%);
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
+  background: linear-gradient(to right, #ffffff 50%, #e8f4ff 50%);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* Container for the image and text */
 .compatibility-container {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    width: 90%;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  gap: 50px;
 }
 
 /* Main title */
 .compatibility-text h2 {
-    font-size: 3.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.2; /* Reduced line height */
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2; /* Reduced line height */
 }
 
 /* Bold and light text variations */
 .compatibility-text .bold,
 .compatibility-text .light {
-    font-weight: 300;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    line-height: 0.7; /* Adjusted line height for readability */
-    text-align: right;
+  font-weight: 300;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  line-height: 0.7; /* Adjusted line height for readability */
+  text-align: right;
 }
-
 
 /* Adjust image to extend above the section */
 .compatibility-image {
-    position: relative;
-    margin-top: -50px; /* Moves image slightly above the section */
+  position: relative;
+  margin-top: -50px; /* Moves image slightly above the section */
 }
 
 /* Ensure image reaches the bottom of the section */
 .compatibility-image img {
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-    margin-top: -60px; /* Moves image higher */
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    display: block;
-    margin-bottom: -20px; /* Moves image down to touch the orange bar */
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  margin-top: -60px; /* Moves image higher */
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin-bottom: -20px; /* Moves image down to touch the orange bar */
 }
-
 
 /* Image scaling effect on hover */
 .compatibility-image img:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 /* Text section on the right */
 .compatibility-text {
-    text-align: left;
-    max-width: 500px;
-    font-family: 'Poppins', sans-serif;
+  text-align: left;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Main title */
 .compatibility-text h2 {
-    font-size: 3.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Bold and light text variations */
 .compatibility-text .bold {
-    font-weight: 600;
-    color: black;
-    font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 .compatibility-text .light {
-    font-weight: 300;
-    color: black;
-    font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Subtitle with right alignment */
 .compatibility-text .subtitle {
-    font-size: 1.2em;
-    color: #3498db;
-    margin-bottom: 20px;
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  color: #3498db;
+  margin-bottom: 20px;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Programming language icons aligned to the right */
 .languages {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0px;
+  flex-wrap: wrap;
 }
 
 /* Maintain original proportions of language icons */
 .languages img {
-    width: auto;
-    height: 40px;
-    object-fit: contain;
+  width: auto;
+  height: 40px;
+  object-fit: contain;
 }
 
 /* Responsive adjustments for smaller screens */
 @media screen and (max-width: 900px) {
-    .compatibility-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .compatibility-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .compatibility-text {
-        text-align: center;
-    }
+  .compatibility-text {
+    text-align: center;
+  }
 
-    /* Center language icons on small devices */
-    .languages {
-        justify-content: center;
-    }
+  /* Center language icons on small devices */
+  .languages {
+    justify-content: center;
+  }
 }
 
 /* Orange bar positioned at the end of the section */
 .orange-line {
-    width: 100%;
-    height: 30px;
-    background-color: #f7a40c;
-    position: relative; /* Removes fixed position */
-    margin-top: -30px; /* Adds spacing before the bar */
+  width: 100%;
+  height: 30px;
+  background-color: #f7a40c;
+  position: relative; /* Removes fixed position */
+  margin-top: -30px; /* Adds spacing before the bar */
 }
-

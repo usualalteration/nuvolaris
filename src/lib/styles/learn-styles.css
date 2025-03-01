@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,14 +9,14 @@
 
 /* General styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 p {
   font-size: 14px;
-  font-family: 'Poppins', 'sans-serif';
+  font-family: "Poppins", "sans-serif";
 }
 
 /* Grid section container */
@@ -35,7 +35,7 @@ p {
   gap: 15px;
   width: 100%;
   max-width: 1200px;
-  background: url('img/learn-nuvolaris.png') no-repeat center / cover;
+  background: url("img/learn-nuvolaris.png") no-repeat center / cover;
   height: auto;
   padding: 20px;
   margin-top: 8%;
@@ -70,7 +70,7 @@ p {
 
 /* General button styles */
 .btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -88,17 +88,16 @@ p {
 
 /* "Learn More" button */
 .learn-more {
-    font-weight: 400; /* Reduced font weight */
-    text-decoration: none; /* Removes underline */
-  }
-  
-  /* Prevent underline on click (for buttons styled as links) */
-  .learn-more:focus, 
-  .learn-more:active, 
-  .learn-more:hover {
-    text-decoration: none;
-  }
-  
+  font-weight: 400; /* Reduced font weight */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Prevent underline on click (for buttons styled as links) */
+.learn-more:focus,
+.learn-more:active,
+.learn-more:hover {
+  text-decoration: none;
+}
 
 /* Button hover effect */
 .btn:hover {
@@ -127,12 +126,12 @@ p {
 .transparent-box h2 {
   font-size: 1.5em;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .transparent-box p {
   font-size: 1.1em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Center buttons inside the transparent box */
@@ -158,6 +157,6 @@ p {
 
   p {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 }

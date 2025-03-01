@@ -7,16 +7,17 @@
   <div class="grid-container">
     <!-- Celle unite -->
     <div class="grid-item item-1">
-
-<div class="center-text">
-    <h3 class="verybigletters">L<span>E</span>A<span>RN</span></h3>
-    <h3 class="letters">NUVOLARIS</h3>
-</div>
-<p>Nuvolaris is extremely
-easy to use: in a week
-you will be able to
-master it!</p>
-
+      <div class="center-text">
+        <h3 id="white" class=" white verybigletters">
+          L<span>E</span>A<span>RN</span>
+        </h3>
+        <h3 id="white" class="white letters">NUVOLARIS</h3>
+      </div>
+      <br />
+      <p id="white" class="miniletters right">Nuvolaris is extremely</p>
+      <p id="white" class="miniletters right">easy to use: in a week</p>
+      <p id="white" class="miniletters right">you will be able to</p>
+      <p id="white" class="miniletters right">master it!</p>
     </div>
     <div class="grid-item item-2">
       <h3>What it can do</h3>

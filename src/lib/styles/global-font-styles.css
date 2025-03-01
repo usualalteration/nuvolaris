@@ -1,37 +1,55 @@
 .verybigletters {
-    font-family: "Poppins", "sans-serif";
-    font-size: 4.2rem;
-    font-weight: 300;
-    color: #333;
-    display: inline;
-    line-height: 1.0; /* Riduce lo spazio tra le righe */
-  }
-  
-  .verybigletters span {
-    font-weight: 700;
-  }
-  
-  .bigletters {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-top: -10px;
-    line-height: 1.0;
-  }
-  
-  .letters {
-    font-size: 2.7rem;
-    font-weight: 300;
-    color: #333;
-    margin-top: -6px;
-    line-height: 1.0;
-  }
-  
-  .orange-letters {
-    color: #ff9900;
-  }
+  font-family: "Poppins", "sans-serif";
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #333;
+  display: inline;
+  line-height: 1; /* Riduce lo spazio tra le righe */
+}
 
-  .center-text{
-    text-align: center;
-  }
-  
+.verybigletters span {
+  font-weight: 700;
+}
+
+.bigletters {
+  font-family: "Poppins", "sans-serif";
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: -10px;
+  line-height: 1;
+}
+
+.miniletters {
+  font-family: "Poppins", "sans-serif";
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: bold;
+  color: #333;
+  line-height: 1;
+}
+
+#white {
+  color: white;
+}
+
+.letters {
+  font-family: "Poppins", "sans-serif";
+  font-size: 2.7rem;
+  font-weight: 300;
+  color: #333;
+  margin-top: -6px;
+  line-height: 1;
+}
+
+.orange-letters {
+  color: #ff9900;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}

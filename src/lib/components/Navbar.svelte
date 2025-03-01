@@ -6,7 +6,7 @@
 <nav class="navbar">
   <div class="navbar-container">
     <a href="/" class="logo">
-      <img src="/img/nuvolaris-logo.png" alt="Nuvolaris">
+      <img src="/img/nuvolaris-logo.png" alt="Nuvolaris" />
     </a>
 
     <!-- Menu Hamburger -->
