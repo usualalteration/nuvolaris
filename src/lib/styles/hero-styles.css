@@ -43,8 +43,9 @@
 /* Paragraph styling inside the hero section */
 .hero-content p {
   font-family: 'Poppins', 'sans-serif';
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-top: 10px;
+  font-weight: 500;
 }
 
 /* Highlighted text with orange color */

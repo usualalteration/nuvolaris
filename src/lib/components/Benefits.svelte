@@ -8,8 +8,8 @@
 
     <!-- Colonna 2 (Titoli) -->
     <div class="benefits-text">
-        <h2>Benefits</h2>
-        <h3 class="verybigletters">WHY</h3>
+        <h2 class="benefits">Benefits</h2>
+        <h3 class="verybigletters">W<span class="verybigletters">HY</span></h3>
         <h3 class="bigletters poppins-bold">CHOOSE</h3>
         <h3 class="letters">NUVOLARIS</h3>
     </div>
