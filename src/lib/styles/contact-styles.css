@@ -1,7 +1,7 @@
-/* Grid container */
+/* Grid container - now perfectly divided */
 .contact-container {
   display: grid;
-  grid-template-columns: 2fr 2fr; /* Left column is smaller */
+  grid-template-columns: 1fr 1fr; /* Two equal parts */
   gap: 30px;
   max-width: 1200px;
   margin: 2rem auto;
@@ -9,9 +9,15 @@
   align-items: center;
 }
 
-/* Left column */
+/* Left column - Text */
 .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 20px;
+  width: 100%; /* Ensures equal width */
 }
 
 .contact-info h1 {
@@ -24,22 +30,28 @@
   color: #555;
 }
 
-/* Right column (form) */
+/* Right column - Form */
 .contact-form {
   background: #f9f9f9;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 70%; /* Increased form width */
-  justify-self: start; /* Aligns form more to the right */
+  width: 80%; /* Takes full width of its column */
+  max-width: 100%; /* Prevents any excess width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-form h2, .contact-form p {
   text-align: center;
+  width: 100%;
 }
 
 .form-group {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 label {
@@ -63,6 +75,7 @@ textarea {
 .row {
   display: flex;
   gap: 10px;
+  width: 100%;
 }
 
 .row div {
@@ -74,6 +87,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns */
   gap: 15px;
+  width: 100%;
 }
 
 /* Service button */
@@ -90,7 +104,7 @@ textarea {
   transition: background 0.3s, transform 0.2s;
   width: 100%;
   text-align: left;
-  color: black; /* Text is always visible */
+  color: black;
 }
 
 /* Service button icon */
@@ -113,16 +127,16 @@ textarea {
   }
 
   .contact-form {
-    width: 80%; /* Increase width on tablets */
+    width: 100%; /* Full width on tablets */
   }
 }
 
 @media (max-width: 768px) {
   .contact-form {
-    width: 100%; /* Full width on small screens */
+    width: 100%;
   }
 
   .checkbox-group {
-    grid-template-columns: 1fr; /* Single column */
+    grid-template-columns: 1fr;
   }
 }
