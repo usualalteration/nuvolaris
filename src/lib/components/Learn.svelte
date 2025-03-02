@@ -14,10 +14,10 @@
         <h3 id="white" class="white letters">NUVOLARIS</h3>
       </div>
       <br />
-      <p id="white" class="miniletters right">Nuvolaris is extremely</p>
-      <p id="white" class="miniletters right">easy to use: in a week</p>
-      <p id="white" class="miniletters right">you will be able to</p>
-      <p id="white" class="miniletters right">master it!</p>
+      <p id="white" class="miniletters right-text center">Nuvolaris is <span>&nbsp;extremely&nbsp;</span></p>
+      <p id="white" class="miniletters right-text center"><span>&nbsp;easy to use&nbsp;</span>: in a week</p>
+      <p id="white" class="miniletters right-text center">you will be able to</p>
+      <p id="white" class="miniletters right-text center">master it!</p>
     </div>
     <div class="grid-item item-2">
       <h3>What it can do</h3>
@@ -30,16 +30,16 @@
         voluptatem sequi nesciunt. Neque porro quisqua.
       </p>
     </div>
+    <div class="grid-item item-3">
     <div class="transparent-box">
-      <div class="grid-item item-3">
         <div class="buttons-container">
           <div class="buttons">
             <h3>Use Cases</h3>
-            <button class="btn watch-btn">WATCH THEM NOW</button>
+            <button class="btn">WATCH THEM NOW</button>
           </div>
           <div>
             <h3>Our Tutorials</h3>
-            <button class="btn learn-btn">LEARN NOW</button>
+            <button class="btn">LEARN NOW</button>
           </div>
         </div>
       </div>
