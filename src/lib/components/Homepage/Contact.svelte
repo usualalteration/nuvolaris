@@ -1,5 +1,5 @@
 <script>
-  import "$lib/styles/contact-styles.css";
+  import "$lib/styles/Homepage-styles/contact-styles.css";
 
   let name = "";
   let email = "";

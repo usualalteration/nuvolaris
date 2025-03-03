@@ -1,5 +1,5 @@
 <script>
-  import "$lib/styles/hero-styles.css";
+  import "$lib/styles/Homepage-styles/hero-styles.css";
 </script>
 
 <section class="hero-section">

@@ -26,20 +26,21 @@ p {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  overflow: hidden;
 }
 
 /* Main grid layout */
-.grid-container {
+.grid-container2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colonne */
+  grid-template-columns: 1fr 1.5fr 2fr 0.5fr; /* Seconda e terza sezione più grandi */
   gap: 15px;
   width: 100%;
   max-width: 1200px;
   background: url("img/learn-nuvolaris.png") no-repeat center / cover;
   height: auto;
   padding: 20px;
-  margin-top: 8%;
 }
+
 
 
 /* Grid items */
@@ -83,53 +84,36 @@ p {
   color: white;
 }
 
-/* "Learn More" button */
-.learn-more {
-  font-weight: 400; /* Reduced font weight */
-  text-decoration: none; /* Removes underline */
-}
-
-/* Prevent underline on click (for buttons styled as links) */
-.learn-more:focus,
-.learn-more:active,
-.learn-more:hover {
-  text-decoration: none;
-}
-
 /* Button hover effect */
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
 
-/* Transparent box with centered text and buttons */
+/* Transparent box */
 .transparent-box {
   background: rgba(255, 255, 255, 0.5);
-  padding: 30px;
-  width: 100%; /* Il doppio della larghezza attuale (90% x 2) */
-  max-width: 1000px; /* Il doppio del max-width attuale */
-  height: 100%; /* Altezza adattabile in base al contenuto */
+  padding: 40px;
+  width: 100%;
+  min-height: 350px;
+  height: auto;
   text-align: center;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
 /* Text inside the transparent box */
 .transparent-box h2 {
   font-size: 1.5em;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
 }
 
 .transparent-box p {
   font-size: 1.1em;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Center buttons inside the transparent box */
@@ -137,15 +121,43 @@ p {
   width: 100%;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 900px) {
+/* 📱 Responsive Design */
+@media screen and (max-width: 1024px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonne su schermi medi */
+    grid-template-columns: 1fr 1fr; /* 2 colonne su tablet */
+  }
+
+  .transparent-box {
+    width: 80%;
+    min-height: 300px; /* Mantenere un'altezza adeguata */
+    padding: 30px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* 1 colonna su schermi piccoli */
+    grid-template-columns: 1fr; /* 1 colonna su mobile */
+  }
+
+  .transparent-box {
+    width: 90%;
+    min-height: 280px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 16px; /* Migliore leggibilità su mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .transparent-box {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 15px;
   }
 }

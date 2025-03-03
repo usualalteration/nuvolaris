@@ -8,7 +8,7 @@ body {
 
 /* Main section with a split background */
 .compatibility-section {
-  background: linear-gradient(to right, #ffffff 50%, #e8f4ff 50%);
+  background: linear-gradient(to right, #ffffff 50%, #ffffff 50%);
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@ body {
 .compatibility-text .bold,
 .compatibility-text .light {
   font-weight: 300;
-  color: black;
+  color: #333;
   font-family: "Poppins", sans-serif;
   line-height: 0.7; /* Adjusted line height for readability */
   text-align: right;
@@ -85,13 +85,13 @@ body {
 /* Bold and light text variations */
 .compatibility-text .bold {
   font-weight: 600;
-  color: black;
+  color: #333;
   font-family: "Poppins", sans-serif;
 }
 
 .compatibility-text .light {
   font-weight: 300;
-  color: black;
+  color: #333;
   font-family: "Poppins", sans-serif;
 }
 

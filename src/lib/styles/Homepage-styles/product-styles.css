@@ -1,0 +1,95 @@
+/* Stili generali della sezione */
+.products-section {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 📌 Immagine home */
+#scritta-home {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 📌 Griglia con sidebar che parte da inizio schermo */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr; /* Sidebar + 3 prodotti */
+  gap: 30px; /* Più spazio tra sidebar e prodotti */
+  width: 100%;
+  max-width: 1200px;
+  align-items: start;
+  justify-content: start;
+  padding-left: 20rem; /* Lascia spazio per la sidebar */
+  position: relative; /* Assicura che le card siano sopra */
+}
+
+/* 📌 Sidebar fissata a sinistra */
+.sidebar {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%); /* Centra la sidebar verticalmente */
+  width: 30rem; /* Dimensione fissa */
+  height: auto;
+  z-index: 10; /* Sidebar sotto le card */
+}
+
+/* 📌 Card prodotto più in primo piano */
+.product-card {
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Effetto sollevato */
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  max-width: 200px; /* Ridotta la larghezza */
+  height: 260px; /* Ridotta l'altezza */
+  position: relative;
+  border-radius: 10px;
+  z-index: 10; /* Card sopra la sidebar */
+}
+
+/* Effetto sollevato al passaggio del mouse */
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 RESPONSIVE DESIGN */
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+  .products-section {
+      min-height: 700px;
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr 1fr; /* Sidebar sopra, 2 prodotti per riga */
+      padding-left: 0; /* Rimuove spazio lasciato per la sidebar */
+  }
+
+  .sidebar {
+      position: relative;
+      left: auto;
+      top: auto;
+      /*transform: none;*/
+      width: 100%;
+  }
+}
+
+/* 📱 Smartphone */
+@media (max-width: 768px) {
+  .products-section {
+      min-height: 800px;
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr; /* Un solo prodotto per riga */
+  }
+}

@@ -1,5 +1,5 @@
 <script>
-  import "$lib/styles/compatibility-styles.css";
+  import "$lib/styles/Homepage-styles/compatibility-styles.css";
 </script>
 
 <section class="compatibility-section">

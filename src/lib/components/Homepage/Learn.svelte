@@ -1,10 +1,10 @@
 <script>
-  import "$lib/styles/learn-styles.css";
+  import "$lib/styles/Homepage-styles/learn-styles.css";
   import "$lib/styles/global-font-styles.css";
 </script>
 
 <section>
-  <div class="grid-container">
+  <div class="grid-container2">
     <!-- Celle unite -->
     <div class="grid-item item-1">
       <div class="center-text">
@@ -14,10 +14,10 @@
         <h3 id="white" class="white letters">NUVOLARIS</h3>
       </div>
       <br />
-      <p id="white" class="miniletters right-text center">Nuvolaris is <span>&nbsp;extremely&nbsp;</span></p>
-      <p id="white" class="miniletters right-text center"><span>&nbsp;easy to use&nbsp;</span>: in a week</p>
-      <p id="white" class="miniletters right-text center">you will be able to</p>
-      <p id="white" class="miniletters right-text center">master it!</p>
+      <p id="white" class="miniletters right-text right">Nuvolaris is <span>&nbsp;extremely&nbsp;</span></p>
+      <p id="white" class="miniletters right-text right"><span>&nbsp;easy to use&nbsp;</span>: in a week</p>
+      <p id="white" class="miniletters right-text right">you will be able to</p>
+      <p id="white" class="miniletters right-text right">master it!</p>
     </div>
     <div class="grid-item item-2">
       <h3>What it can do</h3>

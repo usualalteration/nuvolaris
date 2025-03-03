@@ -1,5 +1,5 @@
 <script>
-  import "$lib/styles/navbar-styles.css";
+  import "$lib/styles/Homepage-styles/navbar-styles.css";
   let isOpen = false;
 </script>
 
