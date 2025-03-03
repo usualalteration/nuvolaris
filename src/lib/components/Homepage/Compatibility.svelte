@@ -1,7 +1,8 @@
 <script>
   import "$lib/styles/Homepage-styles/compatibility-styles.css";
+  import "$lib/styles/global-styles.css";
 </script>
-
+<main>
 <section class="compatibility-section">
   <div class="compatibility-container">
     <div class="compatibility-image">
@@ -31,3 +32,4 @@
   </div>
 </section>
 <div class="orange-line"></div>
+</main>

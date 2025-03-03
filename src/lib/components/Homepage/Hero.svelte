@@ -1,7 +1,8 @@
 <script>
   import "$lib/styles/Homepage-styles/hero-styles.css";
+  import "$lib/styles/global-styles.css";
 </script>
-
+<main>
 <section class="hero-section">
   <div class="hero-content">
     <h1 class="flex-container">THINK OUT OF THE BOX.</h1>
@@ -13,3 +14,4 @@
     <img src="/img/logo-header.png" alt="Nuvolaris Logo" class="hero-logo" />
   </div>
 </section>
+</main>

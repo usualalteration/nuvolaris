@@ -1,4 +1,4 @@
-/* Grid container - now perfectly divided */
+/* Grid container - Always two columns on desktops */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal parts */
@@ -17,11 +17,11 @@
   justify-content: center;
   text-align: center;
   padding: 20px;
-  width: 100%; /* Ensures equal width */
+  width: 100%;
 }
 
 .contact-info h1 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2vw, 2.5rem); /* Adaptable */
   margin-bottom: 10px;
 }
 
@@ -36,8 +36,8 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%; /* Takes full width of its column */
-  max-width: 100%; /* Prevents any excess width */
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +87,7 @@ textarea {
 /* Services section */
 .checkbox-group {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   width: 100%;
 }
@@ -122,23 +122,80 @@ textarea {
   border-color: #0056b3;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
+/* --- RESPONSIVE DESIGN --- */
+
+/* 1280x800 - Mantiene due colonne */
+@media (max-width: 1280px) {
   .contact-container {
-    grid-template-columns: 1fr; /* Stack columns */
+    max-width: 1000px;
+    gap: 20px;
   }
 
   .contact-form {
-    width: 100%; /* Full width on tablets */
+    max-width: 450px;
+  }
+
+  .contact-info h1 {
+    font-size: 2rem;
   }
 }
 
+/* 1024px - Mantiene due colonne */
+@media (max-width: 1024px) {
+  .contact-container {
+    max-width: 900px;
+    gap: 0px;
+  }
+
+  .contact-form {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+}
+
+/* 768px e sotto - Passa a colonna unica */
 @media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* Stack columns */
+    padding: 1rem;
+    gap: 20px;
+  }
+
   .contact-form {
     width: 100%;
   }
 
   .checkbox-group {
     grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Schermi molto piccoli (480px e sotto) */
+@media (max-width: 480px) {
+  .contact-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info h6 {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .service-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .service-btn img {
+    width: 20px;
+    height: 20px;
   }
 }

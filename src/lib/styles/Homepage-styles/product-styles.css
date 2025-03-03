@@ -1,95 +1,328 @@
-/* Stili generali della sezione */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Global styles and box-sizing reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography */
+h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Titles and subtitles */
+.title, .subtitle {
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.title {
+    top: -100px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: absolute;
+    left: -60px;
+    top: 55vh;
+    width: 100vh;
+    height: auto;
+    z-index: 0;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Highlighted text sections */
+.highlighted-text {
+    background: #303030;
+    color: white;
+    width: 90%;
+    max-width: 700px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: clamp(14px, 3vw, 18px);
+    position: relative;
+    z-index: 1;
+    top: -15rem;
+}
+
+.highlighted-text2 {
+    background: #ffffff;
+    color: black;
+    width: 90%;
+    max-width: 400px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: clamp(12px, 2vw, 8px);
+    position: relative;
+    z-index: 1;
+    top: -14rem;
+}
+
+/* Sidebar responsiveness */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+/* Product card styling */
+.product-card {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: 100;
+    transition: transform 0.2s ease-in-out;
+    width: 85%;
+    max-width: 180px;
+    height: 250px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+/* Button inside the product card */
+.product-card .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 120px;
+    padding: 5px;
+}
+
+.product-card .btn img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.product-card .btn:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* Product grid layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 2px;
+    align-items: start;
+    justify-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    position: relative;
+    top: -200px;
+    left: 10vh;
+}
+
+/* Product card colors */
+#development {
+    z-index: 10;
+    opacity: 1;
+}
+
+#production {
+    background-color: #FF9600;
+    opacity: 1;
+    z-index: 10;
+}
+
+#premises {
+    background-color: #00C1FF;
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Button styling for product cards */
+#development .btn {
+    background: #FF9600;
+    color: rgb(255, 255, 255);
+}
+
+#development .btn:hover {
+    background: #c27c19;
+}
+
+#production .btn {
+    background: #9DD8F2;
+    color: black;
+}
+
+#production .btn:hover {
+    background: #7CC2E3;
+}
+
+#premises .btn {
+    background: #0085C0;
+    color: white;
+}
+
+#premises .btn:hover {
+    background: #006FA0;
+}
+
+/* Responsive product grid */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      top: -100px;
+  }
+}
+
+/* Larger screens (1440px and up) */
+@media (min-width: 1440px) {
+  .product-grid {
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      max-width: 1200px;
+      gap: 20px;
+  }
+
+  .product-card {
+      max-width: 220px;
+      height: 280px;
+  }
+}
+
+/* Extra-large screens (1920px and up) */
+@media (min-width: 1920px) {
+  .product-grid {
+      grid-template-columns: repeat(5, minmax(220px, 1fr));
+      max-width: 1400px;
+      gap: 25px;
+  }
+
+  .product-card {
+      max-width: 240px;
+      height: 300px;
+  }
+}
+
+/* Three-column layout */
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  z-index: 10;
+}
+
+/* Larger screens (1440px and up) */
+@media (min-width: 1440px) {
+  .three-columns {
+      max-width: 1400px;
+      gap: 20px;
+  }
+}
+
+/* Extra-large screens (1920px and up) */
+@media (min-width: 1920px) {
+  .three-columns {
+      max-width: 1600px;
+      gap: 30px;
+  }
+}
+
+/* Product section positioning */
 .products-section {
   position: relative;
-  width: 100%;
-  min-height: 600px;
-  max-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+}
+/* Three-column layout */
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    z-index: 10;
 }
 
-/* 📌 Immagine home */
-#scritta-home {
-  width: 100%;
-  max-width: 1200px;
+/* Product section positioning */
+.products-section {
+    position: relative;
 }
 
-/* 📌 Griglia con sidebar che parte da inizio schermo */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr; /* Sidebar + 3 prodotti */
-  gap: 30px; /* Più spazio tra sidebar e prodotti */
-  width: 100%;
-  max-width: 1200px;
-  align-items: start;
-  justify-content: start;
-  padding-left: 20rem; /* Lascia spazio per la sidebar */
-  position: relative; /* Assicura che le card siano sopra */
-}
-
-/* 📌 Sidebar fissata a sinistra */
-.sidebar {
-  position: absolute;
-  left: 0;
-  transform: translateY(-50%); /* Centra la sidebar verticalmente */
-  width: 30rem; /* Dimensione fissa */
-  height: auto;
-  z-index: 10; /* Sidebar sotto le card */
-}
-
-/* 📌 Card prodotto più in primo piano */
-.product-card {
-  padding: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Effetto sollevato */
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-  width: 100%;
-  max-width: 200px; /* Ridotta la larghezza */
-  height: 260px; /* Ridotta l'altezza */
-  position: relative;
-  border-radius: 10px;
-  z-index: 10; /* Card sopra la sidebar */
-}
-
-/* Effetto sollevato al passaggio del mouse */
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* 📌 RESPONSIVE DESIGN */
-
-/* 📱 Tablet */
-@media (max-width: 1024px) {
-  .products-section {
-      min-height: 700px;
+/* Larger screens (1440px and up) */
+@media (min-width: 1440px) {
+  .product-grid {
+      grid-template-columns: repeat(5, minmax(220px, 1fr));
+      max-width: 1400px;
+      gap: 25px;
   }
 
-  .grid-container {
-      grid-template-columns: 1fr 1fr; /* Sidebar sopra, 2 prodotti per riga */
-      padding-left: 0; /* Rimuove spazio lasciato per la sidebar */
-  }
-
-  .sidebar {
-      position: relative;
-      left: auto;
-      top: auto;
-      /*transform: none;*/
-      width: 100%;
-  }
 }
 
-/* 📱 Smartphone */
-@media (max-width: 768px) {
-  .products-section {
-      min-height: 800px;
+/* Extra-large screens (1920px and up) */
+@media (min-width: 1920px) {
+  .product-grid {
+      grid-template-columns: repeat(6, minmax(240px, 1fr));
+      max-width: 1600px;
+      gap: 30px;
   }
 
-  .grid-container {
-      grid-template-columns: 1fr; /* Un solo prodotto per riga */
-  }
 }

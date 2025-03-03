@@ -1,9 +1,10 @@
 <script>
   import "$lib/styles/Homepage-styles/learn-styles.css";
   import "$lib/styles/global-font-styles.css";
+  import "$lib/styles/global-styles.css";
 </script>
-
-<section>
+<main>
+<section class="learn">
   <div class="grid-container2">
     <!-- Celle unite -->
     <div class="grid-item item-1">
@@ -47,3 +48,4 @@
     </div>
   </div>
 </section>
+</main>
