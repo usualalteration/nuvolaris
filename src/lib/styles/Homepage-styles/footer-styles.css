@@ -8,6 +8,10 @@ footer {
     flex-wrap: wrap;
   }
 
+  h3{
+    color: white;
+  }
+
   .footer-left {
     max-width: 250px;
   }

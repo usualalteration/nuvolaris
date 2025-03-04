@@ -36,11 +36,13 @@
     <h6>Love to hear from you.</h6>
     <img src="../img/cube.png" />
   </div>
+  <div class="contact-form-container">
 
-  <!-- Right Column (Form) -->
+  <p>Please fill the form below or write us at info@nuvolaris.io to receive a quote for your project. Feel free to add as much detail as needed. </p>
+  <br>
   <div class="contact-form">
     <h2>Contact Details</h2>
-    <p>Fill in the form below to get in touch with us.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisc.</p>
 
     <form on:submit|preventDefault={submitForm}>
       <div class="row form-group">
@@ -130,6 +132,7 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
+</div>
 </div>
 
 

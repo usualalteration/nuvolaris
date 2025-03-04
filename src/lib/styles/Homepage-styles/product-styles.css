@@ -262,7 +262,11 @@ h6 {
   .product-grid {
       grid-template-columns: 1fr;
       gap: 15px;
-      top: -100px;
+      top: -300px;
+  }
+
+  .sidebar{
+    display: none;
   }
 }
 

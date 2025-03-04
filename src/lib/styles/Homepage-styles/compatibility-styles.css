@@ -8,10 +8,12 @@ body {
 
 /* Main section with a split background */
 .compatibility-section {
-  background:  #ffffff;
-  padding: 50px 0;
+  background: #ffffff;
+  padding: 0rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Container for the image and text */
@@ -19,8 +21,9 @@ body {
   display: flex;
   align-items: center;
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 /* Main title */
@@ -31,6 +34,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.2; /* Reduced line height */
 }
+
 
 /* Bold and light text variations */
 .compatibility-text .bold,
@@ -133,13 +137,26 @@ body {
   .languages {
     justify-content: center;
   }
+
+  .orange-line{
+    display:none;
+  }
 }
 
-/* Orange bar positioned at the end of the section */
 .orange-line {
   width: 100%;
   height: 30px;
   background-color: #f7a40c;
-  position: relative; /* Removes fixed position */
-  margin-top: -30px; /* Adds spacing before the bar */
+  position: absolute; /* Removes fixed position */
+  margin-top: -17vh; /* Adds spacing before the bar */
+}
+
+@media screen and (min-width: 1440px) {/* Orange bar positioned at the end of the section */
+.orange-line {
+  width: 100%;
+  height: 30px;
+  background-color: #f7a40c;
+  position: absolute; /* Removes fixed position */
+  margin-top: -33vh; /* Adds spacing before the bar */
+}
 }

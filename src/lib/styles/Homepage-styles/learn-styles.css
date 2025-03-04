@@ -1,9 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-.learn{
+.learn {
+  background-image: url("img/learn-nuvolaris.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
 }
+
+/* Grid section container */
+.grid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  height: 100vh; /* Ensure the grid section takes full viewport height */
+}
+
+/* Transparent box */
+.transparent-box {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  min-height: 350px;
+  height: 100%; /* Make the transparent box fill the section in height */
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .grid-container2 {
+    grid-template-columns: 1fr 1.5fr 2fr 1fr; /* Rende la quarta colonna più ampia */
+    max-width: 1600px; /* Aumenta la larghezza massima della griglia */
+    padding: 30px;
+  }
+
+  .grid-item {
+    font-size: 1.4em; /* Aumenta la dimensione del testo */
+    padding: 20px;
+  }
+
+  .transparent-box {
+    width: 70%;
+    min-height: 400px;
+    padding: 50px;
+  }
+
+  .transparent-box h2 {
+    font-size: 2em;
+  }
+
+  .transparent-box p {
+    font-size: 1.3em;
+  }
+
+  .btn {
+    font-size: 1.1em;
+    padding: 12px 25px;
+  }
+
+  .buttons-container {
+    max-width: 300px;
+  }
+}
+
 
 * {
   font-family: "Poppins", sans-serif;
@@ -24,24 +95,14 @@ p {
   font-family: "Poppins", "sans-serif";
 }
 
-/* Grid section container */
-.grid-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  overflow: hidden;
-}
 
 /* Main grid layout */
 .grid-container2 {
   display: grid;
   grid-template-columns: 1fr 1.5fr 2fr 0.5fr; /* Seconda e terza sezione più grandi */
   gap: 15px;
-  width: 100%;
-  max-width: 1200px;
-  background: url("img/learn-nuvolaris.png") no-repeat center / cover;
+  width: 100vw;
+  max-width: 1400px;
   height: auto;
   padding: 20px;
 }
@@ -95,21 +156,6 @@ p {
   opacity: 0.9;
 }
 
-/* Transparent box */
-.transparent-box {
-  background: rgba(255, 255, 255, 0.5);
-  padding: 40px;
-  width: 100%;
-  min-height: 350px;
-  height: auto;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Text inside the transparent box */
 .transparent-box h2 {
@@ -122,7 +168,7 @@ p {
 }
 
 /* Center buttons inside the transparent box */
-.transparent-box .buttons-container {
+.buttons-container {
   width: 100%;
 }
 
