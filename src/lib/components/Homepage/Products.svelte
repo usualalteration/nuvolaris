@@ -70,7 +70,6 @@
   <!-- Colonna 2 (Titoli) -->
   <div class="benefits-text">
       <h2 class="benefits">Benefits</h2>
-      <br>
       <h3 class="verybigletters">W<span class="verybigletters">HY</span></h3>
       <h3 class="bigletters poppins-bold">CHOOSE</h3>
       <h3 class="letters">NUVOLARIS</h3>
@@ -79,7 +78,7 @@
   <!-- Colonna 3 (Benefit) -->
   <div class="benefits-container">
       <br>
-      <div class="benefit">
+      <div class="benefit benefits1">
           <img src="./img/numerazione 1.png" alt="Cost Reduction">
           <div>
               <h4>COST REDUCTION</h4>
@@ -87,7 +86,7 @@
           </div>
       </div>
 
-      <div class="benefit">
+      <div class="benefit benefits2">
           <img src="./img/numerazione 2.png" alt="Simplicity">
           <div>
               <h4>SIMPLICITY</h4>
@@ -95,7 +94,7 @@
           </div>
       </div>
 
-      <div class="benefit">
+      <div class="benefit benefits3">
           <img src="./img/numerazione 3.png" alt="Portability">
           <div>
               <h4>PORTABILITY</h4>

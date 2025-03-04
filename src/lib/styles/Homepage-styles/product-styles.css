@@ -56,7 +56,7 @@ h6 {
   left: 0;
   top: 0;
   width: 35%; /* Larghezza della barra */
-  height: 155%; /* Adatta l'altezza alla sezione */
+  height: 150%; /* Adatta l'altezza alla sezione */
   background-color: #333;
   z-index: 0;
 }
@@ -167,13 +167,14 @@ h6 {
 
 }
 
-.computer{
-  width: 30vw;
+.computer {
   position: relative;
-  top: 10vh;
-  left: 0vw;
-
+  top: 1vh;
+  left: -5vw;
+  transform: scale(2);
+  transform-origin: top left;
 }
+
 
 /* Product card colors */
 #development {
@@ -272,7 +273,8 @@ h6 {
       grid-template-columns: repeat(4, minmax(200px, 1fr));
       max-width: 1200px;
       gap: 20px;
-      left: 22vw;
+      left: 9vw;
+      margin-bottom: 10vh;
   }
 
   .product-card {
