@@ -52,13 +52,15 @@ h6 {
 
 /* Sidebar styling */
 .sidebar {
-    position: absolute;
-    left: -60px;
-    top: 55vh;
-    width: 100vh;
-    height: auto;
-    z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%; /* Larghezza della barra */
+  height: 155%; /* Adatta l'altezza alla sezione */
+  background-color: #333;
+  z-index: 0;
 }
+
 
 /* Image container */
 .image-container {
@@ -102,29 +104,10 @@ h6 {
     top: -14rem;
 }
 
-/* Sidebar responsiveness */
-@media (max-width: 1024px) {
-    .sidebar {
-        width: 40%;
-    }
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-}
 
 /* Product card styling */
 .product-card {
+    top: 10vh;
     background: white;
     padding: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -165,7 +148,7 @@ h6 {
 /* Product grid layout */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
     gap: 2px;
     align-items: start;
     justify-items: center;
@@ -174,7 +157,22 @@ h6 {
     padding-top: 20px;
     position: relative;
     top: -200px;
-    left: 10vh;
+    right: -1vw;
+}
+
+.threeproducts{
+  color: white;
+  z-index: 20;
+  text-align: right;
+
+}
+
+.computer{
+  width: 30vw;
+  position: relative;
+  top: 10vh;
+  left: 0vw;
+
 }
 
 /* Product card colors */
@@ -223,42 +221,7 @@ h6 {
     background: #006FA0;
 }
 
-/* Responsive product grid */
-@media (max-width: 768px) {
-  .product-grid {
-      grid-template-columns: 1fr;
-      gap: 15px;
-      top: -100px;
-  }
-}
 
-/* Larger screens (1440px and up) */
-@media (min-width: 1440px) {
-  .product-grid {
-      grid-template-columns: repeat(4, minmax(200px, 1fr));
-      max-width: 1200px;
-      gap: 20px;
-  }
-
-  .product-card {
-      max-width: 220px;
-      height: 280px;
-  }
-}
-
-/* Extra-large screens (1920px and up) */
-@media (min-width: 1920px) {
-  .product-grid {
-      grid-template-columns: repeat(5, minmax(220px, 1fr));
-      max-width: 1400px;
-      gap: 25px;
-  }
-
-  .product-card {
-      max-width: 240px;
-      height: 300px;
-  }
-}
 
 /* Three-column layout */
 .three-columns {
@@ -271,21 +234,7 @@ h6 {
   z-index: 10;
 }
 
-/* Larger screens (1440px and up) */
-@media (min-width: 1440px) {
-  .three-columns {
-      max-width: 1400px;
-      gap: 20px;
-  }
-}
 
-/* Extra-large screens (1920px and up) */
-@media (min-width: 1920px) {
-  .three-columns {
-      max-width: 1600px;
-      gap: 30px;
-  }
-}
 
 /* Product section positioning */
 .products-section {
@@ -307,6 +256,60 @@ h6 {
     position: relative;
 }
 
+/* Responsive product grid */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      top: -100px;
+  }
+}
+
+/* Larger screens (1440px and up) */
+/*schermo2*/
+@media (min-width: 1440px) { 
+  .product-grid {
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      max-width: 1200px;
+      gap: 20px;
+      left: 22vw;
+  }
+
+  .product-card {
+      max-width: 220px;
+      height: 280px;
+  }
+}
+
+/* Extra-large screens (1920px and up) */
+@media (min-width: 1920px) {
+  .product-grid {
+      grid-template-columns: repeat(5, minmax(220px, 1fr));
+      max-width: 1400px;
+      gap: 25px;
+  }
+
+  .product-card {
+      max-width: 240px;
+      height: 300px;
+  }
+}
+/* Larger screens (1440px and up) */
+@media (min-width: 1440px) {
+  .three-columns {
+      max-width: 1400px;
+      gap: 20px;
+  }
+}
+
+/* Extra-large screens (1920px and up) */
+@media (min-width: 1920px) {
+  .three-columns {
+      max-width: 1600px;
+      gap: 30px;
+  }
+}
+
 /* Larger screens (1440px and up) */
 @media (min-width: 1440px) {
   .product-grid {
@@ -325,4 +328,31 @@ h6 {
       gap: 30px;
   }
 
+}
+
+/* Sidebar responsiveness */
+@media (max-width: 1024px) {
+  .sidebar {
+      width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+}
+
+@media (max-width:1700){
+.product-grid{
+  left: 25vw;
+}
 }

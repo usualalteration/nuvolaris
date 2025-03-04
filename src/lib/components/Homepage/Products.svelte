@@ -17,8 +17,17 @@
       <img class="image-container" src="../img/design-scritta-home2.png"/>
       <div class="three-columns">
           <div class="column left">
+            
           </div> 
           <div class="product-grid">
+            <div class="threeproducts">
+              <p id="white" class="right-text verybigletters">3</p><!-- -->
+              <p id="white" class="right-text verybigletters">P<span>R</span>OD</p>
+              <p id="white" class="right-text verybigletters">UC<span>T</span>S</p>
+              <br>
+              <p id="white" class="miniletters"><span>Customize your solution</span> to better fit your company</p>
+              <img src="./img/computer.png" alt="Computer" class="computer">
+            </div>
               <div id="development" class="product-card">
                   <h6>NUVOLARIS</h6>
                   <hr>
@@ -46,7 +55,9 @@
                   <a href="#" class="btn learn-more">LEARN MORE</a>
               </div>
           </div>
-          <img class="sidebar" src="../img/SIdebarcomputer.png">
+          <div class="sidebar">
+            
+          </div>
           
   
 </div>

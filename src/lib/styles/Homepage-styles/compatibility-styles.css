@@ -8,7 +8,7 @@ body {
 
 /* Main section with a split background */
 .compatibility-section {
-  background: linear-gradient(to right, #ffffff 50%, #ffffff 50%);
+  background:  #ffffff;
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -45,7 +45,6 @@ body {
 /* Adjust image to extend above the section */
 .compatibility-image {
   position: relative;
-  margin-top: -50px; /* Moves image slightly above the section */
 }
 
 /* Ensure image reaches the bottom of the section */
@@ -59,7 +58,6 @@ body {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
   display: block;
-  margin-bottom: -20px; /* Moves image down to touch the orange bar */
 }
 
 /* Image scaling effect on hover */
