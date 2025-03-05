@@ -15,3 +15,8 @@
   </div>
 </section>
 </main>
+<style>
+.navbar{
+  background-color: transparent;
+}
+</style>

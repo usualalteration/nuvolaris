@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #00ACD7;
+}
+
+/* Navbar container with flex layout */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo size */
+.logo img {
+  height: 30px;
+}
+
+/* Desktop menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation links */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Pricing button */
+.pricing-btn {
+  background: #ff9900;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Pricing button hover effect */
+.pricing-btn:hover {
+  background: #00c1ff;
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+/* Hamburger menu bars */
+.bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Display hamburger menu on small screens */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Mobile navigation menu */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  /* Open state for the mobile menu */
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Hamburger menu animation */
+  .bar-1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .bar-2 {
+    opacity: 0;
+  }
+
+  .bar-3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

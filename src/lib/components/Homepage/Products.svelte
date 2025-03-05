@@ -1,4 +1,5 @@
 <script>
+  export let switchToDevelopment;
   import "$lib/styles/Homepage-styles/product-styles.css";
   import "$lib/styles/Homepage-styles/benefits-styles.css";
   import "$lib/styles/global-font-styles.css";
@@ -31,10 +32,10 @@
               <div id="development" class="product-card">
                   <h6>NUVOLARIS</h6>
                   <hr>
-                  <h3>DEVELOPMENT</h3>
+                  <h3 class="grey">DEVELOPMENT</h3>
                   <hr>
                   <img src="img/icona-monitor.png" alt="Development">
-                  <a href="#" class="btn learn-more">LEARN MORE</a>
+                  <a href="#" class="btn learn-more" on:click={switchToDevelopment}>LEARN MORE</a>
               </div>
               
               <div id="production" class="product-card" >
