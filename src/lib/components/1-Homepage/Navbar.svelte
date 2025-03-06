@@ -28,3 +28,8 @@
     </ul>
   </div>
 </nav>
+<style>
+  .navbar{
+    background:transparent;
+  }
+</style>

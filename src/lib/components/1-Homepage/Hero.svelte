@@ -1,6 +1,7 @@
 <script>
   import "$lib/styles/Homepage-styles/hero-styles.css";
   import "$lib/styles/global-styles.css";
+  import "tailwindcss/tailwind.css";
 </script>
 <main>
 <section class="hero-section">
@@ -16,7 +17,7 @@
 </section>
 </main>
 <style>
-.navbar{
-  background-color: transparent;
-}
+  .navbar{
+    background:transparent;
+  }
 </style>

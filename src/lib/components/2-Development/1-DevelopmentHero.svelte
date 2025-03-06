@@ -8,12 +8,10 @@
   }
 
   </script>
-  <main>
-      <h1 class="flex-container"></h1>
-      <p>
-        <span class="highlight"></span>
-        <span class="highlight"></span>
-        <span class="highlight"></span>
-      </p>
-      <img src="/img/development-server-hero.svg" />
-  </main>
+
+
+<!-- Hero Section -->
+<main class="relative pt-16">
+    <img class="mt-0" src="/img/development-server-hero.svg" alt="Hero Image">
+
+</main>
