@@ -70,6 +70,9 @@ function switchToOnPremises() {
 </main>
 
 <style>
+  @import "tailwindcss/base";
+  @import "tailwindcss/components";
+  @import "tailwindcss/utilities";
   main {
     font-family: "Inter", sans-serif;
     color: #333;
@@ -78,4 +81,5 @@ function switchToOnPremises() {
     padding: 0;
     overflow-x: hidden;
   }
+  
 </style>
