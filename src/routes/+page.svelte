@@ -1,6 +1,5 @@
 <script>
-  import Navbar from "$lib/components/1-Homepage/Navbar.svelte";
-  import BlueNavbar from "$lib/components/2-Development/0-Blue-navbar.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
   import HeroSection from "$lib/components/1-Homepage/Hero.svelte";
   import Products from "$lib/components/1-Homepage/Products.svelte";
   import Learn from "$lib/components/1-Homepage/Learn.svelte";
@@ -41,7 +40,7 @@ function switchToOnPremises() {
 
 <main>
   {#if currentPage === "development"}
-    <BlueNavbar />
+    <Navbar />
     <DevelopmentHero />
     <DevelopmentChoose />
     <DevelopmentDiscover />

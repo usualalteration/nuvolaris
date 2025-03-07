@@ -3,6 +3,7 @@
     import "$lib/styles/Homepage-styles/product-styles.css";
     import "$lib/styles/Homepage-styles/benefits-styles.css";
     import "$lib/styles/global-font-styles.css";
+    
   
     const dispatch = createEventDispatcher();
   
