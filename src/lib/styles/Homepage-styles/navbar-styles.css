@@ -50,8 +50,8 @@
 /* Pricing button */
 .pricing-btn {
   background: #ff9900;
-  color: white;
-  padding: 0.6rem 1.2rem;
+  color: white !important;
+  padding: 0.7rem 1.2rem;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -61,6 +61,7 @@
 /* Pricing button hover effect */
 .pricing-btn:hover {
   background: #00c1ff;
+  color: white !important;
 }
 
 /* Hamburger menu icon */

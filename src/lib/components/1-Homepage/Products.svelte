@@ -2,7 +2,8 @@
     import { createEventDispatcher } from "svelte";
     import "$lib/styles/Homepage-styles/product-styles.css";
     import "$lib/styles/Homepage-styles/benefits-styles.css";
-    import "$lib/styles/global-font-styles.css";
+    import "$lib/styles/global-styles.css";
+    import "$lib/styles/global-font-styles.css";  
     
   
     const dispatch = createEventDispatcher();

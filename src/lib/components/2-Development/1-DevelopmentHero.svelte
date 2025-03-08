@@ -1,6 +1,8 @@
 <script>
     import "$lib/styles/Homepage-styles/hero-styles.css";
     import "$lib/styles/global-styles.css";
+    import "$lib/styles/global-font-styles.css";
+
   import { currentComponent } from "$lib/store.js";
 
   function switchToHero() {

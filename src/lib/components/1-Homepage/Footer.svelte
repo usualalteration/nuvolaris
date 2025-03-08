@@ -1,5 +1,6 @@
 <script>
   import "$lib/styles/global-styles.css";
+  import "$lib/styles/global-font-styles.css";
   import "$lib/styles/Homepage-styles/footer-styles.css"
   const socialLinks = [
     { name: "X", icon: "./img/x.png", url: "#" },

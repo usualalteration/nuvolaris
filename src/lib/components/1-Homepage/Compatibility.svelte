@@ -1,6 +1,7 @@
 <script>
   import "$lib/styles/Homepage-styles/compatibility-styles.css";
   import "$lib/styles/global-styles.css";
+  import "$lib/styles/global-font-styles.css";
 </script>
 <main>
 <section class="compatibility-section">

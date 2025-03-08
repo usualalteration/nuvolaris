@@ -1,6 +1,7 @@
 <script>
   import "$lib/styles/Homepage-styles/contact-styles.css";
   import "$lib/styles/global-styles.css";
+  import "$lib/styles/global-font-styles.css";
 
   let name = "";
   let email = "";
@@ -31,7 +32,8 @@
 <div class="contact-container">
   <!-- Left Column -->
   <div class="contact-info">
-    <h1>get a new project</h1>
+    <p class="verybigletters" id="azure">G<span>E</span>T <span>A</span></p>
+    <p class="verybigletters"><span>NEW</span> <span>PR</span>OJECT</p>
     <h6>Let's talk about</h6>
     <h6>Love to hear from you.</h6>
     <img src="../img/cube.png" />
