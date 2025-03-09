@@ -4,11 +4,13 @@
   let isOpen = false;
   let isProductsOpen = false;
   let isResourcesOpen = false;
+
+  export let switchPage;
 </script>
 
 <nav class="navbar">
   <div class="navbar-container">
-    <a href="/" class="logo">
+    <a href="/" class="logo" on:click={() => switchPage('homepage')}>
       <img src="/img/nuvolaris-logo.png" alt="Nuvolaris" />
     </a>
 
@@ -26,9 +28,9 @@
         <a href="#">Products ▼</a>
         {#if isProductsOpen}
           <ul class="dropdown-menu">
-            <li><a href="/development">NUVOLARIS DEVELOPMENT</a></li>
-            <li><a href="/production">NUVOLARIS PRODUCTION</a></li>
-            <li><a href="/onpremises">NUVOLARIS ON PREMISES</a></li>
+            <li><a href="#" on:click={() => switchPage('development')}>NUVOLARIS DEVELOPMENT</a></li>
+            <li><a href="#" on:click={() => switchPage('production')}>NUVOLARIS PRODUCTION</a></li>
+            <li><a href="#" on:click={() => switchPage('onpremises')}>NUVOLARIS ON PREMISES</a></li>
           </ul>
         {/if}
       </li>

@@ -31,7 +31,7 @@
 </script>
 
   <main>
-    <Navbar /> <!-- Navbar è sempre presente, quindi sta fuori dal blocco if -->
+    <Navbar {switchPage} />
   
     {#if currentPage === "development"}
       <DevelopmentHero />
