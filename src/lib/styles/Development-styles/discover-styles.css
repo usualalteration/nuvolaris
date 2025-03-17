@@ -1,59 +1,91 @@
+.half-height-section {
+  min-height: 70vh; /* Maggiore altezza per migliorare il layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/img/background.svg');
+  color: white;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+/* Contenitore Flex */
 .flex-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
-  padding: 20px;
+  width: 100%;
 }
 
 .flex-container {
   display: flex;
-  max-width: 1200px;
+  max-width: 1100px; /* Ridotta la larghezza per avvicinare gli elementi */
   width: 100%;
-  gap: 30px; /* Spaziatura tra i blocchi */
-  align-items: center; /* Allinea tutti gli elementi sulla stessa riga */
+  gap: 30px; /* Diminuito gap per un aspetto più compatto */
+  align-items: center;
 }
 
-/* Elementi sulla stessa riga */
+/* Immagine */
 .image-container {
   flex: 1;
   text-align: center;
 }
 
+.mug {
+  width: auto;
+  height: 100vh; /* Ingrandita la tazza ancora di più */
+  max-height: 750px; /* Evita che diventi troppo grande su schermi enormi */
+  position: relative;
+  transform: translateX(40%); /* Spostata leggermente a sinistra per bilanciare */
+}
+
+/* Testo (Centrato) */
 .text-container {
   flex: 2;
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
+/* Pulsanti (Spostati più a sinistra) */
 .buttons-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
+  transform: translateX(-10%); /* Avvicinati al centro */
 }
 
-/* Stile pulsanti */
+/* Stile dei bottoni */
 .button-group {
   text-align: center;
+  width: 100%;
 }
 
-button {
-  background-color: #0077B6;
+.label {
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
-  padding: 10px 20px;
+  background: #333;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+.btn {
+  background-color: #ff9900;
+  color: white;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  width: 100%;
 }
 
-button:hover {
-  background-color: #005f8d;
-}
-
-.half-height-section {
-  min-height: 50vh; /* Imposta l'altezza alla metà della viewport */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn:hover {
+  background-color: #cc7700;
 }
