@@ -1,5 +1,5 @@
 .half-height-section {
-  min-height: 70vh; /* Maggiore altezza per migliorare il layout */
+  min-height: 50vh; /* Maggiore altezza per migliorare il layout */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,9 +32,9 @@
 }
 
 .mug {
-  width: auto;
-  height: 100vh; /* Ingrandita la tazza ancora di più */
-  max-height: 750px; /* Evita che diventi troppo grande su schermi enormi */
+  width: 57.4375rem;
+  height: auto; /* Ingrandita la tazza ancora di più */
+  max-height: 57.4375rem; /* Evita che diventi troppo grande su schermi enormi */
   position: relative;
   transform: translateX(40%); /* Spostata leggermente a sinistra per bilanciare */
 }

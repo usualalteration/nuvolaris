@@ -59,7 +59,7 @@
 }
 
 .right-text {
-  text-align: right;
+  text-align: right !important; 
 }
 
 .center{

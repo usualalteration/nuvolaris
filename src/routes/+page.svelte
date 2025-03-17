@@ -47,6 +47,7 @@
   import ContactAnswers from "$lib/components/ContactAnswers.svelte";
 
   import ContactsHero from "$lib/components/11-Contacts/1-ContactsHero.svelte";
+  import ProductionWhyChoose from "$lib/components/3-Production/3-ProductionWhyChoose.svelte";
 
 
   let currentPage = "homepage";
@@ -64,7 +65,6 @@
       <DevelopmentHero />
       <DevelopmentChoose />
       <DevelopmentDevelopers />
-      <DevelopmentProducts />
       <DevelopmentDiscover />
       <ContactForm />
     {:else if currentPage === "production"}
@@ -72,6 +72,7 @@
       <ProductionChoose />
       <ProductionProducts />
       <DevelopmentDiscover />
+      <ProductionWhyChoose/>
       <ContactForm />
     {:else if currentPage === "onpremises"}
       <OnPremisesHero />

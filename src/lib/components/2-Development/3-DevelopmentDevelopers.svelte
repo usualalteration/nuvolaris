@@ -1,11 +1,11 @@
 <script>
-    import "$lib/styles/Homepage-styles/hero-styles.css";
     import "$lib/styles/global-styles.css";
     import "$lib/styles/global-font-styles.css";
     import "tailwindcss/tailwind.css";
+    import "$lib/styles/Development-styles/developers-styles.css";
   </script>
   
-  <section >
+  <section class="sezione">
     <div
       class="bg-white p-10 mt-16 text-black flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto mx-8 md:mx-16">
       
