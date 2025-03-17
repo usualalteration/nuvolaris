@@ -14,7 +14,11 @@
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   background: #00C1FF; /* Navbar ora azzurra */
+  z-index: 1000;
+  
 }
 
 .navbar-container {

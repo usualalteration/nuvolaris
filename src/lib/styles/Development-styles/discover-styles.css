@@ -1,0 +1,59 @@
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px; /* Spaziatura tra i blocchi */
+  align-items: center; /* Allinea tutti gli elementi sulla stessa riga */
+}
+
+/* Elementi sulla stessa riga */
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.text-container {
+  flex: 2;
+  text-align: center;
+}
+
+.buttons-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Stile pulsanti */
+.button-group {
+  text-align: center;
+}
+
+button {
+  background-color: #0077B6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f8d;
+}
+
+.half-height-section {
+  min-height: 50vh; /* Imposta l'altezza alla metà della viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -18,7 +18,7 @@
   <section class="products-section">
     <!-- Titolo e descrizione -->
     <div class="text-section">
-      <img class="image-container" src="../img/design-scritta-home2.png" />
+      <img id="background-image" class="image-container" src="../img/design-scritta-home2.png" />
       <div class="three-columns">
         <div class="column left"></div>
         <div class="product-grid">

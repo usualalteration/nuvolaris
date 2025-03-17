@@ -19,10 +19,12 @@ body {
     color: #333;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+#background-image {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    display: block; /* Per evitare spazi indesiderati */
+    left: 0 !important;
+    margin-bottom: 10% !important;
 }
 
 /* Typography */
@@ -66,7 +68,7 @@ h6 {
 .image-container {
     position: relative;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: auto;
     z-index: 1;
 }
@@ -361,4 +363,13 @@ h6 {
 .product-grid{
   left: 25vw;
 }
+}
+
+/* Background image full width */
+.background-image {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

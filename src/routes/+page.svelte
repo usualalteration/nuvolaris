@@ -1,4 +1,5 @@
 <script>
+
   import Navbar from "$lib/components/Navbar.svelte";
   import HeroSection from "$lib/components/1-Homepage/1-Hero.svelte";
   import Products from "$lib/components/1-Homepage/2-Products.svelte";
@@ -9,8 +10,9 @@
 
   import DevelopmentHero from "$lib/components/2-Development/1-DevelopmentHero.svelte";
   import DevelopmentChoose from "$lib/components/2-Development/2-DevelopmentChoose.svelte";
-  import DevelopmentDiscover from "$lib/components/2-Development/3-DevelopmentDiscover.svelte";
-  import DevelopmentProducts from "$lib/components/2-Development/4-DevelopmentProducts.svelte";
+  import DevelopmentDevelopers from "$lib/components/2-Development/3-DevelopmentDevelopers.svelte";
+  import DevelopmentDiscover from "$lib/components/2-Development/4-DevelopmentDiscover.svelte";
+  import DevelopmentProducts from "$lib/components/2-Development/5-DevelopmentProducts.svelte";
 
   import ProductionHero from "$lib/components/3-Production/1-ProductionHero.svelte";
   import ProductionChoose from "$lib/components/3-Production/2-ProductionBenefits.svelte";
@@ -61,20 +63,22 @@
     {#if currentPage === "development"}
       <DevelopmentHero />
       <DevelopmentChoose />
-      <DevelopmentDiscover />
+      <DevelopmentDevelopers />
       <DevelopmentProducts />
+      <DevelopmentDiscover />
       <ContactForm />
     {:else if currentPage === "production"}
       <ProductionHero />
       <ProductionChoose />
-      <ProductionDiscover />
       <ProductionProducts />
+      <DevelopmentDiscover />
       <ContactForm />
     {:else if currentPage === "onpremises"}
       <OnPremisesHero />
       <OnPremisesBenefits />
       <OnPremisesChoose />
-      <OnPremisesDiscover />
+      <OnPremisesProducts />
+      <DevelopmentDiscover />
       <ContactForm />
     {:else if currentPage === "aboutus"}
       <AboutUsHero/>

@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    max-width: 1200px; /* Limita la larghezza massima */
+    margin: 0 auto; /* Centra il contenitore */
+    padding: 20px; /* Spazio interno */
+    gap: 20px; /* Distanza tra i box */
+    align-items: center;
+}
+
+/* Box Titolo - Largo la metà rispetto agli altri */
+.title-box {
+    flex: 1; /* Occupa meno spazio rispetto agli altri */
+    max-width: 25%;
+    text-align: center;
+}
+
+/* Box Testo - Occupa la maggior parte dello spazio */
+.content-box {
+    flex: 2;
+    max-width: 50%;
+    text-align: left;
+}
+
+/* Box Immagine e Bottone - Largo la metà rispetto alla sezione centrale */
+.image-box {
+    flex: 1;
+    max-width: 25%;
+    text-align: center;
+}
+
+/* Sezione con altezza ridotta */
+.half-height-section {
+    min-height: 50vh; /* Imposta l'altezza alla metà della viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
