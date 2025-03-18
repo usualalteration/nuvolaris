@@ -7,6 +7,7 @@
 
 <style>
     .container {
+        justify-content: flex-end;
         display: flex;
         background-color: #F39200;
         color: white;
@@ -17,8 +18,10 @@
     }
     .column {
         flex: 1;
+        justify-content: flex-end;
     }
     .title {
+        display: block;
         font-size: 2.5rem;
         font-weight: bold;
         line-height: 2rem;
@@ -36,29 +39,38 @@
     }
     .descriptionbig {
         margin-top: 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #fdfdfd;
     }
     .btn {
-        background-color: #5CB8FF;
+        background-color: #9DD8F2;
         color: black;
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        width: 8rem; /* Ridotta la larghezza del bottone */
     }
     .image {
-        width: 200px;
+        width: 100%;
         height: auto;
     }
+
+    .verybigletters span {
+        display: block;
+    }
+    .verybigletters {
+        display: block;
+    }
+
 </style>
 
 <div class="container">
     <div class="column">
-        <p class="title">WHY CHOOSE</p>
-        <p class="title">NUVOLARIS</p>
+        <p id="white" class="letters right-text"><span class="highlight">W</span>H<span class="highlight">Y</span><br><span class="highlight">CH</span>OO<span class="highlight">SE</span></p>
+        <p id="white" class="letters right-text">NUVOLARIS</p>
         <p id="white" class="verybigletters bold right-text" style="text-align:right;">PROD</p>
         <p id="white" class="verybigletters bold right-text" style="text-align:right;">UCTION</p>
         <p id="white" class="verybigletters right-text" style="text-align:right;">SERVER?</p>

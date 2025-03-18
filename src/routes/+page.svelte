@@ -78,7 +78,6 @@
       <OnPremisesHero />
       <OnPremisesBenefits />
       <OnPremisesChoose />
-      <OnPremisesProducts />
       <DevelopmentDiscover />
       <ContactForm />
     {:else if currentPage === "aboutus"}
