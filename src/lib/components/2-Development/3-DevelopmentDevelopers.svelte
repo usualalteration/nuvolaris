@@ -1,49 +1,92 @@
 <script>
-    import "$lib/styles/global-styles.css";
-    import "$lib/styles/global-font-styles.css";
-    import "tailwindcss/tailwind.css";
-    import "$lib/styles/Development-styles/developers-styles.css";
-  </script>
-  
-  <section class="sezione">
-    <div
-      class="bg-white p-10 mt-16 text-black flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto mx-8 md:mx-16">
-      
-      <div class="flex1"></div>
-      <div class="flex-1 text-left">
-        <h2 class="text-4xl font-bold text-gray-900">
-          <span class="text-orange-500">Why Choose</span> Nuvolaris Dev Server?
-        </h2>
+  import "$lib/styles/global-styles.css";
+  import "$lib/styles/global-font-styles.css";
+  import "tailwindcss/tailwind.css";
+  import "$lib/styles/Production-styles/production-why-choose-styles.css";
+</script>
+
+<style>
+  .container {
+      justify-content: flex-end;
+      display: flex;
+      background-color: #ffffff;
+      color: white;
+      padding: 3rem;
+      align-items: center;
+      gap: 2rem;
+  }
+  .column {
+      flex: 1;
+      justify-content: flex-end;
+  }
+  .title {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 2rem;
+      text-align: right;
+  }
+  .highlight {
+      color: #333;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: right;
+  }
+  .description {
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: #333;
+  }
+  .descriptionbig {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #333;
+  }
+  .btn {
+      background-color: #FF9800;
+      color: black;
+      padding: 0.5rem 0.8rem;
+      font-size: 0.9rem;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 2rem;
+      width: 8rem; /* Ridotta la larghezza del bottone */
+  }
+  .image {
+      width: 100%;
+      height: auto;
+  }
+
+  .verybigletters span {
+      display: block;
+  }
+  .verybigletters {
+      display: block;
+  }
+
+</style>
+
+<div class="container">
+  <div class="column">
+      <p class="letters right-text"><span class="highlight">W</span>H<span class="highlight">Y</span><br><span class="highlight">CH</span>OO<span class="highlight">SE</span></p>
+      <p class="letters right-text">NUVOLARIS</p>
+      <p class="verybigletters bold right-text">DEV</p>
+      <p class="verybigletters right-text">SERVER?</p>
       </div>
-  
-      <!-- Box Centrale (largo il doppio) -->
-      <div class="flex-[2]">
-        <p class="text-gray-700 text-lg">
-          The <span class="font-semibold text-black">Nuvolaris Dev Server</span>
-          is perfect for <span class="font-semibold text-black">developers</span> and
-          <span class="font-semibold text-black">teams</span> who need a fast, flexible,
-          and serverless platform to build modern applications.
-        </p>
-        <hr class="border-t border-gray-400 my-4" />
-        <p class="text-gray-700 text-sm">
-          It’s particularly well-suited for AI-driven projects, providing scalable
-          solutions without the overhead of traditional server management.
-        </p>
-      </div>
-  
-      <!-- Box Immagine + Bottone -->
-      <div class="flex-1 text-center">
-        <img
-          src="/img/nuvolaris-dev-server.svg"
-          alt="Nuvolaris Dev Server"
-          class="mx-auto w-40 h-auto"
-        />
-        <button
-          class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md text-lg shadow-md mt-4">
-          PLAN PRICING
-        </button>
-    </div>
-    <div class="flex1"></div>
-    </div>
-  </section>
-  
+  <div class="column">
+      <p class="descriptionbig">
+        The Nuvolaris Dev Server is perfect for developers and teams who need a fast, flexible and serverless platform to 
+        build modern applications.
+      </p>
+      <p class="description">
+        It's particularly well-suited for AI-driven projects, providing the tools and infrastructure to turn ideas into scalable solutions without the overhead of traditional server management.
+        With its single-server setup, the Nuvolaris Dev Server is compact yet powerful, making it an excellent choice for startups, small development teams or individual developers looking to innovate efficiently.
+      </p>
+  </div>
+  <div class="column" style="text-align: center;">
+      <img src="/img/icona-monitor.png" alt="Illustration" class="image" />
+      <button class="btn">PLAN PRICING</button>
+  </div>
+</div>

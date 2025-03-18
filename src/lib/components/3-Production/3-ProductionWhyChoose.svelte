@@ -12,7 +12,6 @@
         background-color: #F39200;
         color: white;
         padding: 3rem;
-        border-radius: 10px;
         align-items: center;
         gap: 2rem;
     }

@@ -44,7 +44,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
         <div class="relative z-10 bg-[#333] bg-opacity-90 px-6 py-4 text-center">
             <h2 class="text-3xl md:text-5xl font-bold text-white uppercase">
-                CHOOSE <span class="text-blue-500">NUVOLARIS DEVELOPMENT</span>
+                CHOOSE <span class="text-blue-500">NUVOLARIS ON PREMISES</span>
             </h2>
         </div>
     </div>
