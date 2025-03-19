@@ -63,7 +63,7 @@
             <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-10">
                 {#each features as feature}
                     <div class="text-center">
-                        <h3 class="text-lg font-semibold text-gray-900 uppercase">{feature.title}</h3>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase">{feature.title}</h3>
                         <hr class="border-t border-gray-400 my-3">
                         <img src={feature.icon} alt={feature.title} class="w-16 h-16 mx-auto mb-4">
                         <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">
@@ -78,7 +78,7 @@
         
         <!-- Seamless Integration Section Starting from the Third Column -->
         <div class="mt-10 md:col-start-3 md:col-span-2 bg-gray-100 p-6 rounded-lg text-left md:grid md:grid-cols-2 md:col-span-2 md:col-start-3">
-            <h3 class="text-lg font-semibold text-gray-900 uppercase col-span-2">4. Seamless Integration with On-Premises Ecosystems</h3>
+            <h3 class="text-sm font-semibold text-gray-900 uppercase col-span-2">4. Seamless Integration with On-Premises Ecosystems</h3>
             <hr class="border-t border-gray-400 my-3 col-span-2">
             <div class="flex items-start gap-6 col-span-2">
                 <img src="/img/puzzle.svg" alt="Seamless Integration" class="w-16 h-16">

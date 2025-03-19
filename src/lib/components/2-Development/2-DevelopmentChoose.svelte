@@ -73,7 +73,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {#each features as feature}
                         <div class="text-center">
-                            <h3 class="text-lg font-semibold text-gray-900 uppercase">{feature.title}</h3>
+                            <h3 class="text-sm font-semibold text-gray-900 uppercase">{feature.title}</h3>
                             <hr class="border-t border-gray-400 my-3">
                             <img src={feature.icon} alt={feature.title} class="w-16 h-16 mx-auto mb-4">
                             <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">

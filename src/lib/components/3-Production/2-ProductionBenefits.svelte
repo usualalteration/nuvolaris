@@ -6,30 +6,27 @@
 
   const features = [
       {
-          title: "1.Integrated Services",
-          icon: "/img/codebase.svg",
+          title: "1. Fault Tolerance and Resilience",
+          icon: "/img/three-servers.svg",
           features: [
-              { name: "Redis", description: "High-performance caching." },
-              { name: "Postgres", description: "Powerful relational database." },
-              { name: "S3-compatible Storage", description: "Large-scale data storage." }
+              { name: "Three-Server Architecture", description: "Designed to handle server failures gracefully. If one server crashes, the others continue to operate, ensuring uninterrupted service." },
+              { name: "High Availability", description: "Keeps your applications running smoothly with built-in redundancy and load distribution." }
           ]
       },
       {
-          title: "2.Simplified Development",
-          icon: "/img/codewindow.svg",
+          title: "2. Comprehensive Backup Solutions",
+          icon: "/img/backup.svg",
           features: [
-              { name: "Frontend", description: "React, Angular, Vue." },
-              { name: "Backend", description: "Python, Java, Node.js, Go." },
-              { name: "CI/CD", description: "Integrated deployment pipeline." }
+              { name: "Automated Backups", description: "Regularly scheduled backups protect critical data and ensure swift recovery in case of unexpected issues." },
+              { name: "Data Integrity", description: "Safeguards data across the system to minimize risks of loss or corruption." }
           ]
       },
       {
-          title: "3.AI-Ready Platform",
-          icon: "/img/ai.svg",
+          title: "3. Advanced Monitoring Capabilities",
+          icon: "/img/monitoring.svg",
           features: [
-              { name: "Serverless AI", description: "Model deployment." },
-              { name: "Scalable infrastructure", description: "Optimized for AI workloads." },
-              { name: "Real-time data processing", description: "Low-latency architecture." }
+              { name: "Real-Time Monitoring", description: "Tracks system performance, resource utilization, and application health." },
+              { name: "Alerts and Reporting", description: "Provides instant notifications of anomalies, helping teams respond proactively to potential issues."}
           ]
       }
   ];
@@ -50,7 +47,7 @@
       <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
       <div class="relative z-10 bg-[#333] bg-opacity-90 px-6 py-4 text-center">
           <h2 class="text-3xl md:text-5xl font-bold text-white uppercase">
-              CHOOSE <span class="text-blue-500">NUVOLARIS DEVELOPMENT</span>
+              CHOOSE <span class="text-blue-500">NUVOLARIS PRODUCTION</span>
           </h2>
       </div>
   </div>
@@ -61,9 +58,9 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 items-start">
           <!-- Nuvolaris Development Server (Left Side) -->
           <div class="md:col-span-1">
-              <h2 class="text-2xl font-bold text-gray-900">Nuvolaris Development Server</h2>
+              <h2 class="text-2xl font-bold text-gray-900">Nuvolaris production Server</h2>
               <p class="text-gray-700 text-lg mt-4">
-                  The <span class="text-blue-500">Nuvolaris Development Server</span> is a single, all-in-one development server designed to streamline and accelerate application development workflows. It features three pre-configured virtual machines and comes equipped with the Nuvolaris serverless platform.
+                 The Nuvolaris Production Server is a robust, high-availability system designed for deploying and running production-grade applications. Comprising three interconnected servers, it ensures resilience, reliability and seamless operations, even under demanding conditions.
               </p>
           </div>
 
@@ -76,12 +73,12 @@
               <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                   {#each features as feature}
                       <div class="text-center">
-                          <h3 class="text-lg font-semibold text-gray-900 uppercase">{feature.title}</h3>
+                          <h3 class="text-sm font-semibold text-gray-900 uppercase">{feature.title}</h3>
                           <hr class="border-t border-gray-400 my-3">
                           <img src={feature.icon} alt={feature.title} class="w-16 h-16 mx-auto mb-4">
-                          <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">
+                          <ul class="list-disc list-inside text-gray-700 text-sm text-left leading-relaxed">
                               {#each feature.features as f}
-                                  <li><span class="font-semibold text-black">{f.name}:</span> {f.description}</li>
+                                  <li><span class="font-semibold text-black text-left">{f.name}:</span> {f.description}</li>
                               {/each}
                           </ul>
                       </div>
