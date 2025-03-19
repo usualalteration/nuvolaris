@@ -30,6 +30,7 @@
         font-size: 3rem;
         font-weight: bold;
         text-align: right;
+        color: white;
     }
     .description {
         margin-top: 1rem;
@@ -59,7 +60,9 @@
 
     .verybigletters span {
         display: block;
+        color: white;
     }
+    
     .verybigletters {
         display: block;
     }
