@@ -6,7 +6,7 @@
 <style>
     .hero-text {
         position: absolute;
-        bottom: 45%; /* Abbassato di 2rem */
+        bottom: 35%; /* Abbassato di 2rem */
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(0, 0, 0, 0.9);
@@ -15,9 +15,8 @@
     }
     .hero-text2 {
         position: absolute;
-        bottom: 35%; /* Abbassato di 3rem */
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 30%; /* Abbassato di 3rem */
+        left: 22%;
         text-align: center;
     }
 
@@ -43,7 +42,7 @@
         </div>
     </div>
     <div class="hero-text2">
-    <h2 class="text-l md:text-l font-bold text-white">
+    <h2 class="text-lg md:text-lg font-bold text-white">
             <span class="text-white">Experience freedom. Experience innovation. Experience Nuvolaris.</span>
         </h2>
     </div>

@@ -199,3 +199,36 @@ textarea {
     height: 20px;
   }
 }
+
+.contact-title {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact-text-wrapper {
+  width: 100%;
+  display: block;
+  justify-content: right;
+}
+
+.send-button {
+  background-color: #00c1ff;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: normal;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #FF9600;
+}

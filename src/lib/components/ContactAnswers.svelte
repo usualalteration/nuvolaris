@@ -28,18 +28,25 @@
       }
     }
   </script>
+
   
-  <div class="contact-container">
+  <div class="contact-container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <!-- Left Column -->
-    <div class="contact-info">
-      <p class="verybigletters right-text" id="azure"><span>C</span>O<span>NT</span></p>
-      <p class="verybigletters right-text" id="azure">A<span>C</span>T</p>
-      <p class="verybigletters right-text"><span>US</span></p>
-      <p class="letters bold">FOR MORE ANSWERS.</p>
-      <img src="../img/cube.png" />
+    <div class="contact-info flex flex-col justify-center items-center w-full relative">
+      <div class="contact-text-wrapper">
+        <div class="contact-title">
+          <p class="verybigletters" id="azure"><span>C</span>O<span>NT</span></p>
+          <p class="verybigletters" id="azure">A<span>C</span>T</p>
+          <p class="verybigletters"><span>US</span></p>
+          <p class="letters bold">FOR MORE ANSWERS.</p>
+        </div>
+      </div>
+      <img src="../img/cube.png" class="md:self-center mt-32" />
     </div>
+
+    <!-- Right Column -->
     <div class="contact-form-container">
-  
+    
     <p>Please fill the form below or write us at info@nuvolaris.io to receive a quote for your project. Feel free to add as much detail as needed. </p>
     <br>
     <div class="contact-form">
@@ -75,18 +82,12 @@
           <div class="checkbox-group">
             <input type="hidden" bind:group={services} value="Development" />
             <input type="hidden" bind:group={services} value="AI Applications" />
-            <input
-              type="hidden"
-              bind:group={services}
-              value="Sales & Marketing"
-            />
+            <input type="hidden" bind:group={services} value="Sales & Marketing" />
             <input type="hidden" bind:group={services} value="Other" />
   
             <button
               type="button"
-              class="service-btn {services.includes('Development')
-                ? 'active'
-                : ''}"
+              class="service-btn {services.includes('Development') ? 'active' : ''}"
               on:click={() => toggleService("Development")}
             >
               <img src="./img/development.png" alt="Development Icon" />
@@ -95,9 +96,7 @@
   
             <button
               type="button"
-              class="service-btn {services.includes('AI Applications')
-                ? 'active'
-                : ''}"
+              class="service-btn {services.includes('AI Applications') ? 'active' : ''}"
               on:click={() => toggleService("AI Applications")}
             >
               <img src="./img/aiapplications.png" alt="AI Icon" />
@@ -106,9 +105,7 @@
   
             <button
               type="button"
-              class="service-btn {services.includes('Sales & Marketing')
-                ? 'active'
-                : ''}"
+              class="service-btn {services.includes('Sales & Marketing') ? 'active' : ''}"
               on:click={() => toggleService("Sales & Marketing")}
             >
               <img src="./img/salesmarketing.png" alt="Sales Icon" />
@@ -131,11 +128,8 @@
           <textarea id="message" bind:value={message} required></textarea>
         </div>
   
-        <button type="submit">Send Message</button>
+        <button type="submit" class="send-button">SEND</button>
       </form>
     </div>
   </div>
   </div>
-  
-  
-  

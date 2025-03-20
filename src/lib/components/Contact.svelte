@@ -131,7 +131,7 @@
         <textarea id="message" bind:value={message} required></textarea>
       </div>
 
-      <button type="submit">Send Message</button>
+      <button type="submit" class="send-button">SEND</button>
     </form>
   </div>
 </div>
