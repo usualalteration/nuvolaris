@@ -19,7 +19,7 @@
     }
 
     .hero-text2 {
-        top: 60%; /* distanza dal testo principale */
+        top: 55%; /* distanza dal testo principale */
         padding: 8px 16px;
     }
 
