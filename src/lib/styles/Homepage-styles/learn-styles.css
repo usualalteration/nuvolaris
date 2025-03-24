@@ -22,14 +22,15 @@
   padding: 20px;
   overflow: hidden;
   height: 100vh; /* Ensure the grid section takes full viewport height */
+  background-size: cover;
 }
 
 /* Transparent box */
 .transparent-box {
   background: rgba(255, 255, 255, 0.5);
-  width: 100%;
+  width: vw%;
   min-height: 350px;
-  height: 100%; /* Make the transparent box fill the section in height */
+  height: vh%; /* Make the transparent box fill the section in height */
   text-align: center;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
