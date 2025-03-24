@@ -2,13 +2,7 @@
 
 .learn {
   background-image: url("img/learn-nuvolaris.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: 100%;
   height: 100vh;
   width: 100vw;
 }
@@ -18,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 20px;
   overflow: hidden;
   height: 100vh; /* Ensure the grid section takes full viewport height */
@@ -28,9 +21,8 @@
 /* Transparent box */
 .transparent-box {
   background: rgba(255, 255, 255, 0.5);
-  width: vw%;
-  min-height: 350px;
-  height: vh%; /* Make the transparent box fill the section in height */
+  width: 30vw;
+  height: 100vh; /* Make the transparent box fill the section in height */
   text-align: center;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -53,9 +45,9 @@
   }
 
   .transparent-box {
-    width: 70%;
+    width: 70vh;
     min-height: 400px;
-    padding: 50px;
+    padding: 70vh;
   }
 
   .transparent-box h2 {

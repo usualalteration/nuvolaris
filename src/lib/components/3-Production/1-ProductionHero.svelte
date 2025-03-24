@@ -4,6 +4,17 @@
     import "$lib/styles/Production-styles/production-hero-styles.css";
     import "tailwindcss/tailwind.css";
     </script>
+    <style>
+    .banner h4 {
+      font-size: 2rem;        /* Rimpicciolisce il testo */
+      white-space: nowrap;    /* Forza una singola riga */
+      margin: 0;              /* Eventuale rimozione margini standard di H4 */
+    }
+    
+    .highlight-bg {
+      display: inline-block;   /* Assicura che lo span rispetti white-space: nowrap */
+    }
+    </style>
 <section class="section">
   <div class="banner">
     <div class="text-container">

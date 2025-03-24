@@ -4,7 +4,7 @@
   import "$lib/styles/global-font-styles.css";
   import "tailwindcss/tailwind.css";
 </script>
-<main>
+<main class="relative mt-[3.5rem]"> 
 <section class="hero-section">
   <div class="hero-content">
     <h1 class="flex-container">THINK OUT OF THE BOX.</h1>
