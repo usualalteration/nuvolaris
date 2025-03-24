@@ -127,14 +127,14 @@
 }
 
 .power-number {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #00c1ff;
     margin: 0;
     font-weight: bold;
 }
 
 .power-title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 0.5rem;
@@ -160,7 +160,7 @@
 
 .power-description {
     flex: 1;
-    font-size: 0.95rem;
+    font-size: 0.80rem;
     line-height: 1.6;
     color: #333;
 }
@@ -175,12 +175,12 @@
 }
 
 .power-image-wrapper {
-    width: 14rem;
+    width: 12rem;
     flex-shrink: 0;
 }
 
 .power-image {
-    width: 30rem;
+    width: auto;
     height: auto;
 }
 
@@ -227,6 +227,7 @@
           <p class="verybigletters orange-highlight center">
               <span class="orange">6 POWERS</span>&nbsp; YOU'LL OBTAIN
             </p>
+            <br>
             
         <div class="powers-wrapper">
             <!-- Fascia verticale (due immagini sovrapposte) -->
@@ -255,15 +256,15 @@
                 </div>
                 <div class="power-left">
                     <p class="power-number">4.</p>
-                    <h2 class="power-title">DEVELOPING<br>CHATBOTS</h2>
+                    <h2 class="power-title">MULTIMODAL INPUT</h2>
                 </div>
                 <div class="power-left">
                     <p class="power-number">5.</p>
-                    <h2 class="power-title">DEVELOPING<br>CHATBOTS</h2>
+                    <h2 class="power-title">FUNCTION<br>CALLING</h2>
                 </div>
                 <div class="power-left">
                     <p class="power-number">6.</p>
-                    <h2 class="power-title">DEVELOPING<br>CHATBOTS</h2>
+                    <h2 class="power-title">SERVERLESS<br>GPU</h2>
                 </div>
                 <!-- Puoi aggiungere da qui altri titoli 3,4,5,6 -->
             </div>
@@ -300,7 +301,75 @@
                         </ul>
                     </div>
                     <div class="power-image-wrapper">
-                        <img src="/img/fascia-colorata.svg" class="power-image">
+                        <img src="/img/chatbots.svg" class="power-image">
+                    </div>
+                </div>
+    
+                <div class="power-block">
+                    <div class="power-description">
+                        <p>
+                            Learn how to enhance <strong>AI models with retrieval-augmented generation</strong> and utilize <strong>vector databases</strong> for semantic search.
+                          </p>
+                          
+                          <ul>
+                            <li><strong>Embedding:</strong> Generating vector representations for text and data.</li>
+                            <li><strong>Vector DB:</strong> Setting up and querying a vector database for efficient information retrieval.</li>
+                            <li><strong>Sample Project:</strong> Querying a document repository using embeddings and RAG techniques.</li>
+                          </ul>
+                          
+                    </div>
+                    <div class="power-image-wrapper">
+                        <img src="/img/db.svg" class="power-image">
+                    </div>
+                </div>
+                <div class="power-block">
+                    <div class="power-description">
+                        <p>
+                            Delve into processing and integrating different types of data inputs, such as <strong>text, images, and PDFs</strong>, for AI applications.
+                          </p>
+                          
+                          <ul>
+                            <li><strong>Processing PDFs:</strong> Extracting and analyzing text from PDF documents.</li>
+                            <li><strong>Processing Images:</strong> Utilizing computer vision techniques for image processing.</li>
+                            <li><strong>Structured Output:</strong> Generating structured, actionable insights from diverse inputs.</li>
+                          </ul>
+                          
+                          
+                    </div>
+                    <div class="power-image-wrapper">
+                        <img src="/img/pdf.svg" class="power-image">
+                    </div>
+                </div>
+                <div class="power-block">
+                    <div class="power-description">
+                        <p>
+                            Master the use of <strong>function calling</strong> in serverless environments to enhance the functionality of AI applications.
+                          </p>
+                          
+                          <ul>
+                            <li><strong>Function Calling:</strong> Understanding and implementing callable functions in Nuvolaris.</li>
+                            <li><strong>Using Serverless:</strong> Leveraging serverless architecture to execute function calls efficiently.</li>
+                            <li><strong>Sample Project:</strong> Developing "KubeGPT" to automate Kubernetes-related tasks.</li>
+                          </ul>
+                         </div> 
+                    <div class="power-image-wrapper">
+                        <img src="/img/function-calling.svg" class="power-image">
+                    </div>
+                </div>
+                <div class="power-block">
+                    <div class="power-description">
+                        <p>
+                            Unlock the potential of <strong>GPU-accelerated serverless functions</strong> for high-performance AI tasks.
+                          </p>
+                          
+                          <ul>
+                            <li><strong>GPU Functions:</strong> Utilizing GPUs in a serverless environment for resource-intensive computations.</li>
+                            <li><strong>Sample Project:</strong> Generating images using AI models with GPU acceleration.</li>
+                          </ul>
+                          
+                         </div> 
+                    <div class="power-image-wrapper">
+                        <img src="/img/gpu.svg" class="power-image">
                     </div>
                 </div>
                 
