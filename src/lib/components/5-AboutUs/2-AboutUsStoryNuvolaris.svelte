@@ -3,6 +3,7 @@
     import "$lib/styles/global-font-styles.css";
     import "tailwindcss/tailwind.css";
     import "$lib/styles/Production-styles/production-benefits-styles.css";
+  import Page from "../../../routes/+page.svelte";
 </script>
 
 <style>
@@ -38,7 +39,7 @@
     }
 
     .column3:first-child {
-        margin-left: 10rem;
+        flex:2;
     }
 
     .column3:last-child {
@@ -106,10 +107,15 @@
   margin-right: auto;       /* Centra a destra */
 }
 
+section.relative.w-full {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 
 </style>
 
-<section class="relative w-full">
+<section class="relative w-full pb-0 mb-0">
     <div class="relative w-full h-[60vh] flex justify-center items-center bg-gray-200">
         <img src="/img/design-about.svg" alt="Design" class="absolute w-full h-full object-cover z-0">
         <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
@@ -126,7 +132,10 @@
     </div>
     <div class="container3">
         <div class="column3">
-            <p>serverless freedom for private ai</p>
+            <p class="letters bold right-text">SERVERLESS</p>
+               <p class="verybigletters right-text" id="azure"> FREE <br> DOM </p>
+                <p class="letters right-text">F<span class="bold">O</span>R P<span class="bold">R</span>IVA<span class="bold">T</span>E</p>
+        <p class="verybigletters right-text">AI</p>
 
         </div>
         <div class="column3">
@@ -152,8 +161,9 @@
 
         </div>
         <div class="column4">
-            <p>the beginning</p>
-            <p>“Fix, don't throw away”</p>
+            <p class="verybigletters slim">THE</p>
+            <p class="verybigletters slim" id="azure">B<span>E</span>GIN<br>NI<span>N</span>G</p>
+            <h6><span class="bold">Fix</span>, don't throw away”</h6>
         </div>
     </div>
     <img src="img/divider.svg" class="image mx-auto" alt="Divider">
@@ -162,7 +172,9 @@
             <img src="img/Michele-Sciabarra-Ceo-Nuvolaris.svg" class="image" alt="Michele Sciabarrà">
         </div>
         <div class="column5">
-            <p>nuvolaris is here</p>
+            <p class="letters" id="azure">NUVOLARIS</p>
+            <p class="verybigletters">I<span class="bold">S</span></p>
+            <p class="verybigletters">HE<span class="bold">R</span>E</p>
         </div>
         <div class="column5">
             <p>The business operations in Europe made it clear that there exists a market which Nimbella, as a division of Digital Ocean, could not cover.
