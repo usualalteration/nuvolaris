@@ -1,207 +1,135 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-.learn {
-  background-image: url("img/learn-nuvolaris.png");
-  background-size: 100%;
-  height: auto;
-  width:auto;
-}
-
-/* Grid section container */
-.grid-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  overflow: hidden;
-  height: 50vh; /* Ensure the grid section takes full viewport height */
-  background-size: cover;
-}
-
-/* Transparent box */
-.transparent-box {
-  background: rgba(255, 255, 255, 0.5);
-  width: 30vw;
-  height: 80vh; /* Make the transparent box fill the section in height */
-  text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: 1440px) {
-  .grid-container2 {
-    grid-template-columns: 1fr 1.5fr 2fr 1fr; /* Rende la quarta colonna più ampia */
-    max-width: 1600px; /* Aumenta la larghezza massima della griglia */
-    padding: 30px;
-  }
-
-  .grid-item {
-    font-size: 1.4em; /* Aumenta la dimensione del testo */
-    padding: 20px;
-  }
-
-  .transparent-box {
-    width: 70vh;
-    min-height: 400px;
-    padding: 70vh;
-  }
-
-  .transparent-box h2 {
-    font-size: 2em;
-  }
-
-  .transparent-box p {
-    font-size: 1.3em;
-  }
-
-  .btn {
-    font-size: 1.1em;
-    padding: 12px 25px;
-  }
-
-  .buttons-container {
-    max-width: 300px;
-  }
-}
-
-
+/* Elimina margini/padding globali */
 * {
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-/* General styles */
+/* Corpo pagina a 100% e senza margini */
 body {
-  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-p {
-  font-size: 14px;
-  font-family: "Poppins", "sans-serif";
+/* Sezione learn con UNICO sfondo */
+.learn {
+  background: url("img/learn-nuvolaris.png") no-repeat center center;
+  background-size: cover;
+  /* Copre almeno l’intera altezza del viewport */
+  min-height: 100vh;
+  /* Rimuove eventuali gap extra */
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  align-items: center; /* Centra verticalmente la griglia se vuoi */
 }
 
-
-/* Main grid layout */
+/* Griglia principale (3 colonne) */
 .grid-container2 {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 2fr 0.5fr; /* Seconda e terza sezione più grandi */
-  gap: 15px;
-  width: 100vw;
-  max-width: 1400px;
-  height: auto;
-  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Per evitare spazi su tutti i lati */
+  width: 100%;
+  margin: 0 auto;
+  /* Imposta un padding interno se serve distanziare il contenuto dai bordi */
+  padding: 2rem;
+  /* Rimuovi eventuale gap tra le colonne se non lo desideri */
+  gap: 0;
 }
 
-
-
-/* Grid items */
-.grid-item {
-  padding: 15px;
-  font-size: 1.2em;
-  font-weight: bold;
+/* Colonna sinistra */
+.item-1 {
+  color: #fff; /* Testo in bianco, stando su uno sfondo colorato */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 
-/* Button container */
+/* Titoli grandi */
+.item-1 h3.white.verybigletters {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.item-1 h3.white.letters {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* Colonna centrale */
+.item-2 {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+.item-2 h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.item-2 p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Colonna destra */
+.item-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
 .buttons-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 1.5rem;
   width: 100%;
   max-width: 250px;
-}
-
-/* Button titles */
-.button-box h3 {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10px;
   text-align: center;
+  margin: 0 auto;
+}
+.buttons-container h3 {
+  font-size: 1.4rem;
 }
 
-/* General button styles */
 .btn {
-  font-family: "Poppins", sans-serif;
+  background-color: #f7a40c;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  font-weight: bold;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: #f7a40c;
-  color: white;
 }
-
-/* Button hover effect */
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
 
 
-/* Text inside the transparent box */
-.transparent-box h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
 
-.transparent-box p {
-  font-size: 1.1em;
-}
 
-/* Center buttons inside the transparent box */
-.buttons-container {
-  width: 100%;
-}
-
-/* 📱 Responsive Design */
+/* --- RESPONSIVE --- */
 @media screen and (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr; /* 2 colonne su tablet */
-  }
-
-  .transparent-box {
-    width: 80%;
-    min-height: 300px; /* Mantenere un'altezza adeguata */
-    padding: 30px;
+  .grid-container2 {
+    grid-template-columns: 1fr 1fr; /* Due colonne su tablet */
   }
 }
-
 @media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* 1 colonna su mobile */
+  .grid-container2 {
+    grid-template-columns: 1fr; /* Una colonna su mobile */
   }
-
-  .transparent-box {
-    width: 90%;
-    min-height: 280px;
-    padding: 20px;
-  }
-
-  p {
-    font-size: 16px; /* Migliore leggibilità su mobile */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .transparent-box {
-    width: 100%;
-    min-height: 260px;
-  }
-
-  .btn {
-    font-size: 0.9em;
-    padding: 8px 15px;
+  .item-1, .item-2, .item-3 {
+    text-align: center;
   }
 }
