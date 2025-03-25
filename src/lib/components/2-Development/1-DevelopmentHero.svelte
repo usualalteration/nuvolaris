@@ -25,11 +25,11 @@
       </div>
       
       <div class="absolute bottom-0 md:text-lg left-0 whitespace-pre-line font-bold right-0 flex text-white justify-center translate-y-[-10rem]">
-          <h1 class="block whitespace-pre-line">fast, free, scalable and low-cost <span class="text-orange-500">development</span></h1>
+          <h3 class="block whitespace-pre-line">fast, free, scalable and low-cost <span class="text-orange-500">development</span></h3>
       </div>
       
       <div class="absolute bottom-0 md:text-lg left-0 whitespace-pre-line font-bold right-0 flex text-white justify-center translate-y-[-8rem]">
-          <h1 class="block whitespace-pre-line"> in your <span class="text-orange-500">private cloud</span></h1>
+          <h3 class="block whitespace-pre-line"> in your <span class="text-orange-500">private cloud</span></h3>
       </div>
   </div>
 </main>

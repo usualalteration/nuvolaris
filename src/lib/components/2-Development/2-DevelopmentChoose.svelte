@@ -58,7 +58,7 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 items-start">
             <!-- Nuvolaris Development Server (Left Side) -->
             <div class="md:col-span-1">
-                <h2 class="text-2xl font-bold text-gray-900">Nuvolaris Development Server</h2>
+                <h2 class="text-2xl text-gray-900"><span class="letters" id="azure">NUVOLARIS</span> <span class="bigletters">DEVELOP<br>MENT</span> <span class="letters">SERVER</span></h2>
                 <p class="text-gray-700 text-lg mt-4">
                     The <span class="text-blue-500">Nuvolaris Development Server</span> is a single, all-in-one development server designed to streamline and accelerate application development workflows. It features three pre-configured virtual machines and comes equipped with the Nuvolaris serverless platform.
                 </p>

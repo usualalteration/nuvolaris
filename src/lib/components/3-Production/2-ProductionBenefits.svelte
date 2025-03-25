@@ -58,7 +58,8 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 items-start">
           <!-- Nuvolaris Development Server (Left Side) -->
           <div class="md:col-span-1">
-              <h2 class="text-2xl font-bold text-gray-900">Nuvolaris production Server</h2>
+            <h2 class="text-2xl text-gray-900"><span class="letters" id="azure">NUVOLARIS</span> <span class="bigletters">PROD<br>UCTION</span> <span class="letters">SERVER</span></h2>
+
               <p class="text-gray-700 text-lg mt-4">
                  The Nuvolaris Production Server is a robust, high-availability system designed for deploying and running production-grade applications. Comprising three interconnected servers, it ensures resilience, reliability and seamless operations, even under demanding conditions.
               </p>

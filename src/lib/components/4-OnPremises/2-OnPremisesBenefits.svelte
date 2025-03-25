@@ -103,10 +103,10 @@
   
         <!-- Colonna di testo a sinistra -->
         <div class="md:col-span-1">
-          <h2 class="text-2xl font-bold text-gray-900">
-            Nuvolaris Production Server On-Premises Variant
-          </h2>
-          <p class="text-gray-700 text-lg mt-4">
+          <h2 class="text-2xl text-gray-900"><span class="letters" id="azure">NUVOLARIS</span> <span class="bigletters">PROD<br>UCTION</span> <span class="letters">SERVER</span></h2>
+          <h2 class="text-2xl text-gray-900"><span class="letters bold">ON PREMISES<br></span><span class="letters">VARIANT</span></h2>
+
+          <p class="text-gray-700 mt-4">
             The Nuvolaris Production Server – On-Premises Variant is a high-performance, 
             self-hosted solution for organizations that require full control over their 
             infrastructure. Designed with the same resilience and capabilities as the 
@@ -146,7 +146,7 @@
               </div>
             {/each}
           </div>
-  
+  <br>
           <!-- Quarta feature su una riga separata, larga quanto le 3 sopra -->
           <div class="mt-10 bg-white p-6 rounded shadow-md">
             <h3 class="text-xs md:text-sm font-semibold text-gray-900 uppercase tracking-wider text-center">
