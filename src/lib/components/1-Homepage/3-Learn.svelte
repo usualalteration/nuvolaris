@@ -11,10 +11,10 @@
       <!-- Colonna 1 (Sinistra) -->
       <div class="grid-item item-1">
         <div class="center-text">
-          <h3 class="white verybigletters">
+          <h3 class="white verybigletters" id="white">
             L<span>E</span>A<span>RN</span>
           </h3>
-          <h3 class="white letters">NUVOLARIS</h3>
+          <h3 class="white letters" id="white">NUVOLARIS</h3>
         </div>
         <br />
         <p>
