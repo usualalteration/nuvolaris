@@ -38,12 +38,12 @@
           <div>
             <div class="transparent-box">
               <div class="buttons-container">
-                <h3>Use Cases</h3>
+                <h3 class="background">Use <span class="orange">Cases</span></h3>
                 <button class="btn">WATCH THEM NOW</button>
               </div>
               <br />
               <div class="buttons-container">
-                <h3>Our Tutorials</h3>
+                <h3 class="background">Our <span class="orange">Tutorials</span></h3>
                 <button class="btn">LEARN NOW</button>
               </div>
             </div>

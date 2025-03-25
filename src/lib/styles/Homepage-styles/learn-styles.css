@@ -16,6 +16,15 @@ body {
   padding: 0;
 }
 
+.orange{
+  color: #f7a40c;
+}
+
+.background{
+  background-color: #333;
+  padding: 0.2rem 2rem;
+}
+
 /* Sezione learn con UNICO sfondo */
 .learn {
   background: url("img/learn-nuvolaris.png") no-repeat center center;
