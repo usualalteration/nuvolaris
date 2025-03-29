@@ -7,35 +7,12 @@
 <section class="half-height-section">
   <div class="flex-wrapper">
     <div class="flex-container">
-      <div class="flex-8"></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+      <div class="image-container"></div>
+
+      
+
+      
+
 <!-- Box Testo -->
       <!-- <div class="flex-2" style="margin-right:10%;">
         <h2 class="letters" id="white" style="text-align:right;">DISCOVER <br> NUVOLARIS <br> </h2>
