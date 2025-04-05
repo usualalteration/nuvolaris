@@ -23,7 +23,7 @@
   
       .content {
         width: 50vw;
-        height: 145vh;
+        height: auto;
         background-color: rgba(0, 0, 0, 0.75);
         padding: 2.5rem 1.5rem 1.5rem 1.5rem;
         color: white;
