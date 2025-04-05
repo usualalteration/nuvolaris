@@ -27,7 +27,7 @@ body {
 
 /* Sezione learn con UNICO sfondo */
 .learn {
-  background: url("./img/learn-nuvolaris.png");
+  background: url("/img/learn-nuvolaris.png");
   background-size: cover;
   /* Copre almeno l’intera altezza del viewport */
   min-height: 100vh;
