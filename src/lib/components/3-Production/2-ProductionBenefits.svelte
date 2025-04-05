@@ -38,6 +38,17 @@
   * {
       font-family: 'Poppins', sans-serif;
   }
+
+  html, body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 </style>
 
 <section class="relative w-full">

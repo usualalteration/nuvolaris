@@ -38,6 +38,16 @@
     * {
         font-family: 'Poppins', sans-serif;
     }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        margin-top: 0;
+        padding-top: 0;
+    }
 </style>
 
 <section class="relative w-full">
@@ -65,27 +75,27 @@
             </div>
 
             <!-- Features Section -->
-            <div class="md:col-span-3">
-                <!-- "Key Features" Title -->
-                <h2 class="text-xl font-bold text-gray-900 text-center uppercase mb-6">Key Features</h2>
+            <div class="md:col-span-3 flex justify-end">
+                <div class="max-w-4xl">
+                    <h2 class="text-xl font-bold text-gray-900 text-center uppercase mb-6">Key Features</h2>
 
-                <!-- Features Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    {#each features as feature}
-                        <div class="text-center">
-                            <h3 class="text-sm font-semibold text-gray-900 uppercase">{feature.title}</h3>
-                            <hr class="border-t border-gray-400 my-3">
-                            <img src={feature.icon} alt={feature.title} class="w-16 h-16 mx-auto mb-4">
-                            <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">
-                                {#each feature.features as f}
-                                    <li><span class="font-semibold text-black">{f.name}:</span> {f.description}</li>
-                                {/each}
-                            </ul>
-                        </div>
-                    {/each}
+                    <!-- Features Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        {#each features as feature}
+                            <div class="text-left"> <!-- modificato qui -->
+                                <h3 class="text-sm font-semibold text-gray-900 uppercase">{feature.title}</h3>
+                                <hr class="border-t border-gray-400 my-3"> <!-- rimosso ml-auto -->
+                                <img src={feature.icon} alt={feature.title} class="w-16 h-16 mx-auto mb-4">
+                                <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">
+                                    {#each feature.features as f}
+                                        <li><span class="font-semibold text-black">{f.name}:</span> {f.description}</li>
+                                    {/each}
+                                </ul>
+                            </div>
+                        {/each}
+                    </div>
                 </div>
             </div>
         </div>
-
-
+    </div>
 </section>

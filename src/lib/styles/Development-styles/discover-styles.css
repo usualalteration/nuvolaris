@@ -1,5 +1,5 @@
 .half-height-section {
-  min-height: 50vh; /* Maggiore altezza per migliorare il layout */
+  min-height: 100vh; /* Maggiore altezza per migliorare il layout */
   display: flex;
   align-items: center;
   justify-content: center;
