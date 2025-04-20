@@ -65,7 +65,38 @@
   .verybigletters {
       display: block;
   }
-
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      gap: 2rem;
+    }
+    
+    .column {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .right-text {
+      text-align: center;
+    }
+    
+    .btn {
+      margin: 1rem auto;
+      display: block;
+    }
+    
+    .description, .descriptionbig {
+      text-align: center;
+    }
+    
+    .image {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
 </style>
 
 <div class="container">
