@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-/* Full-screen hero section with background image */
 .hero-section {
-  width: 100%;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   background-image: url("/img/hero-nuvolaris.png");
   background-size: cover;
   background-position: center top;
@@ -17,34 +19,41 @@
   justify-content: center;
   text-align: center;
   color: white;
+  overflow: hidden;
+}
+
+.align-right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 /* Hero text content aligned to the right */
 .hero-content {
   color: white;
-  max-width: 800px;
+  max-width: 80dvw;
   text-align: right;
   margin-left: auto;
-  margin-right: 5%;
+  margin-right: 5dvw;
 }
 
 /* Container for flexible right-aligned content */
 .flex-container {
   display: flex;
   justify-content: flex-end;
+  color: #00c1ff;
 }
 
 /* Main heading inside the hero section */
 .hero-content h1 {
   font-size: 2.5rem;
-  font-family: "Poppins", "sans-serif";
+  line-height: 1.2;
 }
 
 /* Paragraph styling inside the hero section */
 .hero-content p {
-  font-family: "Poppins", "sans-serif";
   font-size: 1.15rem;
-  margin-top: 10px;
+  margin-top: 2dvh;
   font-weight: 500;
 }
 
@@ -55,11 +64,62 @@
 
 /* Logo positioning inside the hero section */
 .hero-logo {
-  margin-top: 20px;
-  height: 40px;
+  margin-top: 2dvh;
+  height: 5dvh;
 }
 
-/* Text color for the flex container */
-.flex-container {
-  color: #00c1ff;
+/* Container wrapper */
+.scale-wrapper {
+  width: 100dvw;
+  overflow: hidden;
+}
+
+.desktop-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1dvw;
+  padding: 2dvw;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    width: 100dvw;
+    height: 80dvh; /* Reduced height */
+    background-image: url("/img/hero-nuvolaris.png");
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 65%; /* Adjusted to move text down */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90dvw;
+    padding: 0;
+    text-align: right;
+    color: white;
+    z-index: 2;
+    margin-top: -22rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 4dvw, 2.5rem); /* 👈 leggermente più piccolo */
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: clamp(0.9rem, 2dvw, 1.1rem); /* 👈 più contenuto */
+    margin-top: 1.5dvh;
+    font-weight: 500;
+  }
+
+  .hero-logo {
+    height: clamp(25px, 5dvh, 40px);
+    margin-top: 2dvh;
+  }
 }

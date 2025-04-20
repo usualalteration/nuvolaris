@@ -8,6 +8,7 @@ body {
 
 /* Main section with a split background */
 .compatibility-section {
+  margin-top: -10rem;
   background: #ffffff;
   padding: 0rem 0;
   display: flex;
@@ -20,41 +21,23 @@ body {
 .compatibility-container {
   display: flex;
   align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  gap: 50px;
+  max-width: 1400px; /* Increased max-width for more overall space */
+  width: 90%; /* Use percentage for better responsiveness within max-width */
+  gap: 100px; /* Increased gap for more space between elements */
   flex-wrap: wrap;
-}
-
-/* Main title */
-.compatibility-text h2 {
-  font-size: 3.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.2; /* Reduced line height */
-}
-
-
-/* Bold and light text variations */
-.compatibility-text .bold,
-.compatibility-text .light {
-  font-weight: 300;
-  color: #333;
-  font-family: "Poppins", sans-serif;
-  line-height: 0.7; /* Adjusted line height for readability */
-  text-align: right;
+  justify-content: center; /* Helps center if content doesn't fill max-width */
 }
 
 /* Adjust image to extend above the section */
 .compatibility-image {
   position: relative;
+  flex-shrink: 0; /* Prevent image from shrinking excessively */
 }
 
 /* Ensure image reaches the bottom of the section */
 .compatibility-image img {
   width: 100%;
-  max-width: 550px;
+  max-width: 650px; /* Increased image size */
   height: auto;
   margin-top: -60px; /* Moves image higher */
   object-fit: contain;
@@ -71,17 +54,20 @@ body {
 
 /* Text section on the right */
 .compatibility-text {
-  text-align: left;
-  max-width: 500px;
+  text-align: right; /* Changed to right align */
+  max-width: 600px; /* Increased text area width */
   font-family: "Poppins", sans-serif;
+  width: 100%; /* Ensures the text takes the full available width up to max-width */
+  flex-grow: 1; /* Allow text area to grow if space allows */
 }
 
 /* Main title */
 .compatibility-text h2 {
-  font-size: 3.5em;
+  font-size: 4.2em; /* Increased font size */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Adjusted margin */
   font-family: "Poppins", sans-serif;
+  line-height: 1.2;
 }
 
 /* Bold and light text variations */
@@ -95,13 +81,16 @@ body {
   font-weight: 300;
   color: #333;
   font-family: "Poppins", sans-serif;
+  /* Removed conflicting line-height from original duplicate rule */
+  /* text-align: right; - Inherited from .compatibility-text */
 }
+
 
 /* Subtitle with right alignment */
 .compatibility-text .subtitle {
-  font-size: 1.2em;
+  font-size: 1.4em; /* Increased font size */
   color: #3498db;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* Adjusted margin */
   text-align: right;
   font-family: "Poppins", sans-serif;
 }
@@ -111,52 +100,86 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0px;
+  gap: 5px; /* Adjusted gap slightly for icons */
   flex-wrap: wrap;
+  margin-top: 20px; /* Add some space above icons */
 }
 
 /* Maintain original proportions of language icons */
 .languages img {
   width: auto;
-  height: 40px;
+  height: 45px; /* Slightly increased icon size */
   object-fit: contain;
 }
 
-/* Responsive adjustments for smaller screens */
-@media screen and (max-width: 900px) {
+/* --- Media Query Adjustments --- */
+@media screen and (max-width: 992px) { /* Add a breakpoint for tablets if needed */
+    .compatibility-container {
+        gap: 60px; /* Reduce gap slightly for medium screens */
+        max-width: 95%;
+    }
+     .compatibility-text h2 {
+      font-size: 3.5em; /* Slightly smaller title for tablets */
+    }
+    .compatibility-image img {
+        max-width: 550px; /* Adjust image size */
+    }
+     .compatibility-text {
+        max-width: 500px; /* Adjust text width */
+     }
+}
+
+
+@media screen and (max-width: 768px) {
   .compatibility-container {
     flex-direction: column;
     text-align: center;
+    margin-top: 12rem;
+    gap: 40px; /* Adjust gap for vertical stacking */
+    width: 90%; /* Ensure container doesn't touch edges */
+    max-width: 600px; /* Limit width on mobile */
+  }
+
+  .compatibility-image img {
+      max-width: 80%; /* Adjust relative size for mobile */
+      margin: -40px auto 0 auto; /* Adjust negative margin and center */
   }
 
   .compatibility-text {
+    text-align: center; /* Centers all text */
+    margin: 0 auto; /* Centers the container */
+    max-width: 100%; /* Allow text to use available width */
+  }
+
+  /* Center subtitle on mobile */
+  .compatibility-text .subtitle {
     text-align: center;
+    font-size: 1.2em; /* Adjust font size for mobile */
   }
 
   /* Center language icons on small devices */
   .languages {
     justify-content: center;
+    margin-top: 15px;
   }
 
-  .orange-line{
-    display:none;
+    .languages img {
+      height: 40px; /* Reset icon size for mobile */
+    }
+
+  /* Center bold and light text */
+  .compatibility-text .bold,
+  .compatibility-text .light {
+    text-align: center;
   }
-}
 
-.orange-line {
-  width: 100%;
-  height: 30px;
-  background-color: #f7a40c;
-  position: absolute; /* Removes fixed position */
-  margin-top: -17vh; /* Adds spacing before the bar */
-}
+  /* Adjust title size for mobile */
+  .compatibility-text h2 {
+    font-size: 2.8em; /* Significantly smaller title for mobile */
+    line-height: 1.1;
+  }
 
-@media screen and (min-width: 1440px) {/* Orange bar positioned at the end of the section */
-.orange-line {
-  width: 100%;
-  height: 30px;
-  background-color: #f7a40c;
-  position: absolute; /* Removes fixed position */
-  margin-top: -33vh; /* Adds spacing before the bar */
-}
+  .orange-line {
+    display: none;
+  }
 }
