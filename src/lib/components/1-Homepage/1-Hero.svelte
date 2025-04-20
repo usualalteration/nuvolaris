@@ -4,9 +4,8 @@
   import "$lib/styles/global-font-styles.css";
   import "tailwindcss/tailwind.css";
 </script>
-<main class="relative mt-[3.5rem] "> 
-  <div class="scale-wrapper">
-<section class="hero-section desktop-section">
+
+<section class="hero-section scale-wrapper relative mt-[3.5rem]">
   <div class="hero-content">
     <h1 class="flex-container">THINK OUT OF THE BOX.</h1>
     <p>
@@ -16,7 +15,6 @@
     </p>
     <img src="/img/logo-header.png" alt="Nuvolaris Logo" class="hero-logo align-right" />
   </div>
+
 </section>
-</div>
-</main>
 

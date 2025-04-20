@@ -244,6 +244,7 @@ h6 {
 
 /* Responsive product grid */
 @media (max-width: 768px) {
+
     .product-grid {
         display: flex;
         flex-direction: column;  /* Metti le card in colonna */

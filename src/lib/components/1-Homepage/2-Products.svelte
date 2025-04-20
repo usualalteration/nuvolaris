@@ -126,7 +126,6 @@
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
   /* Base styles and reset */
   :global(*) {
     margin: 0;
@@ -507,7 +506,7 @@
       color: #333;
     }
     .section-wrapper {
-      margin-top: -30rem !important;
+      margin-top: -45rem !important;
     }
 
     section {
