@@ -1,9 +1,10 @@
+
 <script>
   import "$lib/styles/global-styles.css";
   import "$lib/styles/global-font-styles.css";
   import "tailwindcss/tailwind.css";
   import "$lib/styles/Production-styles/production-benefits-styles.css";
-
+  
   const features = [
       {
           title: "1. Fault Tolerance and Resilience",
@@ -32,28 +33,10 @@
   ];
 </script>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-  * {
-      font-family: 'Poppins', sans-serif;
-  }
-
-  html, body {
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-</style>
 
 <section class="relative w-full">
   <!-- Hero Section -->
-  <div class="relative w-full h-[60vh] flex justify-center items-center bg-gray-200">
+  <div class="relative w-full h-[60vh] mobileclass flex justify-center items-center bg-gray-200">
       <img src="/img/design-choose.svg" alt="Design Choose" class="absolute w-full h-full object-cover z-0">
       <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
       <div class="relative z-10 bg-[#333] bg-opacity-90 px-6 py-4 text-center">
@@ -101,4 +84,27 @@ section {
 
 
 </section>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+}
+
+section {
+margin-top: 0;
+padding-top: 0;
+}
+    @media (max-width: 768px) { 
+    .mobileclass {
+        margin-top: -64vh; /* Smaller height on mobile instead of negative margin */
+    }
+}
+ </style>
 

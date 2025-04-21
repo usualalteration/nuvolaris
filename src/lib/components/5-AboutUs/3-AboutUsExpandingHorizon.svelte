@@ -78,6 +78,46 @@
     z-index: 0;
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .column {
+        justify-content: flex-start;
+        text-align: left !important;
+    }
+    .verybigletters,
+    .letters {
+        text-align: left !important;
+    }
+    .btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .image {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+    .nuvolaris-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nuvolaris-image {
+        order: 3; /* Così puoi scegliere l'ordine: qui l'immagine viene per ultima */
+    }
+
+    .nuvolaris-section > div {
+        width: 100%;
+    }
+}
+
+}
 
 
 

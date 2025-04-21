@@ -66,6 +66,31 @@
         display: block;
     }
 
+    @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .column {
+        justify-content: flex-start;
+        text-align: left !important;
+    }
+    .verybigletters,
+    .letters {
+        text-align: left !important;
+    }
+    .btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .image {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+}
+
 </style>
 
 <div class="container">
