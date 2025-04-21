@@ -79,6 +79,8 @@
 }
 
 @media (max-width: 768px) {
+
+   
     .container {
         flex-direction: column;
         align-items: stretch;

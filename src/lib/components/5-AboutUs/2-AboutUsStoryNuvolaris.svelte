@@ -89,7 +89,7 @@
     }
 
     .image{
-        width: 30rem;
+        width: 90vw;
     }
 
     .orangebtn {
@@ -112,7 +112,13 @@ section.relative.w-full {
   margin-bottom: 0 !important;
 }
 
+@media (max-width: 768px) {
 
+    #image {
+    z-index: 10;
+    width: 90vw;
+    }
+}
 </style>
 
 <section class="relative w-full pb-0 mb-0">
@@ -169,7 +175,7 @@ section.relative.w-full {
     <img src="img/divider.svg" class="image mx-auto" alt="Divider">
     <div class="container5">
         <div class="column5">
-            <img src="img/Michele-Sciabarra-Ceo-Nuvolaris.svg" class="image" alt="Michele Sciabarrà">
+            <img src="img/Michele-Sciabarra-Ceo-Nuvolaris.svg" id="image" alt="Michele Sciabarrà">
         </div>
         <div class="column5">
             <p class="letters" id="azure">NUVOLARIS</p>
