@@ -11,7 +11,7 @@
 <!-- Hero Section -->
 <main class="relative mt-[3.5rem]">
     <div class="relative w-full">
-      <img src="../img/development-server-hero.svg" alt="Hero Image" class="w-full h-auto">
+      <img src="/img/development-server-hero.svg" alt="Hero Image" class="w-full h-auto">
   
   <!-- Testo sopra l'immagine -->
 <div class="absolute bottom-0 left-0 right-0 flex justify-center translate-y-[-7rem] md:translate-y-[-12rem]">
