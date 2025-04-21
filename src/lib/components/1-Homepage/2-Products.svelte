@@ -146,7 +146,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: -8rem !important;
+    margin-top: 0 !important;
   }
 
   /* Products section */
@@ -506,7 +506,7 @@
       color: #333;
     }
     .section-wrapper {
-      margin-top: -30rem !important;
+      margin-top: -35rem !important;
     }
 
     section {
