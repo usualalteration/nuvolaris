@@ -146,7 +146,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 0 !important;
+    margin-top: -8rem !important;
   }
 
   /* Products section */
