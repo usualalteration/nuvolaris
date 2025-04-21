@@ -506,7 +506,7 @@
       color: #333;
     }
     .section-wrapper {
-      margin-top: -45rem !important;
+      margin-top: -30rem !important;
     }
 
     section {
