@@ -157,6 +157,8 @@
     padding-top: 0 !important;
   }
 
+
+
   .content-container {
     position: relative;
     width: 100%;
@@ -506,11 +508,11 @@
       color: #333;
     }
     .section-wrapper {
-      margin-top: -35rem !important;
+      margin-top: -0rem !important;
     }
 
     section {
-      margin-top: -60rem !important;
+      margin-top: 0rem !important;
     }
 
     .sidebar {

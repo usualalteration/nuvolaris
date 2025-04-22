@@ -8,10 +8,10 @@
 }
 
 .hero-section {
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: auto; /* Changed from fixed height to auto */
   background-image: url("/img/hero-nuvolaris.png");
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
   display: flex;
@@ -20,6 +20,7 @@
   text-align: center;
   color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .align-right {
@@ -31,10 +32,13 @@
 /* Hero text content aligned to the right */
 .hero-content {
   color: white;
-  max-width: 80dvw;
+  max-width: 80vw;
   text-align: right;
   margin-left: auto;
-  margin-right: 5dvw;
+  margin-right: 5vw;
+  position: relative;
+  width: 100%;
+  padding: 5vh 0; /* Add some padding top and bottom */
 }
 
 /* Container for flexible right-aligned content */
@@ -53,7 +57,7 @@
 /* Paragraph styling inside the hero section */
 .hero-content p {
   font-size: 1.15rem;
-  margin-top: 2dvh;
+  margin-top: 2vh;
   font-weight: 500;
 }
 
@@ -64,62 +68,64 @@
 
 /* Logo positioning inside the hero section */
 .hero-logo {
-  margin-top: 2dvh;
-  height: 5dvh;
+  margin-top: 2vh;
+  height: 5vh;
 }
 
 /* Container wrapper */
 .scale-wrapper {
-  width: 100dvw;
+  width: 100vw;
   overflow: hidden;
 }
 
 .desktop-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 1dvw;
-  padding: 2dvw;
+  gap: 1vw;
+  padding: 2vw;
   justify-content: center;
 }
+
 @media (max-width: 768px) {
   .hero-section {
-    width: 100dvw;
-    height: 80dvh; /* Reduced height */
-    background-image: url("/img/hero-nuvolaris.png");
-    background-size: 100%;
+    width: 100%;
+    height: auto; /* Auto height to prevent white space */
+    min-height: fit-content; /* Use only as much height as needed */
+    background-size: 100% auto;
     background-position: center top;
-    background-repeat: no-repeat;
+    display: block;
     position: relative;
-    overflow: hidden;
   }
 
   .hero-content {
-    position: absolute;
-    top: 90%; /* Adjusted to move text down */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90dvw;
-    padding: 0;
+    position: relative; /* Changed from absolute to relative */
+    top: auto; /* Remove absolute positioning */
+    right: auto;
+    transform: none;
+    width: 90vw;
+    max-width: 90vw;
+    margin: 0 auto 0 auto; /* Center horizontally */
+    margin-right: 5vw; /* Keep right alignment */
+    padding: 5vh 0; /* Add padding instead of absolute positioning */
     text-align: right;
     color: white;
     z-index: 2;
-    margin-top: -38rem;
   }
 
   .hero-content h1 {
-    font-size: clamp(1.5rem, 4dvw, 2.5rem); /* 👈 leggermente più piccolo */
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     margin: 0;
     line-height: 1.2;
   }
 
   .hero-content p {
-    font-size: clamp(0.9rem, 2dvw, 1.1rem); /* 👈 più contenuto */
-    margin-top: 1.5dvh;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    margin-top: 1.5vh;
     font-weight: 500;
   }
 
   .hero-logo {
-    height: clamp(25px, 5dvh, 40px);
-    margin-top: 2dvh;
+    height: clamp(25px, 5vh, 40px);
+    margin-top: 2vh;
   }
 }
