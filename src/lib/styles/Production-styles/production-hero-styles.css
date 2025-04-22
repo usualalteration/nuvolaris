@@ -1,5 +1,6 @@
 * {
   font-family: Poppins, sans-serif;
+  text-align: center; /* Global center alignment */
 }
 
 .banner {
@@ -20,9 +21,9 @@
 .banner h4 {
   font-size: 2rem;
   white-space: nowrap;
-  margin: 0; 
-  margin-top: 5rem;   
-  text-align: center !important;
+  margin: 0;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .text-container {
@@ -33,22 +34,25 @@
 
 .highlight-bg {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 5px 5px;
-  text-align: center;
+ text-align: center;
 }
 
-span{
-  text-align:center;
+span {
+  text-align: center;
+  display: block; /* Makes spans behave like block elements for better centering */
 }
+
 .highlight {
   color: orange;
   font-weight: bold;
+  text-align: center;
 }
 
 .section {
   text-align: center;
-  margin: 0;
+  margin: 0 auto; /* Center sections */
   padding: 0;
+  width: 100%;
 }
 
 p {
@@ -56,12 +60,12 @@ p {
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 0;
+  width: 100%; /* Full width paragraphs */
 }
 
 @media (max-width: 768px) {
-
-  span{
-    text-align:center;
+  * {
+    text-align: center !important; /* Force center alignment on mobile */
   }
   
   .navbar {
@@ -74,25 +78,34 @@ p {
     padding: 0 10px;
     text-align: center;
   }
-
+  
   .text-container {
-    max-width: 300px;
-    margin-top: -15rem;
+    max-width: 90%; /* Use percentage for better scaling */
+    margin: -15rem auto 0; /* Center the container horizontally */
     text-align: center;
   }
-
+  
   h1 {
     font-size: 0.5rem;
     text-align: center;
   }
-
+  
   p {
     font-size: 0.5rem;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
   
   /* Ensure all headings are centered on mobile */
   h2, h3, h4, h5, h6 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  span {
+    display: block;
+    width: 100%;
     text-align: center;
   }
 }
