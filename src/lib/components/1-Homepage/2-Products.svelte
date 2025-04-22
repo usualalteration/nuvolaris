@@ -81,6 +81,9 @@
     <div class="empty-column"></div>
     
     <div class="benefits-text">
+      <br>
+      <br>
+      <br>
       <h2 class="benefits">Benefits</h2>
       <h3 class="verybigletters">W<span id="grey">HY</span></h3>
       <h3 class="bigletters poppins-bold">CHOOSE</h3>

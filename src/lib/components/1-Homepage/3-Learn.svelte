@@ -34,24 +34,23 @@
       </div>
 
       <!-- Right Column -->
-      <div class="grid-item right-column">
-        <div class="buttons-container">
-          <div class="button-box">
-            <div class="button-header">
-              <span>Use</span> Cases
-            </div>
-            <button class="watch-button">WATCH THEM NOW</button>
-          </div>
-          
-          <div class="button-box">
-            <div class="button-header">
-              <span>Our</span> Tutorials
-            </div>
-            <button class="learn-button">LEARN NOW</button>
-          </div>
-        </div>
+<div class="grid-item right-column">
+  <div class="buttons-container">
+    <div class="button-box">
+      <div class="button-header">
+        <span>Use</span> Cases
       </div>
+      <button class="watch-button">WATCH THEM NOW</button>
     </div>
+    
+    <div class="button-box">
+      <div class="button-header">
+        <span>Our</span> Tutorials
+      </div>
+      <button class="learn-button">LEARN NOW</button>
+    </div>
+  </div>
+</div>
   </section>
 </main>
 
@@ -237,11 +236,15 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+
   .right-column {
     grid-column: span 1;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .buttons-container {
@@ -250,7 +253,7 @@ body {
     justify-content: center;
     max-width: 250px;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
   
   .button-box {
@@ -261,10 +264,23 @@ body {
     justify-content: center;
   }
   
-  .button-header, .watch-button, .learn-button {
+  .button-header, 
+  .watch-button, 
+  .learn-button {
     width: 100%;
     text-align: center;
     display: block;
+  }
+  
+  /* Additional centering for buttons */
+  .buttons-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .button-box {
+    max-width: 250px;
+    width: 100%;
   }
 }
 </style>
