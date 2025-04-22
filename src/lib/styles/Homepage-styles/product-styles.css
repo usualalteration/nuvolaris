@@ -117,7 +117,7 @@ h6 {
     font-size: clamp(14px, 3vw, 18px);
     position: relative;
     z-index: 1;
-    top: -15rem;
+
 }
 
 .highlighted-text2 {
@@ -133,7 +133,7 @@ h6 {
     font-size: clamp(12px, 2vw, 8px);
     position: relative;
     z-index: 1;
-    top: -14rem;
+
 }
 
 /* Product card styling */
@@ -251,7 +251,7 @@ h6 {
         justify-content: center; /* Centra orizzontalmente */
         align-items: center;     /* Centra verticalmente */
         gap: 15px;
-        margin-top: -20rem;
+
     }
 
     .threeproducts {
@@ -267,7 +267,7 @@ h6 {
     }
 
     .sectionsection {
-        margin-top: -49.5rem;
+        margin-top:0;
     }
 
     .computer {
