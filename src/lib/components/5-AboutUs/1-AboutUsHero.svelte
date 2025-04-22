@@ -12,16 +12,38 @@
         background-color: rgba(0, 0, 0, 0.9);
         padding: 10px 20px;
         text-align: center;
+        width: 90%; /* Added for mobile */
     }
     .hero-text2 {
         position: absolute;
         bottom: 30%; /* Abbassato di 3rem */
-        left: 22%;
+        left: 50%; /* Changed from 22% for mobile */
+        transform: translateX(-50%); /* Added for centering */
         text-align: center;
+        width: 90%; /* Added for mobile */
     }
 
     .orangespan{
         color: #FF9600;
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 767px) {
+        .hero-text {
+            bottom: 30%; /* Adjust position for mobile */
+            padding: 8px 15px; /* Smaller padding */
+        }
+        
+        .hero-text2 {
+            bottom: 25%; /* Adjust position for mobile */
+            font-size: 0.9rem; /* Smaller font size */
+        }
+        
+        /* Make sure text doesn't overflow on small screens */
+        h2 {
+            white-space: normal;
+            word-wrap: break-word;
+        }
     }
 </style>
 
