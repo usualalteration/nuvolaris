@@ -48,47 +48,196 @@
         margin-top: 0;
         padding-top: 0;
     }
+
+    /* Hero Section */
+    .hero-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e5e7eb;
+    }
+
+    .hero-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .hero-gradient {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, white, transparent);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        background-color: rgba(51, 51, 51, 0.9);
+        padding: 1rem 1.5rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.875rem;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .hero-title span {
+        color: #3b82f6;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+        .hero-container {
+            height: 40vh; /* Reduced height on mobile */
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to top, white 20%, transparent); /* Stronger gradient on mobile */
+        }
+
+        .hero-title {
+            font-size: 1.5rem; /* Slightly smaller text on mobile */
+        }
+    }
+
+    /* Content Section */
+    .content-section {
+        padding: 4rem 2.5rem;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .nuvolaris-title {
+        font-size: 1.5rem;
+        color: #111827;
+    }
+
+    .nuvolaris-title span {
+        color: #3b82f6;
+    }
+
+    .nuvolaris-description {
+        color: #374151;
+        font-size: 1.125rem;
+        margin-top: 1rem;
+    }
+
+    .features-container {
+        max-width: 56rem;
+    }
+
+    .features-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #111827;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .feature-card {
+        text-align: left;
+    }
+
+    .feature-title {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #111827;
+        text-transform: uppercase;
+    }
+
+    .feature-divider {
+        border-top: 1px solid #9ca3af;
+        margin: 0.75rem 0;
+    }
+
+    .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto 1rem;
+    }
+
+    .feature-list {
+        list-style-type: disc;
+        list-style-position: inside;
+        color: #374151;
+        font-size: 0.875rem;
+        line-height: 1.75;
+    }
+
+    .feature-list span {
+        font-weight: 600;
+        color: #000;
+    }
+
+    /* Desktop adjustments */
+    @media (min-width: 768px) {
+        .content-grid {
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .features-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 </style>
 
-<section class="relative w-full">
+<section class="w-full">
     <!-- Hero Section -->
-    <div class="relative w-full h-[60vh] flex justify-center items-center bg-gray-200">
-        <img src="/img/design-choose.svg" alt="Design Choose" class="absolute w-full h-full object-cover z-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
-        <div class="relative z-10 bg-[#333] bg-opacity-90 px-6 py-4 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold text-white uppercase">
-                CHOOSE <span class="text-blue-500">NUVOLARIS DEVELOPMENT</span>
-            </h2>
+    <div class="hero-container">
+        <img src="/img/design-choose.svg" alt="Design Choose" class="hero-image">
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">CHOOSE <span>NUVOLARIS DEVELOPMENT</span></h2>
         </div>
     </div>
 
     <!-- Content Section -->
-    <div class="px-10 py-16">
+    <div class="content-section">
         <!-- Content Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 items-start">
+        <div class="content-grid">
             <!-- Nuvolaris Development Server (Left Side) -->
-            <div class="md:col-span-1">
-                <h2 class="text-2xl text-gray-900"><span class="letters" id="azure">NUVOLARIS</span> <span class="bigletters">DEVELOP<br>MENT</span> <span class="letters">SERVER</span></h2>
-                <p class="text-gray-700 text-lg mt-4">
+            <div>
+                <h2 class="nuvolaris-title"><span>NUVOLARIS</span> <span>DEVELOP<br>MENT</span> <span>SERVER</span></h2>
+                <p class="nuvolaris-description">
                     The <span class="text-blue-500">Nuvolaris Development Server</span> is a single, all-in-one development server designed to streamline and accelerate application development workflows. It features three pre-configured virtual machines and comes equipped with the Nuvolaris serverless platform.
                 </p>
             </div>
 
             <!-- Features Section -->
-            <div class="md:col-span-3 flex justify-end">
-                <div class="max-w-4xl">
-                    <h2 class="text-xl font-bold text-gray-900 text-center uppercase mb-6">Key Features</h2>
+            <div class="flex justify-end">
+                <div class="features-container">
+                    <h2 class="features-title">Key Features</h2>
 
                     <!-- Features Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="features-grid">
                         {#each features as feature}
-                            <div class="text-left"> <!-- modificato qui -->
-                                <h3 class="text-sm font-semibold text-gray-900 uppercase">{feature.title}</h3>
-                                <hr class="border-t border-gray-400 my-3"> <!-- rimosso ml-auto -->
-                                <img src={feature.icon} alt={feature.title} class="w-16 h-16 mx-auto mb-4">
-                                <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">
+                            <div class="feature-card">
+                                <h3 class="feature-title">{feature.title}</h3>
+                                <hr class="feature-divider">
+                                <img src={feature.icon} alt={feature.title} class="feature-icon">
+                                <ul class="feature-list">
                                     {#each feature.features as f}
-                                        <li><span class="font-semibold text-black">{f.name}:</span> {f.description}</li>
+                                        <li><span>{f.name}:</span> {f.description}</li>
                                     {/each}
                                 </ul>
                             </div>

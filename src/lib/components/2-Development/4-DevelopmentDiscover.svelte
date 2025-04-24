@@ -1,7 +1,7 @@
 <script>
   import "$lib/styles/global-styles.css";
   import "$lib/styles/global-font-styles.css";
-  import "$lib/styles/Development-styles/discover-styles.css";
+  //import "$lib/styles/Development-styles/discover-styles.css";
 </script>
 
 <style>

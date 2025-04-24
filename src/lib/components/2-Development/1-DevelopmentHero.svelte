@@ -1,52 +1,149 @@
 <script>
-    import "$lib/styles/Homepage-styles/hero-styles.css";
-    import "$lib/styles/global-styles.css";
-    import "$lib/styles/global-font-styles.css";
+  import "$lib/styles/global-styles.css";
+  import "$lib/styles/global-font-styles.css";
 
-  import { currentComponent } from "$lib/store.js";
-
-  </script>
-
+</script>
 
 <!-- Hero Section -->
-<main class="relative mt-[3.5rem]">
-    <div class="relative w-full">
-      <img src="/img/development-server-hero.svg" alt="Hero Image" class="w-full h-auto">
-  
-  <!-- Testo sopra l'immagine -->
-<div class="absolute bottom-0 left-0 right-0 flex justify-center translate-y-[-7rem] md:translate-y-[-12rem]">
-    <div class="bg-[#000] bg-opacity-90 px-6 py-2 text-center inline-block">
-      <h2 class="text-lg md:text-2xl font-bold text-white uppercase">
-        <span class="text-blue-500">Develop a serverless world</span>
-      </h2>
+<main class="hero-section">
+  <div class="hero-container">
+    <img src="/img/development-server-hero.svg" alt="Hero Image" class="hero-image">
+    
+    <!-- Main heading -->
+    <div class="hero-heading">
+      <div class="heading-box">
+        <h2 class="main-heading">
+          <span class="blue-text">Develop a serverless world</span>
+        </h2>
+      </div>
+    </div>
+    
+    <!-- First subtitle -->
+    <div class="hero-subtitle first-subtitle">
+      <h3 class="subtitle-text">fast, free, scalable and low-cost <span class="orange-text">development</span></h3>
+    </div>
+    
+    <!-- Second subtitle -->
+    <div class="hero-subtitle second-subtitle">
+      <h3 class="subtitle-text"> in your <span class="orange-text">private cloud</span></h3>
     </div>
   </div>
-  
-  <!-- Primo sottotitolo -->
-  <div class="absolute bottom-0 md:text-lg left-0 whitespace-pre-line font-bold right-0 flex text-white justify-center translate-y-[-5rem] md:translate-y-[-10rem]">
-    <h3 class="block whitespace-pre-line">fast, free, scalable and low-cost <span class="text-orange-500">development</span></h3>
-  </div>
-  
-  <!-- Secondo sottotitolo -->
-  <div class="absolute bottom-0 md:text-lg left-0 whitespace-pre-line font-bold right-0 flex text-white justify-center translate-y-[-3rem] md:translate-y-[-8rem]">
-    <h3 class="block whitespace-pre-line"> in your <span class="text-orange-500">private cloud</span></h3>
-  </div>
-  
-  </main>
-  
+</main>
 
 <style>
-    @media (max-width: 767px) {
-  .hero-text-container {
-    transform: translateY(-7rem); /* Era -12rem, ora abbassata di 5rem */
+  /* Base styles */
+  .hero-section {
+    position: relative;
+    margin-top: 3.1rem;
   }
-
-  .hero-subtitle-1 {
-    transform: translateY(-5rem); /* Era -10rem, ora -5rem */
+  
+  .hero-container {
+    position: relative;
+    width: 100%;
   }
-
-  .hero-subtitle-2 {
-    transform: translateY(-3rem); /* Era -8rem, ora -3rem */
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
   }
-}
+  
+  /* Heading styles */
+  .hero-heading {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-5rem);
+  }
+  
+  .heading-box {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .main-heading {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .blue-text {
+    color: #3b82f6;
+  }
+  
+  /* Subtitle styles */
+  .hero-subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-line;
+    font-weight: bold;
+    display: flex;
+    color: white;
+    justify-content: center;
+  }
+  
+  .first-subtitle {
+    transform: translateY(-3rem);
+  }
+  
+  .second-subtitle {
+    transform: translateY(-1rem);
+  }
+  
+  .subtitle-text {
+    display: block;
+    white-space: pre-line;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  
+  .orange-text {
+    color: #f97316;
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 768px) {
+    .hero-heading {
+      transform: translateY(-12rem);
+    }
+    
+    .main-heading {
+      font-size: 1.5rem;
+    }
+    
+    .first-subtitle {
+      transform: translateY(-10rem);
+    }
+    
+    .second-subtitle {
+      transform: translateY(-8rem);
+    }
+    
+    .subtitle-text {
+      font-size: 1.125rem;
+    }
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 767px) {
+    .hero-heading {
+      transform: translateY(-4rem);
+    }
+    
+    .first-subtitle {
+      transform: translateY(-2rem);
+    }
+    
+    .second-subtitle {
+      transform: translateY(0);
+    }
+  }
 </style>
