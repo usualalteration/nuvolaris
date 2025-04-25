@@ -13,7 +13,7 @@
 <footer>
   <!-- Logo e Descrizione -->
   <div class="footer-left">
-    <img src="/img/nuvolaris-logo.png" alt="Nuvolaris Logo" />
+    <img class="footer-logo" src="/img/nuvolaris-logo.png" alt="Nuvolaris Logo" />
     <p>
       The Cloud-Native Solution For Developers And Companies That Want To Work
       Better, Faster And More Efficiently.

@@ -34,7 +34,7 @@
   ];
 </script>
 
-<div class="section-wrapper">
+<div class="section-wrapper" id="section">
   <section class="products-section">
     <div class="sidebar"></div>
     
@@ -503,6 +503,10 @@
 
   /* Mobile styles (≤ 768px) */
   @media (max-width: 768px) {
+
+    #section {
+      margin-top: -5rem !important;
+    }
 
     #grey2 {
       color: #333;
